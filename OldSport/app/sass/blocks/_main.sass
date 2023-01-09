@@ -1,0 +1,61 @@
+.main
+    background-color: $dark
+    padding: 0px 40px 100px 40px
+    &__cocktail
+        display: flex
+        justify-content: space-between
+        margin-bottom: 90px
+        &:nth-last-child(1)
+            margin-bottom: 0px
+
+    &__img
+        border-radius: 13px
+        width: 600px
+    &__recipe
+        display: flex
+        flex-direction: column
+        &-name
+            align-self: center
+            position: relative
+            margin-bottom: 25px
+        &-title
+            margin: 0px
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 100%
+            text-align: center
+            font-style: normal
+            font-weight: normal
+            font-size: 25px
+            line-height: 37px
+            color: $white
+            &--empty
+                color: #F04902
+    &__list
+        margin: 0
+        padding: 0
+        list-style: none
+    &__item
+        display: flex
+        justify-content: space-between
+        margin-bottom: 10px
+        &:nth-last-child(1)
+            margin-bottom: 0px
+
+    &__ml
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 22px
+        color: $ml
+        margin-right: 15px
+    &__alco
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 22px
+        color: $white
+
+

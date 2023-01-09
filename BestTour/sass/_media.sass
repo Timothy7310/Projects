@@ -1,0 +1,602 @@
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .hotel
+        &-slide
+            width: 590px
+    .hotel
+        &-right
+            padding-left: 15px
+        &-slider
+            &__img
+                height: 100%
+                width: 100%
+                object-fit: cover
+    .card
+        width: 230px
+        height: 230px
+    .packages
+        &-card
+            width: 300px
+            &_main
+                width: 630px
+            &__lux
+                grid-column: 3
+                height: 100%
+    .footer
+        &__input
+            &-group
+                flex-basis: 100%
+
+@media ( max-width: 992px)
+    .container
+        max-width: 700px
+    .newsletter
+        &__wrap
+            max-width: 700px
+            padding: 71px 0 74px
+
+    .logo
+        width: 132px
+    .navbar
+        &-top
+            padding-top: 30px
+            padding-bottom: 30px
+        &__search
+            margin-left: auto
+            // change
+            margin-right: 74px
+
+        &-menu
+            // padding-top: 22px
+            // padding-bottom: 22px
+            padding: 20px 15px 22px 15px
+            &__link
+                font-size: 12px
+                line-height: 15px
+    .search
+        &__input
+            // width: 340px
+            width: 339px
+        // change
+        &__button
+            width: 65px
+
+    .hotel
+        padding-bottom: 60px
+        &-grid
+            flex-direction: column
+        &__slider
+            margin-bottom: 30px
+        &-right
+            flex-direction: row
+            padding: 0
+        &-slider
+            width: 100%
+    // change
+    .rating
+        margin-bottom: -3px
+    .booking
+        width: 340px
+        // change
+        padding: 29px 22px 26px 23px
+        &__call
+            &-center
+                margin-bottom: 16px
+        &__number
+            line-height: 30px
+        &__description
+            margin-left: 7px
+    .map
+        width: 340px
+    .reviews
+        &__title
+            margin-bottom: 47px
+            line-height: 45px
+            font-size: 30px
+        &-slider
+            &__item
+                max-width: 580px
+            &__avatar
+                margin-bottom: -3px
+            &__username
+                margin-bottom: 10px
+            &__date
+                margin-bottom: 3px
+            &__button
+                &--prev
+                    left: 0
+                    top: 50%
+                &--next
+                    right: 0
+                    top: 50%
+
+    .packages
+        &-wrap
+            grid-template-columns: repeat(2, 1fr)
+        &-card
+            width: 100%
+            &_main
+                grid-column: span 2
+                grid-row: 1
+                width: 100%
+            &__lux
+                grid-row: 2px
+                grid-column: 1
+            &__white-place
+                grid-row: 2
+                grid-column: 2
+            &__luxury-place
+                grid-row: 3
+                grid-column: 1
+            &__five-star
+                grid-row: 3
+                grid-column: 2
+
+    .activities
+        padding: 32px 0px 50px 0px
+        &-wrap
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
+    .card
+        width: 339px
+        height: 255px
+    .footer
+        padding-top: 74px
+        &__input
+            &-group
+                flex-basis: 48%
+        &-wrap
+            grid-template-columns: repeat(6, 1fr)
+            grid-row-gap: 40px
+        &__logo
+            grid-row: 1 / 2
+            grid-column: span 1
+            margin: 0
+            width: 96px
+        &__icon
+            &-wrap
+                min-width: 44px
+        &__social
+            &-network
+                grid-row: 1 / 2
+                grid-column: span 4
+                align-self: center
+                margin: 20px 0px 0px 66px
+            &-links
+                margin-left: 47px
+        &__text
+            margin-top: 27px
+            margin-bottom: 25px
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 2
+            margin-right: 0px
+        &__legal
+            grid-column: span 2
+            margin-left: 19px
+        &__additional
+            grid-column: span 2
+            margin-left: -39px
+        &__title
+            margin: 7px 0px 20px 0px
+        &__contact
+            &-details
+                grid-column: span 5
+                grid-row: 3
+                margin-top: 10px
+            &-form
+                grid-column: span 5
+                grid-row: 4
+                margin: -7px 0px 0px 0px
+        &__form
+            width: 93%
+        &__input
+            &-group
+                flex-basis: 47%
+        &__rulses
+            &-links
+                grid-row: 5
+                grid-column: span 4
+                margin-top: 15px
+                justify-self: start
+            &-img
+                grid-row: 5
+                grid-column: 5 / 7
+                padding-top: 0px
+                margin-top: 13px
+                width: 136px
+        &-rulses
+            &__link
+                padding-left: 6px
+    .modal
+        &__button
+            width: 100%
+
+@media (max-width:767px)
+    .container
+        max-width: 576px
+        width: 92%
+    body
+        padding-top: 78px
+    .navbar
+        &--mobile
+            &--fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
+        &__user, &__search
+            &--mobile
+                &--hidden
+                    display: none
+                &--visible
+                    display: flex
+        &__user
+            flex-direction: column
+            justify-content: center
+        &-bottom
+            display: none
+            position: fixed
+            left: 0
+            right: 0
+            bottom: 0
+            top: 78px
+            &--visible
+                display: block
+        &-menu
+            flex-direction: column
+            &__item
+                margin: 20px
+                &--mobile
+                    &--visible
+                        display: block
+        &__search
+            &--mobile
+                &--visible
+                    margin-right: 0
+    .menu
+        &-button
+            display: flex
+            width: 16px
+            height: 11px
+            padding: 0
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            border: none
+            background-color: #fff
+            cursor: pointer
+            &__line
+                width: 16px
+                height: 1px
+                background-color: $text-color
+    .user
+        &__name
+            &--light
+                color: $light
+                margin-left: 0
+                margin-top: 10px
+
+    .stars
+        flex-basis: auto
+    .hotel
+        &-name
+            flex-basis: 100%
+        &-wrapper
+            justify-content: space-between
+
+        &-info
+            &__text
+                width: 100%
+            &__name
+                margin-top: 10px
+                margin-bottom: 0
+            &__rating
+                display: none
+            &__offer
+                order: -1
+                margin-left: 0
+
+    .hotel
+        &-right
+            flex-direction: column
+            min-height: 450px
+        &-slider
+            height: 350px
+    .booking
+        width: 100%
+    .map
+        width: 100%
+    .packages
+        &__title
+            font-size: 30px
+        &-card
+            &_main
+                flex-direction: column
+            &-img
+                &_main
+                    height: 450px
+            &__img
+                &_main
+                    width: 100%
+            &__descr
+                display: none
+    .price
+        &__old
+            font-size: 12px
+        &__new
+            font-size: 21px
+        &__btn
+            font-size: 11px
+            padding: 9px 24px 9px 24px
+    .newsletter
+        &__wrap
+            max-width: 576px
+            width: 92%
+            flex-direction: column
+            align-items: flex-start
+    .reviews
+        &-slider
+            &__item
+                padding: 0px 30px 30px
+                width: 100%
+                &::after, &::before
+                    display: none
+            &__button
+                top: 32px
+                &--prev
+                    left: 50%
+                    transform: translate(-50%, 0)
+                    margin-left: -65px
+                &--next
+                    right: 50%
+                    transform: translate(50%, 0)
+                    margin-right: -65px
+    .card
+        width: 49%
+        height: 255px
+    .footer
+        &__input
+            &-group
+                flex-basis: 100%
+        &__additional
+            margin-left: 0px
+    .modal
+        &__dialog
+            width: 90%
+            padding: 36px 50px 33px 50px
+
+@media (max-width: 576px)
+    // change
+    .container
+        width: 90%
+    .logo
+        // width: 99px
+        width: 102px
+    .menu
+        // change
+        &-button
+            margin-right: 8px
+            margin-top: 5px
+    .navbar
+        &__search
+            &--mobile
+                &--visible
+                    width: 74%
+                    margin: auto
+                    margin-bottom: 20px
+        &__user
+            &--mobile
+                &--visible
+                    margin-bottom: 11px
+                    margin-top: 5px
+        &-menu
+            &__item
+                margin: 8px
+    .hotel
+        // change
+        padding-top: 1px
+        // change
+        padding-bottom: 0px
+        // change
+        &-right
+            display: block
+        // change
+        &-info
+            padding-bottom: 38px
+            &__description
+                width: 280px
+        &-slider
+            // height: 250px
+            height: 179px
+        &__slider
+            margin-bottom: 20px
+            width: 97%
+            margin-right: 7px
+    .booking
+        width: 97%
+        padding: 27px 22px 23px 24px
+        margin-bottom: 20px
+    .map
+        margin-bottom: 40px
+        height: 179px
+    .packages
+        &-card
+            &__lux
+                grid-column: span 2
+                grid-row: 2
+            &__white-place
+                grid-column: span 2
+                grid-row: 3
+            &__luxury-place
+                grid-column: span 2
+                grid-row: 4
+            &__five-star
+                grid-column: span 2
+                grid-row: 5
+            &__img
+                width: 100%
+                height: 100%
+            &-img
+                width: 100%
+                height: 300px
+    .newsletter
+        // padding: 76px 0 83px 0
+        &__title
+            // margin-bottom: 37px
+            margin-bottom: 32px
+            line-height: 26px
+            font-size: 20px
+            margin-top: 25px
+        &__subtitle
+            font-size: 30px
+            line-height: 47px
+        &__wrap
+            padding: 52px 0 82px 8px
+    .form
+        &-newsletter
+            &__input
+                width: 100%
+                padding-left: 18px
+                padding-right: 87px
+                &-wrap
+                    width: 100%
+
+    .subscribe
+        // width: 100%
+        width: 97%
+    .reviews
+        &__title
+            // font-size: 28px
+            font-size: 18px
+            line-height: 23px
+            // change
+            max-width: 245px
+            margin: auto
+            margin-bottom: 42px
+            margin-top: 30px
+        &-slider
+            &__button
+                &--next
+                    margin-right: -85px
+                &--prev
+                    margin-left: -93px
+    .activities
+        padding: 29px 0px 48px 0px
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 36px
+            margin-left: 3px
+    .activities
+        padding: 29px 0px 42px 0px
+        &__card
+            width: 282px
+            height: 255px
+            object-fit: cover
+            margin-left: auto
+            margin-right: auto
+            &_divergent
+                margin-bottom: 26px
+    .card
+        &__img
+            width: 100%
+    .footer
+        padding-top: 67px
+        &-wrap
+            grid-template-columns: 1fr
+            grid-row-gap: 27px
+        &__logo
+            grid-row: 1
+            grid-column: 1
+            width: 97px
+        &__text
+            margin-top: 29px
+        &__item
+            &--mb-2
+                margin-bottom: 21px
+        &__icon
+            &-wrap
+                min-width: 33px
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+                margin: 0
+                margin-top: 12px
+                flex-direction: column
+            &-links
+                justify-content: space-between
+                max-width: 85px
+                margin-left: 3px
+                margin-top: 10px
+        &__title
+            margin: 0px 0px 16px 0px
+        &__legal
+            grid-row: 3
+            grid-column: 1
+            margin-left: 0px
+        &__additional
+            grid-row: 4
+            grid-column: 1
+            margin-bottom: 3px
+        &__categories
+            grid-row: 5
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+                width: 98%
+            &-form
+                grid-row: 7
+                grid-column: 1
+                width: 97%
+                margin-top: 10px
+        &__form
+            margin-top: 0
+            width: 101%
+        &__input
+            &-group
+                width: 100%
+                &-tel
+                    top: 62px
+                &-name
+                    top: -2px
+        &__message
+            margin-bottom: 14px
+            margin-top: 130px
+        &__info
+            order: 2
+            flex-basis: 100%
+            margin-bottom: 15px
+        &__button
+            order: 3
+            font-size: 12px
+        &__rulses
+            &-links
+                grid-row: 8
+                grid-column: 1
+                margin-top: 3px
+                margin-left: -3px
+            &-img
+                grid-row: 9
+                grid-column: 1
+                justify-self: start
+                margin-top: -80px
+        &-rulses
+            &__links
+                padding-left: 5px
+    .stars
+        padding-right: 20px
+@media (max-height: 670px)
+    .modal__dialog
+        height: 90%
+        overflow-y: scroll
+@media (max-height: 520px)
+    .navbar-menu
+        height: 510px
+        overflow-y: scroll

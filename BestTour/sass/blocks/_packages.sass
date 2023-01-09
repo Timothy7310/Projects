@@ -1,0 +1,143 @@
+.packages
+    padding: 14px 0px 68px 0px
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        padding-bottom: 35px
+    &-wrap
+        display: grid
+        grid-template-columns: repeat(3, minmax(min-content, 1fr))
+        grid-gap: 30px
+        grid-auto-rows: minmax(83px, min-content)
+        align-items: start
+    &-card
+        display: flex
+        flex-direction: column
+        background-color: $dark
+        color: $light
+        width: 350px
+        border-radius: 8px
+        overflow: hidden
+        &__name
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            padding: 6px 0px 27px 0px
+        &__descr
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 160.6%
+            margin-bottom: 40px
+            max-width: 300px
+            &_main
+                overflow: auto
+                max-height: 165px
+        &__geo
+            display: flex
+            align-items: center
+            margin-bottom: 11px
+            &_text
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+            &_img
+                margin-right: 15px
+        &__guests
+            display: flex
+            align-items: center
+            margin-bottom: 11px
+            &_text
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+            &_img
+                margin-right: 15px
+        &__room
+            display: flex
+            align-items: center
+            margin-bottom: 20px
+            &_main
+                margin-bottom: 42px
+            &_text
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+            &_img
+                margin-right: 15px
+        &_main
+            display: flex
+            grid-column: 1 / 3
+            flex-direction: row
+            width: 730px
+
+        &-img
+            position: relative
+            width: 350px
+            height: 250px
+            object-fit: cover
+            &_main
+                position: relative
+            &_offer
+                position: absolute
+                background-color: $primary
+                padding: 4px 9px 4px 9px
+                border-radius: 0px 4px 4px 0px
+                top: 26px
+                font-style: normal
+                font-weight: 600
+                font-size: 8px
+                line-height: 10px
+                &_main
+                    padding: 8px 20px 7px 11px
+                    top: 26px
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 12px
+
+        &__img
+            &_main
+                height: 100%
+                object-fit: cover
+        &__info
+            padding: 23px 20px 30px 32px
+            &_main
+                padding: 31px 20px 23px 49px
+.price
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    &-wrap
+        display: flex
+        flex-direction: column
+    &__old
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 18px
+        text-decoration-line: line-through
+        margin-bottom: 5px
+    &__new
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+    &__btn
+        color: $light
+        background-color: $primary
+        border: none
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 19px
+        padding: 11px 27px 10px 26px
+        border-radius: 4px
+        cursor: pointer

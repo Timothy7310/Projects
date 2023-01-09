@@ -1,0 +1,584 @@
+@media ( max-width: 1430px )
+    .quality
+        &__graphics-img
+            position: static
+        &-text
+            margin-right: 50px
+@media ( max-width: 1200px )
+    .container
+        width: 960px
+        &-clients
+            width: 960px
+    .header
+        &-container
+            width: 960px
+        &-wrap
+            flex-wrap: wrap
+        &-nav
+            flex-basis: 100%
+            margin-top: 20px
+        &-links
+            justify-content: space-between
+            width: 100%
+        &-logo
+            order: -2
+    .button
+        &-demo
+            &--header
+                order: -1
+    .main
+        &-partners
+            &__item
+                &:nth-last-child(1)
+                    margin-left: 39px
+    .about-us
+        &-info
+            margin: 0px 0px 55px 0px
+    .delivery
+        &-items
+            justify-content: center
+        &-item
+            margin: 30px
+            &:nth-child(7)
+                margin-bottom: 30px
+            &:nth-child(8)
+                margin-bottom: 30px
+            &:nth-child(9)
+                margin-bottom: 30px
+    .safety
+        &__item
+            max-width: 278px
+        &-info
+            font-size: 18px
+        &-offer
+            justify-content: space-between
+            &__text
+                font-size: 17px
+                margin: 0
+    .clients
+        &-text
+            align-items: flex-start
+        &-reviews
+            width: 500px
+            padding: 50px 37px 50px 37px
+            &__text
+                font-size: 26px
+            &::before
+                top: 25px
+                left: 10px
+        &-features
+            &__item
+                width: 360px
+    .swiper
+        &-container
+            max-width: 500px
+            min-height: inherit
+        &-pagination
+            bottom: 20px !important
+            left: 40px !important
+@media ( max-width: 992px )
+    .container
+        width: 700px
+        &-clients
+            width: 700px
+    .header
+        &-container
+            width: 700px
+        &__link
+            font-size: 15px
+    .main
+        margin-top: 125px
+        &-title
+            font-size: 34px
+            line-height: 60px
+        &-building
+            &__title
+                font-size: 30px
+            &__text
+                font-size: 17px
+        &-safety
+            &__title
+                font-size: 30px
+            &-card
+                &-text
+                    max-width: 436px
+                &__title
+                    font-size: 30px
+                &__info
+                    font-size: 17px
+                &__subtitle
+                    font-size: 17px
+        &-partners
+            &__item
+                margin: 20px
+                &:nth-child(1)
+                    margin-left: 20px
+                &:nth-last-child(1)
+                    margin-left: 20px
+
+    .about-us
+        &-title
+            font-size: 27px
+            margin: 0px 0px 30px 0px
+        &-info
+            font-size: 18px
+            margin: 0px 0px 70px 0px
+        &-delivery
+            &-text
+                flex-basis: 70%
+            &__title
+                width: inherit
+            &__info
+                width: inherit
+        &-optimization
+            &-text
+                flex-basis: 70%
+            &__title
+                width: inherit
+            &__info
+                width: inherit
+        &-control
+            &-text
+                flex-basis: 70%
+            &__title
+                width: inherit
+            &__info
+                width: inherit
+    .delivery
+        &-title
+            font-size: 29px
+        &-info
+            font-size: 18px
+        &-item
+            width: 280px
+        &-features
+            &-text
+                width: 220px
+            &__img
+                width: 40px
+                height: 40px
+            &__subinfo
+                &-text
+                    font-size: 18px
+    .safety
+        &-info
+            width: inherit
+        &-items
+            align-items: center
+            flex-direction: column
+        &__item
+            margin-bottom: 30px
+            min-width: 400px
+        &-offer
+            flex-wrap: wrap
+            &__img
+                order: -2
+            &__text
+                text-align: center
+                margin-top: 15px
+    .button
+        &-details
+            &--offer
+                order: -1
+    .quality
+        &-main
+            flex-direction: column
+        &-text
+            margin-right: 0px
+            margin-bottom: 50px
+            display: flex
+            align-items: center
+            flex-direction: column
+    .plan
+        &-wrap
+            align-items: center
+            justify-content: center
+            flex-direction: column
+        &-img
+            align-items: center
+            margin-bottom: 50px
+            &__title
+                text-align: center
+            &__info
+                text-align: center
+        &-list
+            display: flex
+            flex-direction: column
+            align-items: center
+    .clients
+        &-text
+            flex-direction: column
+            align-items: center
+        &-reviews
+            width: 530px
+            padding: 60px 51px 60px 51px
+            &::before
+                top: 35px
+                left: 20px
+    .swiper
+        &-container
+            max-width: 530px
+            margin-top: 20px
+        &-pagination
+            left: 60px !important
+    .contact-with-us
+        &-title
+            font-size: 36px
+            line-height: 52px
+@media ( max-width: 767px )
+    body
+        &.lock
+            overflow: hidden
+    .container
+        width: 550px
+        &-clients
+            width: 550px
+    .header
+        position: fixed
+        width: 100%
+        top: 0
+        left: 0
+        z-index: 50
+        &-container
+            width: 550px
+        &-nav
+            position: fixed
+            top: -100%
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: $white
+            align-items: flex-start
+            padding-top: 140px
+            transition: all 0.5s ease 0s
+            overflow: auto
+            margin-top: 0px
+            &.active
+                top: 0
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: $blue-mb
+            z-index: 2
+        &-links
+            position: relative
+            z-index: 2
+            flex-direction: column
+            margin: 16px 0px 16px 0px
+        &__item
+            margin: 20px
+            &--mobile--visible
+                display: block
+                margin-bottom: 60px
+        &__link
+            font-size: 20px
+        &-logo
+            position: relative
+            z-index: 3
+            &__text
+                color: $white
+
+        &__burger
+            display: block
+            position: relative
+            width: 30px
+            height: 20px
+            z-index: 3
+            cursor: pointer
+            &::before,
+            &::after
+                content: ''
+                background-color: $white
+                position: absolute
+                width: 100%
+                height: 2px
+                left: 0
+                transition: all 0.3s ease 0s
+            &::before
+                top: 0
+            &::after
+                bottom: 0
+            &-span
+                position: absolute
+                background-color: $white
+                left: 0
+                width: 100%
+                height: 2px
+                top: 9px
+                transition: all 0.3s ease 0s
+                &.active
+                    transform: scale(0)
+            &.active
+                &::before
+                    transform: rotate(45deg)
+                    top: 9px
+
+                &::after
+                    transform: rotate(-45deg)
+                    bottom: 9px
+
+    .button
+        &-demo
+            &--header--mobile
+                &--hidden
+                    display: none
+                &--visible
+                    font-size: 18px
+                    padding: 11px 22px 11px 22px
+    .main
+        &-title
+            font-size: 24px
+            line-height: 50px
+        &-items
+            flex-direction: column
+        &__item
+            margin-bottom: 50px
+        &-building
+            &__title
+                font-size: 27px
+        &-safety
+            &__title
+                font-size: 27px
+            &-card
+                flex-direction: column
+                &-text
+                    margin-bottom: 50px
+                &__title
+                    font-size: 27px
+                    margin-bottom: 140px
+                &__img
+                    width: 300px
+    .about-us
+        &-delivery
+            flex-direction: column
+            &-text
+                margin-right: 0px
+                margin-bottom: 50px
+                text-align: center
+        &-optimization
+            flex-direction: column
+            &-text
+                margin-left: 0px
+                margin-bottom: 50px
+                text-align: center
+            &__img
+                order: 1
+        &-control
+            flex-direction: column
+            &-text
+                margin-right: 0px
+                margin-bottom: 50px
+                text-align: center
+    .delivery
+        &-item
+            width: 340px
+        &-features
+            &-text
+                width: 274px
+    .quality
+        &-features
+            &-items
+                flex-direction: column
+                align-items: center
+            &__item
+                margin-bottom: 30px
+        &__graphics-img
+            width: 100%
+    .clients
+        &-awards
+            &-items
+                width: inherit
+            &__item
+                margin-top: 15px
+                margin-bottom: 15px
+                margin-left: 30px
+                margin-right: 30px
+                &:nth-child(1)
+                    margin-left: 30px
+                &:nth-child(3)
+                    margin-right: 30px
+                &:nth-child(4)
+                    margin-top: 15px
+                    margin-left: 30px
+    .footer
+        &-nav
+            flex-wrap: wrap
+        &-info
+            order: 2
+            margin: 50px auto 0px auto
+        &-bottom
+            flex-direction: column
+@media ( max-width: 576px )
+    .container
+        width: 90%
+        &-clients
+            width: 90%
+    .header
+        &-container
+            width: 90%
+        &-logo
+            width: 190px
+            &__text
+                font-size: 18px
+    .main
+        &-title
+            font-size: 21px
+            line-height: 38px
+        &-buttons
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &-features
+            margin-bottom: 70px
+        &-building
+            margin-bottom: 110px
+            &__title
+                text-align: center
+                font-size: 21px
+        &-safety
+            &__title
+                font-size: 21px
+                line-height: 43px
+                margin-bottom: 120px
+            &-card
+                &__title
+                    font-size: 21px
+                    line-height: 43px
+                    text-align: center
+                    margin-bottom: 40px
+    .button
+        &-details
+            &--main
+                margin-left: 0px
+                margin-top: 20px
+    .about-us
+        &-title
+            font-size: 21px
+        &-info
+            font-size: 17px
+    .delivery
+        &-features
+            width: 95%
+            &__subinfo
+                &-text
+                    font-size: 16px
+    .delivery
+        &-item
+            width: 280px
+        &-features
+            &-text
+                width: 220px
+    .safety
+        &-title
+            font-size: 29px
+        &__item
+            min-width: 90%
+        &-offer
+            &__text
+                order: -3
+                margin-bottom: 15px
+    .quality
+        &-title
+            font-size: 29px
+        &-text
+            width: 90%
+        &-buttons
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-features
+            &__item
+                width: 90%
+    .plan
+        &-img
+            width: 90%
+            &__title
+                font-size: 29px
+            &__info
+                font-size: 18px
+        &-list
+            &__item
+                width: 90%
+                &::before
+                    left: -60px
+            &-items
+                padding: 0px 0px 0px 60px
+        &-buttons
+            align-self: center
+            display: flex
+            flex-direction: column
+            align-items: center
+    .clients
+        &-title
+            font-size: 29px
+        &-info
+            font-size: 18px
+        &-reviews
+            width: 100%
+            padding: 30px 25px 30px 25px
+            &::before
+                top: 20px
+            &__text
+                font-size: 20px
+                line-height: 40px
+            &-avatar
+                flex-direction: column
+                &__img
+                    margin-bottom: 15px
+                &__text
+                    width: inherit
+                &__name
+                    text-align: center
+                    margin-bottom: 10px
+                &__prof
+                    text-align: center
+                    margin-bottom: 20px
+        &-features
+            &__item
+                width: 90%
+        &-awards
+            &__item
+                margin-top: 25px
+                margin-bottom: 25px
+                &:nth-child(4)
+                    margin-top: 25px
+
+    .swiper
+        &-container
+            width: 90%
+        &-pagination
+            width: 100% !important
+            left: 0px !important
+    .contact-with-us
+        &-wrap
+            padding: 75px 38px 0px 38px
+        &-title
+            font-size: 24px
+            line-height: 40px
+        &-buttons
+            flex-direction: column
+            margin-bottom: 75px
+    .footer
+        &-nav
+            flex-direction: column
+            align-items: center
+            margin-bottom: 150px
+        &-items
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 30px
+        &__item
+            text-align: center
+            &--title
+                margin-bottom: 0px
+
+.button
+    &-details
+        &--offer
+            margin-top: 0px

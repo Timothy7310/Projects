@@ -1,0 +1,178 @@
+*
+    box-sizing: border-box
+
+body
+    font-family: 'Inter', sans-serif
+    font-style: normal
+    font-weight: normal
+    // color: $text-color
+    // background-color: $secondary
+h1
+    font-style: normal
+    font-weight: normal
+h2
+    font-style: normal
+    font-weight: normal
+h3
+    font-style: normal
+    font-weight: normal
+p
+    font-style: normal
+    font-weight: normal
+span
+    font-style: normal
+    font-weight: normal
+.container
+    max-width: 1056px
+    margin: 0px auto
+    &-clients
+        max-width: 1150px
+        margin: 0px auto
+img
+    max-width: 100%
+.button
+    &-demo
+        font-size: 17px
+        line-height: 24px
+        color: $white
+        background-color: $dark
+        cursor: pointer
+        border: 2px solid $dark
+        padding: 12px 24px 12px 24px
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16)
+        border-radius: 4px
+    &-details
+        font-size: 18px
+        line-height: 24px
+        color: $dark
+        background-color: transparent
+        border: 1px solid $grey-border
+        border-radius: 4px
+        padding: 13px 25px 13px 25px
+        cursor: pointer
+.back-to-top
+    position: fixed
+    right: 20px
+    bottom: 32px
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    border: 1px solid $blue
+    text-decoration: none
+    background-color: transparent
+    color: $blue
+    display: none
+    z-index: 3
+    &::before,
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+    &::before
+        width: 5px
+        height: 25px
+        border-top-left-radius: 3px
+        border-top-right-radius: 3px
+        background-color: $blue
+    &::after
+        width: 15px
+        height: 15px
+        transform: translate(-50%, -50% ) rotate(45deg)
+        border-top: 5px solid $blue
+        border-left: 5px solid $blue
+@media only screen and (max-width: 3000px) and (min-width: 993px)
+    .back-to-top
+        transition: 0.4s  ease
+        &::after
+            transition: 0.4s  ease
+        &::before
+            transition: 0.4s  ease
+        &:hover
+            background-color: $blue
+
+            &::after
+                border-top: 5px solid $white
+                border-left: 5px solid $white
+
+            &::before
+                background-color: $white
+
+    .header
+        &__link
+            transition: 0.4s  ease
+            &:hover
+                color: $blue
+
+    .button
+        &-demo
+            transition: .5s ease-in-out
+            &:hover
+                color: $dark
+                background-color: transparent
+                border: 2px solid $dark
+
+            &--quality
+                transition: .4s ease-in-out
+                &:hover
+                    border: 1px solid $white
+                    color: $white
+
+            &--contact-with-us
+                transition: .4s ease-in-out
+                &:hover
+                    color: $dark
+                    background-color: $white
+                    border: 2px solid $white
+        &-details
+            transition: .4s ease-in-out
+            &--main
+                &:hover
+                    color: $white
+                    background-color: $dark
+                    border: 1px solid $dark
+                    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16)
+
+            &--quality
+                transition: .4s ease-in-out
+                &:hover
+                    background-color: $white
+                    color: $dark
+
+    .clients-awards
+        &__name
+            transition: .4s ease
+        &__item
+            &:hover
+                & .clients-awards__name
+                    color: $blue
+
+    .footer
+        &-contacts
+            &__email
+                transition: .4s ease
+                &:hover
+                    color: darken($grey,25% )
+
+            &__tel
+                transition: .4s ease
+                &:hover
+                    color: darken($grey,25% )
+
+            &__link
+                &-img
+                    transition: .4s ease
+                    &:hover
+                        fill: $blue
+                        fill-opacity: 0.7
+
+        &__link
+            &:hover
+                &::after
+                    width: 100%
+        &-bottom
+            &__privacy
+                transition: .4s ease
+                &:hover
+                    color: darken($grey,25% )

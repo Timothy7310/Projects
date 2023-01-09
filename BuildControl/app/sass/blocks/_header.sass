@@ -1,0 +1,60 @@
+.header
+    padding: 26px 10px 26px 10px
+    margin-bottom: 74px
+    background-color: $white-bg
+    &-container
+        max-width: 1378px
+        margin: 0px auto
+    &-wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-logo
+        text-decoration: none
+        display: flex
+        align-items: center
+        &__img
+            width: 30px
+            height: 44px
+            margin-right: 8px
+        &__text
+            font-size: 22px
+            line-height: 27px
+            color: $dark
+            text-transform: uppercase
+    &-nav
+        display: flex
+        align-items: center
+    &-links
+        list-style: none
+        padding: 0
+        margin: 0
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+    &__item
+        margin-left: 11px
+        margin-right: 11px
+        font-size: 16px
+        line-height: 19px
+        color: $grey
+        &--mobile--visible
+            display: none
+    &__link
+        text-decoration: none
+        color: inherit
+    &__burger
+        display: none
+
+.button
+    &-demo
+        &--header
+            color: $white
+            background-color: $dark
+            padding: 8px 19px 8px 19px
+            cursor: pointer
+            border: 2px solid $dark
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16)
+            border-radius: 4px
+            font-size: 15px
+            line-height: 16px

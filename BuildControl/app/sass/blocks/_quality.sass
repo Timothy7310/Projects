@@ -1,0 +1,93 @@
+.quality
+    background-color: $dark
+    margin-bottom: 143px
+    padding: 144px 0px 118px 0px
+    position: relative
+    &-wrap
+        display: flex
+        flex-direction: column
+
+    &-main
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 127px
+    &-text
+        width: 589px
+
+    &-title
+        font-size: 32px
+        line-height: 48px
+        color: $white
+        margin: 0px 0px 50px 0px
+    &-items
+        list-style: none
+        padding: 0px 0px 0px 40px
+        margin: 0px
+    &__item
+        margin-bottom: 24px
+        position: relative
+        &::before
+            content: ''
+            display: block
+            width: 8px
+            height: 8px
+            position: absolute
+            background-image: url(/img/section-quality/marker.svg)
+            left: -40px
+            top: 10px
+        &-title
+            font-size: 18px
+            line-height: 24px
+            color: $white
+            margin: 0px 0px 10px 0px
+        &-info
+            font-size: 16px
+            line-height: 24px
+            color: $white-info
+            margin: 0
+    &__graphics-img
+        width: 618px
+        position: absolute
+        right: 0
+    &-features
+        width: 100%
+        align-self: center
+        &-items
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            list-style: none
+            padding: 0px
+            margin: 0
+        &__item
+            display: flex
+            align-items: center
+            flex-direction: column
+            width: 340px
+        &__img
+            width: 48px
+            height: 48px
+        &__title
+            font-size: 18px
+            line-height: 24px
+            color: $white
+            text-align: center
+            margin: 20px 0px 10px 0px
+        &__text
+            font-size: 16px
+            line-height: 24px
+            color: $white-info
+            text-align: center
+            margin: 0
+
+.button
+    &-demo
+        &--quality
+            color: $dark
+            background-color: $white
+            border: 1px solid $grey-border
+            padding: 13px 24px 13px 24px
+    &-details
+        &--quality
+            color: $white

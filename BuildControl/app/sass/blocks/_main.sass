@@ -1,0 +1,157 @@
+.main
+    margin-bottom: 136px
+    &-wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &-title
+        margin: 0
+        text-align: center
+        font-size: 48px
+        line-height: 64px
+        margin-bottom: 30px
+        color: $dark
+        max-width: 818px
+    &-buttons
+        margin-bottom: 88px
+    &__city
+        &-img
+            margin-bottom: 38px
+    &__cars
+        &-img
+            margin-bottom: 148px
+    &-items
+        list-style: none
+        margin: 0
+        padding: 0
+        display: flex
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+    &-features
+        margin-bottom: 142px
+        &__img
+            width: 48px
+            height: 48px
+            margin-bottom: 20px
+        &__title
+            text-align: center
+            font-size: 18px
+            line-height: 24px
+            margin: 0px 0px 10px 0px
+            color: $dark
+        &__text
+            text-align: center
+            font-size: 16px
+            line-height: 24px
+            margin: 0
+            color: $grey
+    &-building
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 144px
+        &__title
+            margin: 0
+            font-size: 32px
+            line-height: 48px
+            margin-bottom: 16px
+            color: $dark
+        &__text
+            margin: 0
+            font-size: 20px
+            line-height: 32px
+            margin-bottom: 40px
+            text-align: center
+            color: $grey
+    &-safety
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 128px
+        &__title
+            margin: 0
+            font-size: 32px
+            line-height: 48px
+            color: $dark
+            text-align: center
+            margin-bottom: 168px
+        &-card
+            display: flex
+            align-items: center
+            &-text
+                max-width: 542px
+            &__title
+                margin: 0
+                font-size: 32px
+                line-height: 48px
+                color: $dark
+                margin-bottom: 16px
+            &__info
+                margin: 0
+                font-size: 20px
+                line-height: 32px
+                color: $grey
+                margin-bottom: 28px
+            &__subtitle
+                font-size: 20px
+                line-height: 32px
+                color: $dark
+                &-wrap
+                    display: inline-block
+                    position: relative
+
+                    &::after
+                        content: ''
+                        display: block
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        width: 100%
+                        height: 16px
+                        background-color: $yellow
+                        z-index: -1
+    &-partners
+        position: relative
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: -57px
+            left: 0px
+            width: 100%
+            height: 1px
+            background-color: $grey-tr
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            bottom: -57px
+            left: 0px
+            width: 100%
+            height: 1px
+            background-color: $grey-tr
+
+        &-items
+            list-style: none
+            margin: 0
+            padding: 0
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+
+        &__item
+            margin-left: 39px
+
+            &:nth-child(1)
+                margin-left: 0px
+            &:nth-last-child(1)
+                margin-left: 0px
+
+.button
+    &-details
+        &--main
+            margin-left: 16px

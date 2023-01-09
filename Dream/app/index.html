@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream</title>
+
+    <link rel="preload" href="fonts/Metropolis-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Metropolis-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+
+
+
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="index.html" class="header__logo">
+                    <svg class="header__logo-img">
+                        <use xlink:href="img/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+                <button id="burger" class="header__burger" aria-label="Open menu.">
+                    <span class="header__burger-span header__burger-span--1"></span>
+                    <span class="header__burger-span header__burger-span--2"></span>
+                    <span class="header__burger-span header__burger-span--3"></span>
+                    <span class="header__burger-span header__burger-span--4"></span>
+                </button>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Find House</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Community</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Our Blog</a>
+                        </li>
+                        <li class="header__item header__item--mb">
+                            <button class="sign-up sign-up--mb sign-up-toggle--mb">
+                                Register
+                            </button>
+                        </li>
+                        <li class="header__item header__item--mb">
+                            <button class="sign-in sign-in--mb  sign-in-toggle--mb">Login</button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__profile">
+                    <button class="sign-up sign-up-toggle">Register</button>
+                    <button class="sign-in sign-in-toggle">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__wrap">
+                <h1 class="main__title">
+                    Choose your Dream House
+                </h1>
+                <div class="form-search">
+                    <div class="input-geo input-search">
+                        <svg class="input-search__img">
+                            <use xlink:href="img/sprite.svg#geo"></use>
+                        </svg>
+                        <span class="input-geo__text">Bali, Indonesia</span>
+                    </div>
+                    <div class="input-house input-search">
+                        <svg class="input-search__img">
+                            <use xlink:href="img/sprite.svg#home"></use>
+                        </svg>
+                        <span class="input-search__text">Deluxe Type</span>
+                    </div>
+                    <button class="button-search" aria-label="Search">
+                        <svg class="button-search__img">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+
+
+
+                <!-- Slider main container -->
+                <div class="swiper-container main-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide swiper-slide--main">
+                            <div class="main-slide">
+                                <picture class="main-slide__img-wrap">
+                                    <source 
+                                        srcset="img/main/slide-1-mb@1x.webp 1x,
+                                                img/main/slide-1-mb@2x.webp 2x"
+                                        media="(max-width: 576px)"
+                                        type="image/webp">
+                                    <source srcset="img/main/slide-1@1x.webp 1x,
+                                                    img/main/slide-1@2x.webp 2x" 
+                                                    type="image/webp">
+                                    <img loading="lazy" loading="lazy" src="img/main/slide-1@1x.jpg" srcset="img/main/slide-1@2x.jpg 2x"
+                                        class="main-slide__img" alt="White building with swimming pool.">
+                                </picture>
+                                <div class="main-slide__text">
+                                    <h2 class="main-slide__title">Deluxe House with Pool.</h2>
+                                    <div class="main-slide__info">
+                                        <svg class="main-slide__info-img">
+                                            <use xlink:href="img/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="main-slide__info-text">Denpasar, Bali, Indonesia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--main">
+                            <div class="main-slide">
+                                <picture class="main-slide__img-wrap">
+                                    <source 
+                                            srcset="img/main/slide-2-mb@1x.webp 1x,
+                                                    img/main/slide-2-mb@2x.webp 2x" 
+                                            media="(max-width: 576px)"
+                                            type="image/webp">
+                                    <source srcset="img/main/slide-2@1x.webp 1x,
+                                            img/main/slide-2@2x.webp 2x" type="image/webp">
+                                    <img loading="lazy" loading="lazy" src="img/main/slide-2@1x.jpg" srcset="img/main/slide-2@2x.jpg 2x"
+                                        class="main-slide__img" alt="Two-storey house with a large swimming pool and lawn.">
+                                </picture>
+                                <div class="main-slide__text">
+                                    <h2 class="main-slide__title">Jagaditha Bali Deluxe Villa.</h2>
+                                    <div class="main-slide__info">
+                                        <svg class="main-slide__info-img">
+                                            <use xlink:href="img/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="main-slide__info-text">Denpasar, Bali, Indonesia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--main">
+                            <div class="main-slide">
+                                <picture class="main-slide__img-wrap">
+                                    <source 
+                                            srcset="img/main/slide-3-mb@1x.webp 1x,
+                                                    img/main/slide-3-mb@2x.webp 2x"
+                                                    type="image/webp"
+                                            media="(max-width: 576px)">
+                                    <source srcset="img/main/slide-3@1x.webp 1x,
+                                            img/main/slide-3@2x.webp 2x" type="image/webp">
+                                    <img loading="lazy" loading="lazy" src="img/main/slide-3@1x.jpg" srcset="img/main/slide-3@2x.jpg 2x"
+                                        class="main-slide__img" alt="Two-storey house in a modern style.">
+                                </picture>
+                                <div class="main-slide__text">
+                                    <h2 class="main-slide__title">The Modern Deluxe House.</h2>
+                                    <div class="main-slide__info">
+                                        <svg class="main-slide__info-img">
+                                            <use xlink:href="img/sprite.svg#geo"></use>
+                                        </svg>
+                                        <span class="main-slide__info-text">Denpasar, Bali, Indonesia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-slider-buttons">
+                        <button class=" main-slider-button main-slider-button--prev">
+                            <svg class="main-slider-button__img">
+                                <use xlink:href="img/sprite.svg#prev"></use>
+                            </svg>
+                        </button>
+                        <button class=" main-slider-button main-slider-button--next">
+                            <svg class="main-slider-button__img">
+                                <use xlink:href="img/sprite.svg#next"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </main>
+    <section class="service">
+        <div class="container">
+            <div class="service__wrap">
+                <div class="headline service__headline">
+                    <div class="headline__num-wrap">
+                        <span class="headline__num">01</span>
+                    </div>
+                    <h2 class="headline__title">Best Service</h2>
+                </div>
+                <h3 class="service__title">Why Choose Us?</h3>
+                <p class="service__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, viverra aenean
+                    nisl lacus. Sit id vulputate.</p>
+                <ul class="service__list">
+                    <li class="service__item">
+                        <article class="service-card">
+                            <span class="service-card__num">01</span>
+                            <svg class="service-card__img">
+                                <use xlink:href="img/sprite.svg#home-big"></use>
+                            </svg>
+
+                            <span class="service-card__title-num">01</span>
+                            <h4 class="service-card__title">Property Insurance</h4>
+
+                            <p class="service-card__info">
+                                We offer our customers for property insurance for their better life.
+                            </p>
+                            <a href="#" class="service-card__link">Learn More</a>
+                        </article>
+                    </li>
+                    <li class="service__item">
+                        <article class="service-card">
+                            <span class="service-card__num">02</span>
+                            <svg class="service-card__img">
+                                <use xlink:href="img/sprite.svg#tax"></use>
+                            </svg>
+
+                            <span class="service-card__title-num">02</span>
+                            <h4 class="service-card__title">Tax Advantage</h4>
+
+                            <p class="service-card__info">
+                                You get may type facilities specially tax advantage is
+                                one them.
+                            </p>
+                            <a href="#" class="service-card__link">Learn More</a>
+                        </article>
+                    </li>
+                    <li class="service__item">
+                        <article class="service-card">
+                            <span class="service-card__num">03</span>
+                            <svg class="service-card__img">
+                                <use xlink:href="img/sprite.svg#sale"></use>
+                            </svg>
+
+                            <span class="service-card__title-num">03</span>
+                            <h4 class="service-card__title">Lowest Commission</h4>
+
+                            <p class="service-card__info">
+                                We give you lowest commision and many more.
+                            </p>
+                            <a href="#" class="service-card__link">Learn More</a>
+                        </article>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+        <div class="service-bg"></div>
+    </section>
+    <section class="week">
+        <div class="container">
+            <div class="week__wrap">
+                <div class="hotel-card week__hotel-card">
+                    <div class="hotel-card__img-wrap week__img-wrap">
+                        <span class="hotel-card__type">House</span>
+                        <picture>
+                            <source 
+                                    srcset="img/section-week/offer-mb@1x.webp,
+                                            img/section-week/offer-mb@2x.webp 2x"
+                                            type="image/webp" 
+                                    media="(max-width: 576px)">
+                            <source srcset="img/section-week/offer@1x.webp 1x,
+                                img/section-week/offer@2x.webp 2x" 
+                                type="image/webp">
+                            <img loading="lazy" src="img/section-week/offer@1x.jpg" 
+                            srcset="img/section-week/offer@2x.jpg 2x"
+                                class="hotel-card__img" alt="Bright house in a modern style with a lawn.">
+                        </picture>
+                    </div>
+                    <h4 class="hotel-card__title week__hotel-title">North Echo Avenue</h4>
+                    <span class="hotel-card__info week__hotel-info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
+                    <span class="hotel-card__price">Rp 1,500 M</span>
+                </div>
+                <div class="week__info">
+                    <div class="headline week__headline">
+                        <div class="headline__num-wrap">
+                            <span class="headline__num">02</span>
+                        </div>
+                        <h2 class="headline__title">Weekly House</h2>
+                    </div>
+                    <h3 class="week__title">
+                        Get House of
+                        The Week
+                    </h3>
+                    <ul class="week__list">
+                        <li class="week__item">
+                            <div class="week__item-check">
+                                <svg class="week__item-img">
+                                    <use xlink:href="img/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <span class="week__item-text">Architectural Inspection</span>
+                        </li>
+                        <li class="week__item">
+                            <div class="week__item-check">
+                                <svg class="week__item-img">
+                                    <use xlink:href="img/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <span class="week__item-text">Reduction of Utility Fees</span>
+                        </li>
+                        <li class="week__item">
+                            <div class="week__item-check">
+                                <svg class="week__item-img">
+                                    <use xlink:href="img/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <span class="week__item-text">Home Purchase Discount</span>
+                        </li>
+
+                    </ul>
+                    <a href="#" class="week__link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="best">
+        <div class="container">
+            <div class="best__wrap">
+                <div class="headline best__headline">
+                    <div class="headline__num-wrap">
+                        <span class="headline__num">03</span>
+                    </div>
+                    <h2 class="headline__title">Best Properties</h2>
+                </div>
+                <h3 class="best__title">
+                    Best Properties
+                    Around You
+                </h3>
+                <a href="#" class="link-learn-more best__link-learn-more">
+                    <span class="link-learn-more__text">Learn more about this</span>
+                    <svg class="link-learn-more__img">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                </a>
+
+               
+                <!-- If we need navigation buttons -->
+                <button class=" best-slider-button best-slider-button--prev">
+                    <svg class="best-slider-button__img">
+                        <use xlink:href="img/sprite.svg#prev-best"></use>
+                    </svg>
+                </button>
+                <button class=" best-slider-button best-slider-button--next">
+                    <svg class="best-slider-button__img">
+                        <use xlink:href="img/sprite.svg#next-best"></use>
+                    </svg>
+                </button>
+
+
+                <!-- Slider main container -->
+                <div class="swiper-container best__slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide swiper-slide--best">
+                            <div class="hotel-card ">
+                                <div class="hotel-card__img-wrap ">
+                                    <span class="hotel-card__type">Apartment</span>
+                                    <picture>
+                                        <source 
+                                            srcset="img/section-best/slide-1-mb@1x.webp 1x,
+                                                    img/section-best/slide-1-mb@2x.webp 2x"
+                                                    type="image/webp"
+                                            media="(max-width: 576px)">
+                                        <source srcset="img/section-best/slide-1-wide@1x.webp 1x,
+                                                    img/section-best/slide-1-wide@2x.webp 2x"
+                                                    type="image/webp"
+                                        media="(max-width: 1200px)">
+                                        <source srcset="img/section-best/slide-1@1x.webp 1x,
+                                                img/section-best/slide-1@2x.webp 2x"
+                                                type="image/webp">
+                                        <img loading="lazy" src="img/section-best/slide-1@1x.jpg"
+                                            srcset="img/section-best/slide-1@2x.jpg 2x"
+                                            class="hotel-card__img"
+                                            alt="Pool surrounded by palm trees.">
+                                    </picture>
+                                </div>
+                                <h4 class="hotel-card__title">Denpasar Suite</h4>
+                                <span class="hotel-card__info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
+                                <span class="hotel-card__price">Rp 450 Juta</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--best">
+                            <div class="hotel-card ">
+                                <div class="hotel-card__img-wrap ">
+                                    <span class="hotel-card__type">Apartment</span>
+                                    <picture>
+                                        <source 
+                                            srcset="img/section-best/slide-2-mb@1x.webp 1x,
+                                                    img/section-best/slide-2-mb@2x.webp 2x"
+                                                    type="image/webp"
+                                            media="(max-width: 576px)">
+                                        <source srcset="img/section-best/slide-2-wide@1x.webp 1x,
+                                                    img/section-best/slide-2-wide@2x.webp 2x"
+                                                    type="image/webp"
+                                        media="(max-width: 1200px)">
+                                        <source srcset="img/section-best/slide-2@1x.webp 1x,
+                                                img/section-best/slide-2@2x.webp 2x" type="image/webp">
+                                        <img loading="lazy" src="img/section-best/slide-2@1x.jpg"
+                                            srcset="img/section-best/slide-2@2x.jpg 2x"
+                                            class="hotel-card__img" 
+                                            alt="Apartments in hotels with pool.">
+                                    </picture>
+                                </div>
+                                <h4 class="hotel-card__title">Echo Park Suite</h4>
+                                <span class="hotel-card__info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
+                                <span class="hotel-card__price">Rp 550 Juta</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--best">
+                            <div class="hotel-card ">
+                                <div class="hotel-card__img-wrap ">
+                                    <span class="hotel-card__type">House</span>
+                                    <picture>
+                                        <source 
+                                            srcset="img/section-best/slide-3-mb@1x.webp 1x,
+                                                    img/section-best/slide-3-mb@2x.webp 2x"
+                                                    type="image/webp"
+                                            media="(max-width: 576px)">
+                                        <source srcset="img/section-best/slide-3-wide@1x.webp 1x,
+                                                    img/section-best/slide-3-wide@2x.webp 2x"
+                                                    type="image/webp"
+                                        media="(max-width: 1200px)">
+                                        <source srcset="img/section-best/slide-3@1x.webp 1x,
+                                                img/section-best/slide-3@2x.webp 2x" type="image/webp">
+                                        <img loading="lazy" src="img/section-best/slide-3@1x.jpg"
+                                            srcset="img/section-best/slide-3@2x.jpg 2x" 
+                                            class="hotel-card__img" 
+                                            alt="House overlooking the ocean.">
+                                    </picture>
+                                </div>
+                                <h4 class="hotel-card__title">Bali Residence</h4>
+                                <span class="hotel-card__info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
+                                <span class="hotel-card__price">Rp 750 Juta</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--best">
+                            <div class="hotel-card ">
+                                <div class="hotel-card__img-wrap ">
+                                    <span class="hotel-card__type">House</span>
+                                    <picture>
+                                        <source 
+                                            srcset="img/section-best/slide-4-mb@1x.webp 1x,
+                                                    img/section-best/slide-4-mb@2x.webp 2x"
+                                                    type="image/webp"
+                                            media="(max-width: 576px)">
+                                        <source srcset="img/section-best/slide-4-wide@1x.webp 1x,
+                                                    img/section-best/slide-4-wide@2x.webp 2x"
+                                                    type="image/webp"
+                                        media="(max-width: 1200px)">
+                                        <source srcset="img/section-best/slide-4@1x.webp 1x,
+                                                        img/section-best/slide-4@2x.webp 2x" type="image/webp">
+                                        <img loading="lazy" src="img/section-best/slide-4@1x.jpg"
+                                            srcset="img/section-best/slide-4@2x.jpg 2x" 
+                                            class="hotel-card__img" 
+                                            alt="House with outdoor pool.">
+                                    </picture>
+                                </div>
+                                <h4 class="hotel-card__title">Bali Echo House</h4>
+                                <span class="hotel-card__info">Jl. Soekarno - Hatta No. 123, Denpasar</span>
+                                <span class="hotel-card__price">Rp 945 Juta</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comments">
+        <div class="container">
+            <div class="comments__wrap">
+                <div class="headline comments__headline">
+                    <div class="headline__num-wrap">
+                        <span class="headline__num">04</span>
+                    </div>
+                    <h2 class="headline__title">Testimonies</h2>
+                </div>
+                <h3 class="comments__title">
+                    What Our Customers
+                    Said?
+                </h3>
+                <a href="#" class="link-learn-more comments__link-learn-more">
+                    <span class="link-learn-more__text">Learn more about this</span>
+                    <svg class="link-learn-more__img">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                </a>
+
+
+
+                <!-- Slider main container -->
+                <div class="swiper-container comments-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide swiper-slide--comments">
+                            <div class="comments-slide">
+                                <picture class="comments-slide__img-wrap">
+                                    <source 
+                                        srcset="img/section-comments/house-1-mb@1x.webp 1x,
+                                                img/section-comments/house-1-mb@1x.webp 2x"
+                                                type="image/webp"
+                                        media="(max-width: 576px)">
+                                    <source 
+                                        srcset="img/section-comments/house-1-wide@1x.webp 1x,
+                                                img/section-comments/house-1-wide@2x.webp 2x" 
+                                                type="image/webp"
+                                        media="(max-width: 992px)">
+                                    <source srcset="img/section-comments/house-1@1x.webp 1x,
+                                            img/section-comments/house-1@2x.webp 2x" 
+                                            type="image/webp">
+                                    <img loading="lazy" src="img/section-comments/house-1@1x.jpg"
+                                        srcset="img/section-comments/house-1@2x.jpg 2x"
+                                        class="comments-slide__img"
+                                        alt="House in a modern style with a garden.">
+                                </picture>
+                                <svg class="comments-slide__quote">
+                                    <use xlink:href="img/sprite.svg#quote"></use>
+                                </svg>
+                                <p class="comments-slide__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Pellentesque amet velit
+                                    risus quam. Platea pulvinar nunc
+                                    tincidunt turpis nulla. Ullamcorper augue ullamcorper lectus ac. Dui tempor, proin
+                                    integer cras. Hac faucibus
+                                    congue
+                                    ultricies vestibulum vulputate sapien.</p>
+                                <div class="comments-slide__profile">
+                                    <picture>
+                                        <source srcset="img/section-comments/avatar-1@2x.webp 1x,
+                                                            img/section-comments/avatar-1@2x.webp 2x"
+                                            type="image/webp">
+                                        <img loading="lazy" src="img/section-comments/avatar-1@1x.jpg"
+                                            srcset="img/section-comments/avatar-1@2x.jpg 2x"
+                                            class="comments-slide__profile-img" alt="">
+                                    </picture>
+                                    <span class="comments-slide__profile-name">Jenny Wilson</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--comments">
+                            <div class="comments-slide">
+                                <picture class="comments-slide__img-wrap">
+                                    <source 
+                                        srcset="img/section-comments/house-2-mb@1x.webp 1x,
+                                                img/section-comments/house-2-mb@1x.webp 2x"
+                                                type="image/webp"
+                                        media="(max-width: 576px)">
+                                    <source 
+                                        srcset="img/section-comments/house-2-wide@1x.webp 1x,
+                                                img/section-comments/house-2-wide@2x.webp 2x" 
+                                                type="image/webp"
+                                        media="(max-width: 992px)">
+                                    <source srcset="img/section-comments/house-2@1x.webp 1x,
+                                                    img/section-comments/house-2@2x.webp 2x" 
+                                                    type="image/webp">
+                                    <img loading="lazy" src="img/section-comments/house-2@1x.jpg"
+                                        srcset="img/section-comments/house-2@2x.jpg 2x" 
+                                        class="comments-slide__img"
+                                        alt="House in a modern style with panoramic windows.">
+                                </picture>
+                                <svg class="comments-slide__quote">
+                                    <use xlink:href="img/sprite.svg#quote"></use>
+                                </svg>
+                                <p class="comments-slide__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Pellentesque amet velit
+                                    risus quam. Platea pulvinar nunc
+                                    tincidunt turpis nulla. Ullamcorper augue ullamcorper lectus ac. Dui tempor, proin
+                                    integer cras. Hac faucibus
+                                    congue
+                                    ultricies vestibulum vulputate sapien.</p>
+                                <div class="comments-slide__profile">
+                                    <picture>
+                                        <source srcset="img/section-comments/avatar-2@2x.webp 1x,
+                                                        img/section-comments/avatar-2@2x.webp 2x" type="image/webp">
+                                        <img loading="lazy" src="img/section-comments/avatar-2@1x.jpg"
+                                            srcset="img/section-comments/avatar-2@2x.jpg 2x"
+                                            class="comments-slide__profile-img" alt="">
+                                    </picture>
+                                    <span class="comments-slide__profile-name">Jenny Wilson</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--comments">
+
+                            <div class="comments-slide">
+                                <picture class="comments-slide__img-wrap">
+                                    <source 
+                                        srcset="img/section-comments/house-3-mb@1x.webp 1x,
+                                                img/section-comments/house-3-mb@1x.webp 2x"
+                                                type="image/webp"
+                                        media="(max-width: 576px)">
+                                    <source 
+                                        srcset="img/section-comments/house-3-wide@1x.webp 1x,
+                                                img/section-comments/house-3-wide@2x.webp 2x" 
+                                                type="image/webp"
+                                        media="(max-width: 992px)">
+                                    <source srcset="img/section-comments/house-3@1x.webp 1x,
+                                                        img/section-comments/house-3@2x.webp 2x" 
+                                                        type="image/webp">
+                                    <img loading="lazy" src="img/section-comments/house-3@1x.jpg"
+                                        srcset="img/section-comments/house-3@2x.jpg 2x" class="comments-slide__img"
+                                        alt="Bright house with a large parking lot and palm trees in the yard.">
+                                </picture>
+                                <svg class="comments-slide__quote">
+                                    <use xlink:href="img/sprite.svg#quote"></use>
+                                </svg>
+                                <p class="comments-slide__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Pellentesque amet velit
+                                    risus quam. Platea pulvinar nunc
+                                    tincidunt turpis nulla. Ullamcorper augue ullamcorper lectus ac. Dui tempor, proin
+                                    integer cras.</p>
+                                <div class="comments-slide__profile">
+                                    <picture>
+                                        <source srcset="img/section-comments/avatar-3@2x.webp 1x,
+                                                            img/section-comments/avatar-3@2x.webp 2x"
+                                            type="image/webp">
+                                        <img loading="lazy" src="img/section-comments/avatar-3@1x.jpg"
+                                            srcset="img/section-comments/avatar-3@2x.jpg 2x"
+                                            class="comments-slide__profile-img" alt="">
+                                    </picture>
+                                    <span class="comments-slide__profile-name">Jenny Wilson</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="comments-slider-buttons">
+                        <button class=" comments-slider-button comments-slider-button--prev">
+                            <svg class="comments-slider-button__img">
+                                <use xlink:href="img/sprite.svg#prev"></use>
+                            </svg>
+                        </button>
+                        <button class=" comments-slider-button comments-slider-button--next">
+                            <svg class="comments-slider-button__img">
+                                <use xlink:href="img/sprite.svg#next"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination">
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <div class="blog__wrap">
+                <div class="headline blog__headline">
+                    <div class="headline__num-wrap">
+                        <span class="headline__num">04</span>
+                    </div>
+                    <h2 class="headline__title">Testimonies</h2>
+                </div>
+                <article class="blog__article-main article-main">
+                    <a href="#" class="article-main__link">
+                        <div class="article-main__img-wrap">
+                            <div class="author">
+                                <picture class="author__img-wrap">
+                                    <source srcset="img/section-blog/avatar@1x.webp 1x,
+                                                                img/section-blog/avatar@2x.webp 2x" type="image/webp">
+                                    <img loading="lazy" src="img/section-blog/avatar@1x.jpg" 
+                                        srcset="img/section-blog/avatar@2x.jpg 2x"
+                                        class="author__img" alt="">
+                                </picture>
+                                <span class="author__name">
+                                    Albert Florention
+                                </span>
+                                <span class="author__prof">
+                                    Writer
+                                </span>
+                            </div> 
+                            <picture>
+                                <source 
+                                    srcset="img/section-blog/card-1-mb@1x.webp 1x,
+                                            img/section-blog/card-1-mb@2x.webp 2x"
+                                            type="image/webp"
+                                    media="(max-width: 576px)">
+                                <source srcset="img/section-blog/card-1@1x.webp 1x,
+                                        img/section-blog/card-1@2x.webp 2x" type="image/webp">
+                                <img loading="lazy" src="img/section-blog/card-1@1x.jpg" srcset="img/section-blog/card-1@2x.jpg 2x"
+                                    class="article-main__img" alt="Living room interior.">
+                            </picture>
+                        </div>
+                    </a>
+                    <a href="#" class="article-main__link article-main__link--title">
+                        <h4 class="article-main__title clamp-text-2">
+                            This is The Appearence of The Interior of The Newest style disgne
+                        </h4>
+                    </a>
+                </article>
+                <h3 class="blog__title">
+                    Always Check Our
+                    Latest Blog
+                </h3>
+                <ul class="blog__list">
+                    <li class="blog__item">
+                        <article class="blog__article article">
+                            <a href="#" class="article__link">
+                                <picture class="article__img-wrap">
+                                    <source 
+                                    srcset="img/section-blog/card-2-wide@1x.webp 1x,
+                                            img/section-blog/card-2-wide@2x.webp 2x"
+                                            type="image/webp"
+                                    media="(max-width: 576px)">
+                                    <source srcset="img/section-blog/card-2@1x.webp 1x,
+                                        img/section-blog/card-2@2x.webp 2x"
+                                        type="image/webp">
+                                    <img loading="lazy" src="img/section-blog/card-2@1x.jpg" srcset="img/section-blog/card-2@2x.jpg 2x"
+                                        class="article__img" alt="Bright room with sofa.">
+                                </picture>
+                            </a>
+                            <div class="article-text">
+                                <a href="#" class="article__link">
+                                    <h5 class="article-text__title clamp-text-2">
+                                        Some Essential
+                                        Home Care
+                                    </h5>
+                                </a>
+                                <span class="article-text__author">Sophia William</span>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="blog__item">
+                        <article class="blog__article article">
+                            <a href="#" class="article__link">
+                                <picture class="article__img-wrap">
+                                    <source 
+                                    srcset="img/section-blog/card-3-wide@1x.webp 1x,
+                                            img/section-blog/card-3-wide@2x.webp 2x"
+                                            type="image/webp"
+                                    media="(max-width: 576px)">
+                                    <source srcset="img/section-blog/card-3@1x.webp 1x,
+                                            img/section-blog/card-3@2x.webp 2x"
+                                        type="image/webp">
+                                    <img loading="lazy" src="img/section-blog/card-3@1x.jpg" 
+                                        srcset="img/section-blog/card-3@2x.jpg 2x"
+                                        class="article__img" alt="Green wall with an interesting design solution.">
+                                </picture>
+                            </a>
+                            <div class="article-text">
+                                <a href="#" class="article__link">
+                                    <h5 class="article-text__title clamp-text-2">
+                                        Wall Color
+                                        Selection Affects
+                                    </h5>
+                                </a>
+                                <span class="article-text__author">Franklin Jauhari</span>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="blog__item">
+                        <article class="blog__article article">
+                            <a href="#" class="article__link">
+                                <picture class="article__img-wrap">
+                                    <source 
+                                    srcset="img/section-blog/card-4-wide@1x.webp 1x,
+                                            img/section-blog/card-4-wide@2x.webp 2x"
+                                            type="image/webp"
+                                    media="(max-width: 576px)">
+                                    <source srcset="img/section-blog/card-4@1x.webp 1x,
+                                                    img/section-blog/card-4@2x.webp 2x"
+                                        type="image/webp">
+                                    <img loading="lazy" src="img/section-blog/card-4@1x.jpg" 
+                                        srcset="img/section-blog/card-4@2x.jpg 2x"
+                                        class="article__img" alt="People stand on the background of the sunset.">
+                                </picture>
+                            </a>
+                            <div class="article-text">
+                                <a href="#" class="article__link">
+                                    <h5 class="article-text__title clamp-text-2">
+                                        Let The Hot
+                                        House be Experience
+                                    </h5>
+                                </a>
+                                <span class="article-text__author">Marvin William</span>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <img loading="lazy" src="img/sprite/ellipse.svg" class="footer__ellipse footer__ellipse--left" alt="">
+        <img loading="lazy" src="img/sprite/ellipse.svg" class="footer__ellipse footer__ellipse--right" alt="">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__text">
+                    <h2 class="footer__title">Contact Us For
+                        More Information</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <span class="footer__item-name">Mail</span>
+                            <a href="mailto:dream@house.com" class="footer__item-link">
+                                <span class="footer__item-link-span">dream@house.com</span>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <span class="footer__item-name">Phone</span>
+                            <a href="tel:+6281778890999" class="footer__item-link">
+                                <span class="footer__item-link-span">+62 8177 8890 999</span>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <span class="footer__item-name">Address</span>
+                            <a href="https://yandex.ru/maps/21085/surabaya/?ll=112.719214%2C-7.274237&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D112.735%252C-7.274%26spn%3D0.255%252C0.164%26text%3DIndonesia%252C%2520Jawa%2520Timur%252C%2520Surabaya&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=12"
+                                target="_blank" rel="nofollow noopener" class="footer__item-link">
+                                <span class="footer__item-link-span">Jl. MH. Thamrin No 990, Surabaya, Jawa Timur, Indonesia</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__media">
+                        <span class="footer__media-text">Social Media</span>
+                        <a href="https://ru-ru.facebook.com/" target="_blank" rel="nofollow noopener" title="Facebook"
+                            class="footer__media-link">
+                            <svg class="footer__media-img">
+                                <use xlink:href="img/sprite.svg#fb"></use>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="nofollow noopener" title="Twitter"
+                            class="footer__media-link">
+                            <svg class="footer__media-img">
+                                <use xlink:href="img/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="nofollow noopener" title="Instagram"
+                            class="footer__media-link">
+                            <svg class="footer__media-img">
+                                <use xlink:href="img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__form">
+
+                    <h3 class="footer__form-title">
+                        What do you want to ask?
+                    </h3>
+                    <form action="send.php" method="POST" class="form">
+                        <input type="text" name="name" class="form__input" placeholder="Full Name" required>
+                        <input type="email" name="email" class="form__input" placeholder="Email Address" required>
+                        <textarea name="message" class="form__message" placeholder="Message" required></textarea>
+                        <button class="button-send" type="submit">Send Now</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal modal-sign-up">
+        <div class="modal__overlay modal-sign-up__overlay"></div>
+        <div class="modal__dialog modal-sign-up__dialog">
+            <button class="button-close button-close-sign-up" aria-label="Close Sign-up window."
+                autofocus>
+                <svg class="button-close__img">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+
+            </button>
+
+            <form class="form-modal">
+                <div class="form-modal__field">
+                    <label for="email_field_sign-up" class="form-modal__field-label">E-mail:</label>
+                    <input type="email" id="email_field_sign-up" name="email"  class="form-modal__field-input" required>
+                </div>
+                <div class="form-modal__field">
+                    <label for="password_field_sign-up" class="form-modal__field-label">Password:</label>
+                    <input type="password" id="password_field_sign-up" name="password" class="form-modal__field-input" required>
+                </div>
+                <button type="submit" class="sign-up sign-up--modal">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal modal-sign-in">
+        <div class="modal__overlay modal-sign-in__overlay"></div>
+        <div class="modal__dialog modal-sign-in__dialog">
+            <button class="button-close button-close-sign-in"  aria-label="Close Sign-in window."
+                autofocus>
+                <svg class="button-close__img">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+
+            </button>
+
+            <form class="form-modal">
+                <div class="form-modal__field">
+                    <label for="email_field_sign-in" class="form-modal__field-label">E-mail:</label>
+                    <input type="email" id="email_field_sign-in" name="email" class="form-modal__field-input" required>
+                </div>
+                <div class="form-modal__field">
+                    <label for="password_field_sign-in" class="form-modal__field-label">Password:</label>
+                    <input type="password" id="password_field_sign-in" name="password" class="form-modal__field-input" required>
+                </div>
+                <button type="submit" class="sign-in sign-in--modal">Login</button>
+            </form>
+        </div>
+    </div>
+    <script defer src="js/main.min.js"></script>
+
+</body>
+
+</html>

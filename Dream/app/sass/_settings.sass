@@ -1,0 +1,246 @@
+*
+    box-sizing: border-box
+
+body
+    font-family: 'Metropolis', sans-serif
+
+.container
+    max-width: 1140px
+    margin: 0px auto
+img
+    width: 100%
+
+.headline
+    display: grid
+    grid-auto-flow: column
+    grid-column-gap: 40px
+    align-items: center
+    grid-template-columns: min-content 1fr
+    grid-template-rows: 1fr
+    &__num
+        font-style: normal
+        font-weight: 600
+        font-size: 24px
+        line-height: 19px
+        color: $main-info
+        &-wrap
+            width: 51px
+            height: 51px
+            border: 2px solid $main-info
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 24px
+        color: $main-info
+        text-transform: uppercase
+        margin: 0
+.hotel-card
+    display: flex
+    flex-direction: column
+    &__img
+        height: 100%
+        width: 100%
+        object-fit: cover
+        &-wrap
+            position: relative
+            margin-bottom: 32px
+            width: 100%
+            height: 461px
+    &__type
+        position: absolute
+        bottom: 0
+        left: 0
+        padding: 27px 60px 27px 60px
+        background-color: $white
+        color: $other
+        font-style: normal
+        font-weight: 500
+        font-size: 24px
+        line-height: 24px
+    &__title
+        font-style: normal
+        font-weight: 800
+        font-size: 32px
+        line-height: 32px
+        letter-spacing: 0.01em
+        color: $main-info
+        margin: 0px 0px 24px 0px
+    &__info
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 18px
+        color: $second-info
+        margin: 0px 0px 24px 0px
+    &__price
+        font-style: normal
+        font-weight: 800
+        font-size: 32px
+        line-height: 32px
+        letter-spacing: 0.01em
+        color: $primary
+.link-learn-more
+    padding: 34px 50px
+    border: 2px solid $secondary
+    display: inline-grid
+    grid-auto-flow: column
+    align-items: center
+    grid-column-gap: 32px
+    text-decoration: none
+    position: relative
+    z-index: 2
+    &__img
+        width: 32px
+        height: 32px
+        fill: $secondary
+        transition: .4s ease-in-out
+    &__text
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 24px
+        color: $secondary
+        transition: .4s ease-in-out
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        bottom: 0
+        left: auto
+        right: 0
+        width: 0%
+        height: 100%
+        background-color: $secondary
+        z-index: -1
+        transition: .4s ease-in-out
+
+@media  (min-width: 993px)
+
+    .header
+        &__link
+            &:hover
+                &::after
+                    width: 100%
+                    transition: ease 0.5s
+        &__logo
+            &:hover
+                & .header__logo-img
+                    opacity: 0.85
+    .sign
+        &-up
+            transition: ease .4s
+            &:hover
+                box-shadow: none
+                border-radius: 10px
+        &-in
+            transition: ease .4s
+            &:hover
+                box-shadow: none
+                border-radius: 10px
+                background-color: transparent
+                color: $primary
+    .main-slider-button
+        transition: .4s ease-in-out
+        &:hover
+            background: rgba(255, 255, 255, 0.38)
+            backdrop-filter: blur(50px)
+            & .main-slider-button__img
+                fill: $secondary
+    .comments-slider-button
+        transition: .4s ease-in-out
+        &:hover
+            background: rgba(255, 255, 255, 0.38)
+            backdrop-filter: blur(50px)
+            & .comments-slider-button__img
+                fill: $secondary
+    .button-search
+        transition: .4s ease-in-out
+        &:hover
+            background-color: transparent
+            & .button-search__img
+                fill: $primary
+    .service-card__link
+        transition: .4s ease-in-out
+        &:hover
+            &::after
+                width: 100%
+                left: 0
+                right: 0
+
+    .week__link
+        transition: .4s ease-in-out
+        &:hover
+            &::after
+                width: 100%
+                left: 0
+                right: 0
+    .link-learn-more
+        &:hover
+            &::after
+                width: 100%
+                left: 0
+                right: 0
+            & .link-learn-more__text
+                color: $white
+            & .link-learn-more__img
+                fill: $white
+    .best-slider-button
+        transition: .4s ease-in-out
+        &:hover
+            background: $secondary
+            & .best-slider-button__img
+                stroke: $white
+
+    .article-main__title
+        transition: .4s ease-in-out
+        &:hover
+            color: $secondary
+    .article-text__title
+        transition: .4s ease-in-out
+        &:hover
+            color: $secondary
+
+    .footer
+        &__media-link
+            transition: .4s ease-in-out
+            &:hover
+                border: none
+                & .footer__media-img
+                    width: 40px
+                    height: 40px
+        &__item-link
+            // transition: .4s ease-in-out
+            &:hover
+                & .footer__item-link-span
+                    opacity: 0.9
+                    background-size: 100% 2px
+
+    .button-send
+        transition: .4s ease-in-out
+        &:hover
+            color: darken($white,10%)
+            &::after
+                height: 100%
+                top: auto
+                bottom: 0
+    .button-close
+        &:hover
+            & .button-close__img
+                stroke: $primary
+    .modal-toggle
+        transition: .4s ease-in-out
+    .thank-you-btn
+        &:hover
+            &::after
+                width: 100%
+                left: 0
+                right: 0
+            & .thank-you-btn__text
+                color: $white
+            & .thank-you-btn__img
+                fill: $white

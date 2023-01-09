@@ -1,0 +1,61 @@
+.footer
+    padding: 0px 30px 0px 30px
+    margin-bottom: 120px
+    &__wrap
+        display: grid
+        grid-template-rows: min-content 1fr min-content
+        grid-template-areas: "title" "card" "contacts"
+        grid-row-gap: 20px
+    &__title
+        grid-area: title
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 42px
+        color: #212B31
+        margin: 0
+    &-card
+        grid-area: card
+        display: grid
+        grid-auto-flow: column
+        grid-template-columns: minmax(min-content,430px) minmax(min-content,390px)
+        justify-content: space-evenly
+        align-items: center
+        &__info
+            font-style: normal
+            font-weight: normal
+            font-size: 21px
+            line-height: 25px
+            color: #72787D
+            margin: 0
+    &-contacts
+        grid-area: contacts
+        &__list
+            display: inline-grid
+            grid-auto-flow: column
+            grid-column-gap: 30px
+            list-style: none
+            padding: 0
+            margin: 0
+        &__item
+            width: 50px
+            height: 50px
+            background-color: $blue
+            border: 2px solid $blue
+            border-radius: 50%
+            position: relative
+        &__link
+            width: 100%
+            height: 100%
+            display: block
+            position: relative
+        &__img
+            width: 25px
+            height: 25px
+            position: absolute
+            top: 50%
+            left: 50%
+            transition: tran
+            transform: translate(-50%,-50%)
+            fill: $white
+            transition: .4s ease-in-out

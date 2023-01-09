@@ -1,0 +1,38 @@
+.header
+    padding: 30px 20px 50px 20px
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
+        text-decoration: none
+    &__nav
+
+    &__list
+        display: grid
+        grid-auto-flow: column
+        grid-column-gap: 25px
+
+        list-style: none
+        padding: 0
+        margin: 0
+    &__link
+        text-decoration: none
+        color: $dark
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 21px
+        position: relative
+        &::after
+            display: block
+            content: ""
+            background-color: $blue
+            height: 2px
+            width: 0%
+            left: 50%
+            position: absolute
+            transition: width .3s ease-in-out
+            transform: translateX(-50%)
+    &__burger
+        display: none

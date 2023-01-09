@@ -1,0 +1,266 @@
+.text
+    padding-top: 60px
+    &-wrap
+        max-width: 618px
+        margin-left: 100px
+    &-paragraph
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 30px
+        color: $footer-info-color
+        margin: 0px 0px 30px 0px
+        &-first
+            margin-bottom: 0px
+            &::first-letter
+                font-size: 100px
+                line-height: 75px
+                color: $blue
+                font-weight: 900
+                margin-top: 10px
+                margin-left: -10px
+                margin-right: 10px
+                float: left
+    &-title
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        color: $dark
+        margin-top: 46px
+        margin-bottom: 29px
+    &-slider
+        &-img
+            height: 555px
+            width: 100%
+            object-fit: cover
+.swiper-container-article
+    width: 100%
+    position: relative
+    overflow: hidden
+    border-radius: 10px
+    border: 1px solid #D9DADB
+.slider
+    margin-bottom: 45px
+    margin-top: 58px
+    &-text
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-info
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $footer-info-color
+        margin-left: 35px
+    &-author
+        display: flex
+        padding: 12px 64px 11px 0px
+        position: relative
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            left: -32px
+            top: 0
+            height: 100%
+            width: 1px
+            background-color: $rec-underline
+
+        &__avatar
+            width: 45px
+            height: 45px
+            object-fit: cover
+            border-radius: 50%
+            margin-right: 10px
+        &__name
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $footer-info-color
+            margin-bottom: 2px
+            margin-top: 3px
+        &__prof
+            color: $header-search-text
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+        &-text
+            display: flex
+            flex-direction: column
+    &-button
+        position: absolute
+        top: 45%
+        transform: translateY(-55%)
+        z-index: 3
+        width: 60px
+        height: 60px
+        border: none
+        cursor: pointer
+        background-color: transparent
+        &--next
+            right: 35px
+            background-image: url(../img/article/slider-arrow-next.svg)
+            background-repeat: no-repeat
+            background-position: center
+        &--prev
+            left: 35px
+            background-image: url(../img/article/slider-arrow-prev.svg)
+            background-repeat: no-repeat
+            background-position: center
+.text
+    &-material
+        display: flex
+.subject
+    display: flex
+    flex-direction: column
+    max-width: 265px
+    align-self: center
+    margin-left: 60px
+    margin-top: 55px
+    &-title
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 25px
+        color: $dark
+        margin-bottom: 17px
+    &-img
+        width: 264px
+        height: 180px
+        object-fit: cover
+        border-radius: 10px
+    &-link
+        text-decoration: none
+    &-name
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: $dark
+        margin-top: 15px
+        margin-bottom: 5px
+    &-text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $footer-info-color
+        margin-bottom: 21px
+        margin-top: 0
+    &-data
+        display: flex
+        align-items: center
+    &-eye
+        margin-right: 5px
+    &-com
+        margin-right: 6px
+        margin-left: 11px
+    &-num
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $header-search-text
+.quote
+    &-wrap
+        position: relative
+        margin-top: 51px
+        margin-bottom: 44px
+    &-img
+        position: absolute
+        top: -22px
+        left: -22px
+    &-text
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        color: $dark
+        position: relative
+        z-index: 2
+.button
+    &-wrap
+        display: flex
+        align-items: center
+        margin-bottom: 60px
+        margin-top: 43px
+    &-tag
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: $dark
+        padding: 5px 14px 5px 14px
+        border: 1px solid $rec-underline
+        border-radius: 5px
+        cursor: pointer
+        outline: none
+        background: #fff
+        margin-right: 10px
+.read-tags-button--active
+    color: $light
+    background: $blue
+.repost
+    margin-top: 90px
+    margin-bottom: 90px
+    position: relative
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        top: -31px
+        width: 107%
+        height: 1px
+        background-color: $rec-underline
+    &-title
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        color: $dark
+        margin-bottom: 25px
+    &-buttons
+        display: flex
+        align-items: center
+    &__button
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: #ffffff
+        position: relative
+        background-color: $blue
+        border: none
+        outline: none
+        cursor: pointer
+        border-radius: 20px
+        padding: 10px 45px 10px 48px
+        margin-right: 14px
+        &-num
+            position: absolute
+            top: 9px
+            right: 21px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            &--like
+                color: #FFC4C9
+            &--fb
+                color: #BBC6FF
+            &--tw
+                color: #C5E4FC
+        &-img
+            position: absolute
+            top: 11px
+            left: 20px

@@ -1,0 +1,100 @@
+.portfolio
+    padding: 0px 30px 0px 30px
+    margin-bottom: 110px
+    &__wrap
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 42px
+        color: $dark
+        margin: 0px 0px 60px 0px
+    &-card
+        background-color: #F2F2F2
+        display: grid
+
+        grid-template-rows: repeat(5,min-content) 50px
+        grid-template-columns: 20px 1fr 1fr 1fr 1px
+
+        // grid-template-areas: "...title title title ..." "...mockups mockups lighthouse ..." "...mockups mockups lighthouse ..." "...task task task ..." "...deadline deadline deadline ..." "...project project project ..."
+        grid-column-gap: 50px
+        grid-row-gap: 30px
+        border-radius: 20px
+        &--mb:not(:last-child)
+            margin-bottom: 100px
+        &__title
+            grid-area: title
+            grid-row: 1
+            grid-column: 2 / 5
+            font-style: normal
+            font-weight: bold
+            font-size: 32px
+            line-height: 38px
+            color: $dark
+            margin: 25px 0px 0px 0px
+        &__img
+            border-radius: 10px
+            &-wrap
+                grid-area: mockups
+                grid-row: 2 / 4
+                grid-column: 2 / 4
+        &__lighthouse
+            grid-area: lighthouse
+            grid-row: 2 / 4
+            grid-column: 4
+            display: grid
+            grid-template-rows: repeat(3,min-content)
+            grid-row-gap: 50px
+            &-title
+                font-style: normal
+                font-weight: bold
+                font-size: 25px
+                line-height: 28px
+                color: $dark
+                text-align: center
+                margin: 0px
+            &-link
+
+                justify-self: center
+                align-self: center
+                color: $white
+                background-color: $green
+                text-decoration: none
+                padding: 12px 24px 12px 24px
+                border-radius: 10px
+                font-weight: bold
+                font-size: 17px
+                line-height: 24px
+                box-shadow: 0px 2px 3px rgba(0,0,0,0.16)
+                border: 1px solid $green
+
+        &__desc
+            max-width: 400px
+            &-title
+                font-style: normal
+                font-weight: bold
+                font-size: 25px
+                line-height: 28px
+                color: $dark
+                margin: 0px 0px 17px 0px
+            &-info
+                font-style: normal
+                font-weight: normal
+                font-size: 21px
+                line-height: 25px
+                color: $grey
+                margin: 0
+            &:nth-child(4)
+
+                grid-area: task
+                grid-row: 4
+                grid-column: 2
+            &:nth-child(5)
+                grid-area: deadline
+                grid-row: 4
+                grid-column: 3
+            &:nth-child(6)
+
+                grid-area: project
+                grid-row: 5
+                grid-column: 2 / 5

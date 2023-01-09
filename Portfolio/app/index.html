@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title lang="en">Timothy Popovskiy - Web Developer</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link type="image/x-icon" rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="index.html" class="header__logo" title="Логотип сайта.">
+                    <picture>
+                        <source srcset="img/header/logo-mb.svg"
+                        media="(max-width: 576px)">
+                        <img src="img/header/logo.svg" alt=" ">
+                    </picture>
+
+                </a>
+                <button id="burger" class="header__burger" aria-label="Menu.">
+                    <span class="header__burger-span header__burger-span--1"></span>
+                    <span class="header__burger-span header__burger-span--2"></span>
+                    <span class="header__burger-span header__burger-span--3"></span>
+                    <span class="header__burger-span header__burger-span--4"></span>
+                </button>
+                <nav id="menu" class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#head1" class="header__link">Чем полезен</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#head2" class="header__link">Где учился</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#head3" class="header__link">Портфолио</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#head4" class="header__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__wrap">
+               
+                    <h1 class="main__title">
+                        Привет, я Тимофей Поповский - разработчик сайтов
+                    </h1>
+                    <p class="main__info">
+                        Эту странцу я создал специально для потенциальных работодателей: здесь есть мои проекты из портфоло, описание моих
+                        навыков и контактные данные
+                        
+                    </p>
+               
+                <picture class="main__img-wrap">
+                    <source srcset="img/main/me@1x.webp 1x,
+                                    img/main/me@2x.webp 2x" 
+                                    type="image/webp">
+                    <img src="img/main/me@1x.jpg"
+                        srcset="img/main/me@2x.jpg 2x"
+                        class="main__img" 
+                        alt="Я сижу на стуле в смокинге и как бы говорю: возьмите меня в свой проект &#9786;.">
+                </picture>
+            </div>
+        </div>
+    </main>
+    <section class="utility">
+        <div class="container">
+            <div class="utility__wrap">
+                <h2 id="head1" class="utility__title">
+                    Чем полезен
+                </h2>
+                <p class="utility__info">
+                    Умею верстать сайты из дизайн макетов. Работал с макетами PSD, Adobe XD и Figma.
+                    Знаю, как правильно экспортировать графику из макета, как доставать шрифты и узнавать точные отступы. Например, не буду
+                    вырезать иконку в PNG, если есть возможность достать SVG.
+                </p>
+                <article class="utility-card utility-card--mb">
+                    <div class="utility-card__text">
+                        <h3 class="utility-card__title">
+                            Семантическая верстка
+                        </h3>
+                        <p class="utility-card__info">
+                            Делаю семантчески правильно разметку, без проблем прохожу проверку кода на валидность без ошибок. Понимаю как расставить
+                            теги и заголовки на странице. После меня SEO-специалисту не нужно будет переделывать работу.
+                        </p>
+                    </div>
+                    <picture>
+                        <source 
+                                srcset="img/section-utility/card-1@1x.webp 1x,
+                                img/section-utility/card-1@2x.webp 2x" 
+                                type="image/webp"
+                        >
+                        <img
+                            src="img/section-utility/card-1@1x.png"
+                            srcset="img/section-utility/card-1@2x.png 2x" 
+                            alt="Человек сидит за ноутбуком в окружении чашек для кофе."
+                            class="utility-card__img" 
+                        >
+                    </picture>
+                </article>
+                <article class="utility-card utility-card--mb">
+                    <div class="utility-card__text">
+                        <h3 class="utility-card__title">
+                            Пиксель в пиксель
+                        </h3>
+                        <p class="utility-card__info">
+                            Понимаю, как важно сделать верстку точно по макету, поэтому верстаю пиксель в пиксель, если потребуется. В процессе
+                            работы, накладываю дизайн-макет на верстку, чтобы убедиться, что расхождений нет.
+                        </p>
+                    </div>
+                    <picture>
+                        <source 
+                                srcset="img/section-utility/card-2@1x.webp 1x,
+                                img/section-utility/card-2@2x.webp 2x" 
+                                type="image/webp"
+                        >
+                        <img
+                            src="img/section-utility/card-2@1x.png"
+                            srcset="img/section-utility/card-2@2x.png 2x" 
+                            alt="Показаны обстрактные блоки сайта вокруг которого расставлены оранжевые конусы."
+                            class="utility-card__img" 
+                        >
+                    </picture>
+                </article>
+                <article class="utility-card utility-card--mb">
+                    <div class="utility-card__text">
+                        <h3 class="utility-card__title">
+                            Стили на препроцессорах
+                        </h3>
+                        <p class="utility-card__info">
+                            Стили пишу с помощью препроцессора SASS, поэтому получается писать стили быстро, легко находить нужный участок кода и
+                            делать гибкие настройки.
+                        </p>
+                    </div>
+                    <picture>
+                        <source 
+                                srcset="img/section-utility/card-3@1x.webp 1x,
+                                img/section-utility/card-3@2x.webp 2x" 
+                                type="image/webp"
+                        >
+                        <img
+                            src="img/section-utility/card-3@1x.png"
+                            srcset="img/section-utility/card-3@2x.png 2x" 
+                            alt="Человек сидит за ноутбуком в окружении вопросительных знаков."
+                            class="utility-card__img" 
+                        >
+                    </picture>
+                </article>
+                <article class="utility-card utility-card--mb">
+                    <div class="utility-card__text">
+                        <h3 class="utility-card__title">
+                            Адаптивная верстка
+                        </h3>
+                        <p class="utility-card__info">
+                            Верстаю адаптивно, верстку проверяю на планшете, смартфоне и большом телевизоре. Еще у меня есть подписка на
+                            browserstack, поэтому если нужно быстро узнать, как сайт ведет себя на пятом айфоне - посмотрю за 5 минут и сделаю
+                            скриншот и исправлю недочеты.
+                        </p>
+                    </div>
+                   <picture>
+                        <source 
+                                srcset="img/section-utility/card-4@1x.webp 1x,
+                                img/section-utility/card-4@2x.webp 2x" 
+                                type="image/webp"
+                        >
+                        <img
+                            src="img/section-utility/card-4@1x.png"
+                            srcset="img/section-utility/card-4@2x.png 2x" 
+                            alt="Экран мобильного телефона с значком выполнено, а также папка с правками."
+                            class="utility-card__img" 
+                        >
+                    </picture>
+                </article>
+                <article class="utility-card utility-card--mb">
+                    <div class="utility-card__text">
+                        <h3 class="utility-card__title">
+                            Доступность на сайте
+                        </h3>
+                        <p class="utility-card__info">
+                            Не забываю об доступности сайта, каждое информативное изображение описано, настроен фокус у интерактивных элементов для
+                            доступности с клавиатуры, а также описываю поведение кнопок и сылок, чтобы сайтом было удобно пользоваться всем людям
+                            без исключения.
+                        </p>
+                    </div>
+                    <picture>
+                        <source 
+                                srcset="img/section-utility/card-5@1x.webp 1x,
+                                img/section-utility/card-5@2x.webp 2x" 
+                                type="image/webp"
+                        >
+                        <img
+                            src="img/section-utility/card-5@1x.png"
+                            srcset="img/section-utility/card-5@2x.png 2x" 
+                            alt="Два человека обсуждают на фоне телефона как лучше разметить страницу, чтобы она была доступной."
+                            class="utility-card__img" 
+                        >
+                    </picture>
+                </article>
+                <article class="utility-card utility-card--mb ">
+                    <div class="utility-card__text">
+                        <h3 class="utility-card__title">
+                            Оптимизация сайта
+                        </h3>
+                        <p class="utility-card__info">
+                            Использую современные форматы изображения, такие как webp вместе с jpg/png с помощью тега picture, благодаря чему
+                            фотография загрузится даже на раних версиях Safari. Каждое изображение оптимизировано, а svg файлы прогоняю через svgo и
+                            добавляю в спрайт.
+                        </p>
+                    </div>
+                    <picture>
+                        <source 
+                                srcset="img/section-utility/card-6@1x.webp 1x,
+                                img/section-utility/card-6@2x.webp 2x" 
+                                type="image/webp"
+                        >
+                        <img
+                            src="img/section-utility/card-6@1x.png"
+                            srcset="img/section-utility/card-6@2x.png 2x" 
+                            alt="Из ноутбука вылетает ракета."
+                            class="utility-card__img" 
+                        >
+                    </picture>
+                </article>
+                <article class="utility-card ">
+                    <div class="utility-card__text">
+                        <h3 class="utility-card__title">
+                            Хостинг, домен, Git и т.д.
+                        </h3>
+                        <p class="utility-card__info">
+                            Умею настраивать хостинг, привязывать домен и регистрировать SSL-сертификат. Сам проект обычно храню в
+                            репозитории на
+                            Github. Правда, еще не участвовал в командной разработке, поэтому гит знаю на уровне: сделать репозиторий,
+                            клонировать
+                            его, внести изменения, сохранить коммиты и отправить пуш.
+                        </p>
+                    </div>
+                    <picture>
+                        <source 
+                                srcset="img/section-utility/card-7@1x.webp 1x,
+                                img/section-utility/card-7@2x.webp 2x" 
+                                type="image/webp"
+                        >
+                        <img
+                            src="img/section-utility/card-7@1x.png"
+                            srcset="img/section-utility/card-7@2x.png 2x" 
+                            alt="Вид сверху на рабочий стол:ноутбук,наушники,телефон,кружка кофе и блокнот с заметками."
+                            class="utility-card__img" 
+                        >
+                    </picture>
+                </article>
+
+            </div>
+        </div>
+    </section>
+    <section class="study">
+        <div class="container">
+            <div class="study__wrap">
+                <h2 id="head2" class="study__title">
+                    Где учился
+                </h2>
+                <div class="study__cards">
+                    <article class="study__card">
+                        <h3 class="study__card-title">
+                            Самостоятельно
+                        </h3>
+                        <p class="study__card-info">
+                            Начал с просмотра видеоуроков на Youtube: смотрел, как автор пишет код, потом повторял. Затем начал писать код
+                            сам,
+                            просил обратной связи в чатах где были более опытные разработчики.
+                        </p>
+                        <p class="study__card-info">
+                            Проходил кучу разных тестов по HTML, CSS, PHP, JS и т.д. на специальных сайтах. Даже сертификаты остались.
+                        </p>
+                    </article>
+                    <article class="study__card">
+                        <h3 class="study__card-title">
+                            Курсы
+                        </h3>
+                        <p class="study__card-info">
+                            Прошел 7 недельный интенсивный курс по верстке в Glo Academy. Защитил самый сложный дипломный проект на курсе и
+                            вощел в
+                            число лучших учеников курса. Вот ссылка:
+                        </p>
+                        <a href="https://tpopovsky.ru/universal/" rel="nofollow noopener" target="_blank" class="study__card-link">
+                            Посмотреть
+                        </a>
+                    </article>
+                </div>
+                <div class="study__certificates">
+                    
+                    <button aria-label="Открыть модальное окно с сертификатом" class="button-certificates">
+                        <img src="img/section-study/sertificate-1.jpg" alt="Сертификат выпускника курса Веб-старт от Glo Academy." class="study__certificates-img" >
+                    </button>
+                   
+                    <button aria-label="Открыть модальное окно с сертификатом" class="button-certificates">
+                        <img src="img/section-study/sertificate-2.jpg" alt="Сертификат о прохождении интерактивного курса Основы HTML от HTML Academy." class="study__certificates-img" >
+                    </button>
+                    
+                    <button aria-label="Открыть модальное окно с сертификатом" class="button-certificates">
+                        <img src="img/section-study/sertificate-3.jpg" alt="Сертификат о прохождении интерактивного курса Основы CSS от HTML Academy." class="study__certificates-img" >
+                    </button>
+                    
+                    <button aria-label="Открыть модальное окно с сертификатом" class="button-certificates">
+                        <img src="img/section-study/sertificate-4.jpg" alt="Сертификат о прохождении интерактивного курса Веб-разработка для начинающих: HTML и CSS от Stepik"   class="study__certificates-img">
+                    </button>
+                </div>
+                <div id="modalCertificates" class="modal-certificates">
+                   
+                    <button aria-label="Закрыть модальное окно с сертификатом" id="close" class="modal-certificates__close">&times;</button>
+                    
+                  
+                        <img class="modal-certificates__content" id="img01" src="#" alt="Сертификат.">
+                  
+                    
+                    <div class="modal-certificates__overlay" id="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio__wrap">
+                <h2 id="head3" class="portfolio__title">Мои последние проекты</h2>
+                <article class="portfolio-card portfolio-card--mb">
+                    <h3 class="portfolio-card__title">Сайт для стоматологии &#8220;Logoipsum&#8221;</h3>
+                    <picture class="portfolio-card__img-wrap">
+                        <source srcset="img/section-portfolio/logoipsum@1x.webp 1x,
+                                        img/section-portfolio/logoipsum@2x.webp 2x"
+                                        type="image/webp">
+                        <img src="img/section-portfolio/logoipsum@1x.png" 
+                        srcset="img/section-portfolio/logoipsum@2x.png 2x"
+                        class="portfolio-card__img"
+                         alt="Показано как будет выглядить сайт на различных мониторах от компьютеров до смартфонов.">
+                    </picture>
+                    <div class="portfolio-card__lighthouse">
+                        <h4 class="portfolio-card__lighthouse-title">Проверка оптимизации сайта</h4>
+                        <picture class="portfolio-card__lighthouse-img-wrap">
+                            <img 
+                                src="img/section-portfolio/logoipsum-lighthouse.png"
+                            
+                                class="portfolio-card__lighthouse-img"
+                                alt="Получено 100 баллов из 100 по результатам проверка PageSpeed Insights.">
+                        </picture>
+                        <a href="https://tpopovsky.ru/logoipsum/" rel="nofollow noopener" target="_blank" class="portfolio-card__lighthouse-link">
+                            Посмотреть
+                        </a>
+                    </div>
+                  
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Критические стили
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            В этом проекте впервые решил подключить критические стили для оптимизации, в результате чего пользователь максимально быстро получается FCP.
+                        </p>
+                    </div>
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Многостраничный сайт
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            Также это первый многостраничный сайт, который в будущем хочу натянуть на WordPress.
+                        </p>
+                    </div>
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Продуманная карта
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            Карта загружается только при клике и также на нее можно сфокусироваться с клавиатуры, что в некоторых случаях может пригодиться.
+                        </p>
+                    </div>
+                </article>
+                <article class="portfolio-card portfolio-card--mb">
+                    <h3 class="portfolio-card__title">Сайт для дизайн студии &#8220;Decbase&#8221;</h3>
+                    <picture class="portfolio-card__img-wrap">
+                        <source srcset="img/section-portfolio/site-1@1x.webp 1x,
+                                        img/section-portfolio/site-1@2x.webp 2x"
+                                        type="image/webp">
+                        <img src="img/section-portfolio/site-1@1x.png" 
+                        srcset="img/section-portfolio/site-1@2x.png 2x"
+                        class="portfolio-card__img"
+                         alt="Показано как будет выглядить сайт на различных мониторах от компьютеров до смартфонов.">
+                    </picture>
+                    <div class="portfolio-card__lighthouse">
+                        <h4 class="portfolio-card__lighthouse-title">Проверка оптимизации сайта</h4>
+                        <picture class="portfolio-card__lighthouse-img-wrap">
+                          
+                            <img 
+                            src="img/section-portfolio/lighthouse-1.png"
+                            
+                              class="portfolio-card__lighthouse-img"
+                               alt="Получено 100 баллов из 100 по результатам проверка PageSpeed Insights.">
+                        </picture>
+                        <a href="https://tpopovsky.ru/decbase/" rel="nofollow noopener" target="_blank" class="portfolio-card__lighthouse-link">
+                            Посмотреть
+                        </a>
+                    </div>
+                  
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Выход из ситуаций
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            В макете все иконки были в формате png, а мне нужен был svg для анимации слайдера и пришлось искать схожие иконки в нужном формате. Так что готов к неожиданным трудностям.
+                        </p>
+                    </div>
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Grid
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            В подвале сайте было решено использовать grid, чтобы при адаптиве можно было легко менять положение блоков.
+                        </p>
+                    </div>
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Доступность
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            На сайте настроено управление с клавиатуры, чтобы как можно больше людей смогли комфортно воспользоваться сайтом. А также отдельно настроено поведение фокуса при открытии модального окна регистрации. 
+                        </p>
+                    </div>
+                </article>
+                <article class="portfolio-card portfolio-card--mb">
+                    <h3 class="portfolio-card__title">Сайт для строительной компании &#8220;СтройКонтроль&#8221;</h3>
+                    <picture class="portfolio-card__img-wrap">
+                        <source srcset="img/section-portfolio/site-2@1x.webp 1x,
+                                        img/section-portfolio/site-2@2x.webp 2x"
+                                        type="image/webp">
+                        <img src="img/section-portfolio/site-2@1x.png" 
+                            srcset="img/section-portfolio/site-2@2x.png 2x"
+                            class="portfolio-card__img" 
+                            alt="Показано как будет выглядить сайт на различных мониторах от компьютеров до смартфонов.">
+                    </picture>
+                    <div class="portfolio-card__lighthouse">
+                        <h4 class="portfolio-card__lighthouse-title">Проверка оптимизации сайта</h4>
+                        <picture class="portfolio-card__lighthouse-img-wrap">
+                      
+                            <img src="img/section-portfolio/lighthouse-2.png" class="portfolio-card__lighthouse-img" alt="Получено 98 баллов из 100 по результатам проверка PageSpeed Insights.">
+                        </picture>
+                        <a href="https://tpopovsky.ru/buildcontrol/" rel="nofollow noopener" target="_blank" class="portfolio-card__lighthouse-link">
+                            Посмотреть
+                        </a>
+
+                    </div>
+                   
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Retina экраны
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            На сайте вставлены специальные изображения повыщенной четкости которые загрузятся только для специальных экранов, благодаря чему это никак не влияет на скорость загрузки сайта.
+                        </p>
+                    </div>
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Доступность кнопок
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            Чтобы слабовидящим и слепым людям было комфортно пользоваться сайтом интерактивные элементы подписаны через атрибут aria-label.
+                        </p>
+                    </div>
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Оптимизация для смартфонов
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            Сайт на малых экранах загружает вместо большой картинки спецальную картинку для смартфонов. Благодаря этому экономится трафик и сайт быстрее загружается.
+                        </p>
+                    </div>
+                </article>
+                <article class="portfolio-card portfolio-card--mb">
+                    <h3 class="portfolio-card__title">Сайт для поиска жилья &#8220;Dream&#8221;</h3>
+                    <picture class="portfolio-card__img-wrap">
+                        <source srcset="img/section-portfolio/site-3@1x.webp 1x,
+                                        img/section-portfolio/site-3@2x.webp 2x" type="image/webp">
+                        <img src="img/section-portfolio/site-3@1x.png" srcset="img/section-portfolio/site-3@2x.png 2x"
+                            class="portfolio-card__img"
+                            alt="Показано как будет выглядить сайт на различных мониторах от компьютеров до смартфонов.">
+                    </picture>
+                    <div class="portfolio-card__lighthouse">
+                        <h4 class="portfolio-card__lighthouse-title">Проверка оптимизации сайта</h4>
+                        <picture class="portfolio-card__lighthouse-img-wrap">
+                            <img src="img/section-portfolio/lighthouse-3.png" class="portfolio-card__lighthouse-img"
+                                alt="Получено 98 баллов из 100 по результатам проверка PageSpeed Insights.">
+                        </picture>
+                        <a href="https://tpopovsky.ru/dream/" rel="nofollow noopener" target="_blank"
+                            class="portfolio-card__lighthouse-link">
+                            Посмотреть
+                        </a>
+                    </div>
+                
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Grid
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            Для многих блоков использовал верстку на гридах, так как мне нужна была не стандартная разметка для слайдеров. Также использование гридов упростило верстку адаптива.
+                        </p>
+                    </div>
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Управление с клавиатуры
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            Сайт полностью доступен с клавиатуры, чтобы как можно больше людей в самых различных ситуациях смогли
+                            воспользоваться сайтом. Также реализована ловушка для модального окна
+                        </p>
+                    </div>
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Современные форматы изображения
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            Формат webp весит куда легче чем png, но также поддерживает полупрозрачность. Однако, он еще не везде
+                            поддерживается и
+                            эту проблему я решил с помощью тега &lt;picture&gt;.
+                        </p>
+                    </div>
+                </article>
+
+
+                <!-- <article class="portfolio-card portfolio-card--mb">
+                    <h3 class="portfolio-card__title">Сайт для строительной компании &#8220;EcoCabins&#8221;</h3>
+                    <picture class="portfolio-card__img-wrap">
+                        <source srcset="img/section-portfolio/site-4@1x.webp 1x,
+                                        img/section-portfolio/site-4@2x.webp 2x"
+                                        type="image/webp">
+                        <img src="img/section-portfolio/site-4@1x.png" 
+                        srcset="img/section-portfolio/site-4@2x.png 2x"
+                          class="portfolio-card__img" 
+                          alt="Показано как будет выглядить сайт на различных мониторах от компьютеров до смартфонов.">
+                    </picture>
+                    <div class="portfolio-card__lighthouse">
+                        <h4 class="portfolio-card__lighthouse-title">Проверка оптимизации сайта</h4>
+                        <picture class="portfolio-card__lighthouse-img-wrap">
+                            
+                            <img src="img/section-portfolio/lighthouse-4.png"  class="portfolio-card__lighthouse-img" alt="Получено 98 баллов из 100 по результатам проверка PageSpeed Insights.">
+                        </picture>
+                        <a href="https://tpopovsky.ru/ecocabins/" rel="nofollow noopener" target="_blank" class="portfolio-card__lighthouse-link">
+                            Посмотреть
+                        </a>
+                    </div>
+                   
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Адаптивное меню
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            На мобильных экранах реализован скрипт который показывает меню при скролле вверх и убирает при скролле вниз, чтобы можно было быстро добраться до навигации.
+                        </p>
+                    </div>
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Управление с клавиатуры
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            Сайт полностью доступен с клавиатуры, чтобы как можно больше людей в самых различных ситуациях смогли воспользоваться сайтом.
+                        </p>
+                    </div>
+                    <div class="portfolio-card__desc">
+                        <h4 class="portfolio-card__desc-title">
+                            Современные форматы изображения
+                        </h4>
+                        <p class="portfolio-card__desc-info">
+                            Формат webp весит куда легче чем png, но также поддерживает полупрозрачность. Однако, он еще не везде поддерживается и
+                            эту проблему я решил с помощью тега &lt;picture&gt;.
+                        </p>
+                    </div>
+                </article> -->
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <h2 id="head4" class="footer__title">
+                    Контакты для связи
+                </h2>
+                <div class="footer-card">
+                    <p class="footer-card__info">
+                        Сейчас я открыт к предложениям. Вы можете пригласить меня в проект на полный рабочий день.
+                    </p>
+                    <picture>
+                        <source 
+                                srcset="img/footer/card-1@1x.webp 1x,
+                                img/footer/card-1@2x.webp 2x" 
+                                type="image/webp"
+                        >
+                        <img
+                            src="img/footer/card-1@1x.png"
+                            srcset="img/footer/card-1@2x.png 2x" 
+                            alt="Человек сидит за цветами в горшках и смотрит в бинокль."
+                            class="footer-card__img" 
+                        >
+                    </picture>
+                </div>
+                <div class="footer-contacts">
+                    <ul class="footer-contacts__list">
+                        <li class="footer-contacts__item">
+                            <a href="https://vk.com/id104796057" target="_blank" rel="nofollow noopener" title="ВКонтакте" class="footer-contacts__link">
+                                <svg class="footer-contacts__img">
+                                    <use xlink:href="img/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-contacts__item">
+                            <a href="https://www.instagram.com/tima_popovskii/" target="_blank" rel="nofollow noopener" title="Instagram" class="footer-contacts__link">
+                                <svg class="footer-contacts__img">
+                                    <use xlink:href="img/sprite.svg#inst"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-contacts__item">
+                            <a href="https://github.com/Timothy7310" target="_blank" rel="nofollow noopener" title="GitHub" class="footer-contacts__link">
+                                <svg class="footer-contacts__img">
+                                    <use xlink:href="img/sprite.svg#github"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-contacts__item">
+                            <a href="https://t.me/zipker" target="_blank" rel="nofollow noopener" title="Telegram" class="footer-contacts__link">
+                                <svg class="footer-contacts__img">
+                                    <use xlink:href="img/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-contacts__item">
+                            <a href="https://wa.me/79528304444" target="_blank" rel="nofollow noopener" title="WhatsApp" class="footer-contacts__link">
+                                <svg class="footer-contacts__img">
+                                    <use xlink:href="img/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>

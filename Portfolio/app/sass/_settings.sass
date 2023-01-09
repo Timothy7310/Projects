@@ -1,0 +1,52 @@
+*
+    box-sizing: border-box
+body
+    font-family: 'Roboto', sans-serif
+.container
+    max-width: 1346px
+    margin: 0px auto
+img
+    width: 100%
+
+.hystmodal-opened
+    overflow: hidden
+@media  (min-width: 993px)
+    .header
+        &__link
+            transition: .4s ease-in-out
+            &:hover
+                &::after
+                    width: 100%
+                    transition: ease 0.5s
+    .portfolio
+        &-card
+            &__lighthouse
+                &-link
+                    transition: .4s ease-in-out
+                    &:hover
+                        color: $green
+                        background-color: transparent
+
+    .study
+        &__card-link
+            transition: .4s ease-in-out
+            &:hover
+                color: $green
+                background-color: transparent
+        &__certificates
+            &-img
+                transition: .4s ease-in-out
+                &:hover
+                    opacity: 0.7
+    .modal
+        &-certificates
+            &__close
+                transition: .4s ease-in-out
+                &:hover
+                    opacity: 0.7
+    .footer-contacts__item
+        transition: .4s ease-in-out
+        &:hover
+            background-color: transparent
+            & .footer-contacts__img
+                fill: $blue

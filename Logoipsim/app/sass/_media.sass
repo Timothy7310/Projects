@@ -1,0 +1,627 @@
+
+@media (max-width:1200px)
+    .container
+        width: 960px
+    .main
+        &::before
+            width: 600px
+            height: 600px
+            top: -100px
+        &__subtitle
+            font-size: 24px
+        &__text
+            width: 416px
+        &__img
+            width: 433px
+            height: 323px
+    .features
+        &__list
+            grid-gap: $base * 6
+        &__item
+            &-img
+                width: 53px
+                height: 53px
+    .rules
+        &::before
+            width: 400px
+            height: 400px
+        &__wrap
+            grid-template-columns: 430px 450px
+    .services
+        &__list
+            grid-column-gap: $base * 15
+            grid-row-gap: $base * 17
+    .comments
+        &-card
+            max-width: 280px
+            &__text
+                padding: ($half-base * 17) ($half-base * 16)
+    .blog
+        &-cards
+            grid-column-gap: 30px
+    .about-us
+        &__img
+            width: 410px
+            height: 310px
+        &__text
+            width: 480px
+    .history
+        &__text
+            width: 465px
+        &__img
+            width: 380px
+    .departments
+        &__list
+            grid-template-columns: repeat(2,1fr)
+    .main-doctors
+        &__img
+            width: 400px
+        &__text
+            width: 500px
+    .main-article-card
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: min-content 1fr min-content
+        &__link
+            &-img
+                grid-column: 1
+                grid-row: 2
+            &-title
+                grid-column: 1 / 3
+                grid-row: 1
+        &__title
+            max-width: 700px
+        &__info
+            grid-column: 2
+            grid-row: 2
+    .blog-card-info--main-article
+        grid-column: 1
+        grid-row: 3
+    .feedback-form__field--subject
+        width: inherit
+@media (max-width:992px)
+    .container
+        width: 700px
+    h1
+        font-size: 38px
+        line-height: 42px
+    h2
+        font-size: 34px
+        line-height: 58px
+    .header
+        &__list
+            grid-column-gap: $base * 4
+    .main
+        padding-top: $padding-vertical-sm-992px
+        &::before
+            width: 544px
+            height: 544px
+            top: auto
+            bottom: 50px
+        &__wrap
+            flex-direction: column
+        &__text
+            margin-bottom: $base * 10
+        &__img-wrap
+            align-self: flex-end
+    .features
+        padding-top: $padding-vertical-sm-992px
+        &__list
+            grid-template-columns: repeat(2, min-content)
+            justify-content: space-between
+            grid-row-gap: $base * 15
+        &__item
+            width: 280px
+            &-img
+                width: 83px
+                height: 83px
+    .rules
+        padding-top: $padding-vertical-992px
+        padding-bottom: $padding-vertical-992px
+        &::before
+            width: 350px
+            height: 350px
+        &__wrap
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: min-content 1fr
+            grid-column-gap: $half-base * 15
+        &__title
+            grid-column: 2
+            grid-row: 1
+            font-size: 19px
+            line-height: 28px
+        &__img
+            height: 238px
+            margin-left: 21px
+            &-wrap
+                grid-column: 1
+                grid-row: 1 / 3
+        &__list
+            grid-column: 1 / 3
+            grid-row: 2 / 4
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr 1fr
+            grid-column-gap: $half-base * 15
+            grid-row-gap: $half-base * 50
+        &__item
+            &:first-child
+                grid-column: 2
+            &-title
+                font-size: 20px
+                line-height: 28px
+    .services
+        padding-bottom: $padding-vertical-992px
+        &__list
+            grid-template-columns: repeat(2, 1fr)
+            grid-column-gap: $base * 25
+        &__subtitle
+            font-size: 34px
+            margin-bottom: $base * 15
+    .doctors
+        padding-bottom: $padding-vertical-992px
+        &-cards
+            grid-template-columns: repeat(2, 1fr)
+            grid-row-gap: $half-base * 25
+            grid-column-gap: $half-base * 30
+    .comments
+        padding-bottom: $padding-vertical-992px
+        &-card
+            max-width: 320px
+    .swiper-slide
+        display: grid
+        opacity: 0.5
+    .swiper-slide-prev
+        & .comments-card
+            margin: 0
+            justify-self: end
+    .swiper-slide-next
+        & .comments-card
+            margin: 0
+            justify-self: start
+    .swiper-slide-visible
+        opacity: 1
+        & .comments-card
+            margin: auto
+    .swiper-container
+        width: 80%
+    .blog
+        padding-bottom: $padding-vertical-992px
+    .blog-cards
+        grid-template-columns: repeat(2,1fr)
+        &--index
+            grid-row-gap: $base * 20
+            & li:last-child
+                grid-column: 1 / 3
+                justify-self: center
+                max-width: 335px
+    .footer
+        &__wrap
+            grid-template-columns: repeat(3,1fr)
+            grid-template-rows: min-content min-content 1fr
+            grid-column-gap: $half-base * 25
+        &__logo
+            grid-column: 1
+            grid-row: 1
+        &__about-us
+            grid-column: 1 / 3
+            grid-row: 2
+            margin-bottom: $base * 5
+        &__contacts
+            grid-column: 1
+            grid-row: 3
+            width: 212px
+        &__social
+            grid-column: 2
+            grid-row: 3
+            justify-self: center
+        &__newsletter
+            grid-column: 3
+            grid-row: 3
+    .breadcrumbs
+        padding: ($half-base * 15) 0
+    .about-us
+        padding-top: $padding-vertical-sm-992px
+        &__wrap
+            flex-direction: column
+        &__img-wrap
+            order: 1
+        &__text
+            margin-bottom: $base * 10
+    .history
+        &::before
+            height: 90%
+            top: 0
+            transform: translateX(0)
+        &__wrap
+            flex-direction: column
+            padding-top: $base * 4
+        &__text
+            align-self: flex-start
+            margin-bottom: $base * 4
+        &__img-wrap
+            align-self: flex-end
+    .departments
+        padding-top: $padding-vertical-992px
+    .main-doctors
+        padding-top: $padding-vertical-sm-992px
+        &__wrap
+            flex-direction: column
+        &__img-wrap
+            order: 1
+            align-self: flex-end
+        &__text
+            align-self: flex-start
+            margin-bottom: $base * 10
+    .main-article-card
+        grid-template-columns: 1fr
+        grid-template-rows: min-content minmax(467px, 1fr) min-content min-content
+        &__link
+            &-img
+                grid-column: 1
+                grid-row: 2
+            &-title
+                grid-column: 1
+                grid-row: 1
+        &__info
+            grid-column: 1
+            grid-row: 4
+    .blog-card-info--main-article
+        grid-column: 1
+        grid-row: 3
+    .feedback
+        padding-top: $padding-vertical-992px
+        padding-bottom: $padding-vertical-992px
+        &__title
+            margin-bottom: $half-base * 25
+@media (max-width:767px)
+    .container
+        width: 550px
+    h2
+        font-size: 30px
+    h3
+        font-size: 21px
+        line-height: 29px
+    body
+        &.lock
+            overflow: hidden
+    .header
+        &__wrap
+            grid-template-columns: min-content min-content
+        &__logo
+            position: relative
+            z-index: 6
+        &__nav
+            position: fixed
+            z-index: 5
+            top: -100%
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: $white
+            padding-top: $base * 25
+            overflow: auto
+            transition: $transition-ease-in-out
+            display: grid
+            &.active
+                top: 0
+        &__list
+            grid-auto-flow: row
+            grid-row-gap: $base * 10
+            width: 100%
+            justify-content: center
+            overflow-y: auto
+            margin: ($half-base * 15) 0
+        &__item
+            justify-self: center
+        &__link
+            font-size: 18px
+            line-height: 26px
+        &__social
+            display: none
+            &--mb
+                display: grid
+        &__burger
+            display: block
+            position: relative
+            z-index: 6
+            width: 40px
+            height: 30px
+            border: none
+            background-color: transparent
+            cursor: pointer
+            transition: $transition-ease-in-out
+            grid-column: 2
+            grid-row: 1
+            justify-self: end
+            &-span
+                position: absolute
+                width: 100%
+                height: 2px
+                left: 0
+                transition: $transition-ease-in-out
+                background-color: $primary
+                &--1
+                    top: 0
+                    &.active
+                        transform: rotate(45deg)
+                        transform-origin: 5%
+                        width: 44px
+                &--2,
+                &--3
+                    top: 13.5px
+                &--2
+                    &.active
+                        transform: translateX(-40px)
+                        background-color: transparent
+                &--3
+                    right: 0
+                    &.active
+                        transform: translateX(40px)
+                        background-color: transparent
+                &--4
+                    bottom: 0
+                    &.active
+                        transform-origin: 5%
+                        transform: rotate(-45deg)
+                        width: 44px
+    .main
+        &::before
+            width: 486px
+            height: 486px
+    .call
+        padding-top: $half-base * 15
+        padding-bottom: $half-base * 15
+        &__phone
+            display: block
+    .features
+        &__list
+            grid-row-gap: $base * 10
+        &__item
+            width: 250px
+    .rules
+        &::before
+            left: 60%
+
+        &__wrap
+            grid-template-columns: 1fr
+            grid-template-rows: min-content min-content 1fr
+        &__title
+            grid-column: 1
+            grid-row: 1
+        &__img
+            width: 320px
+            &-wrap
+                grid-column: 1
+                grid-row: 2
+                margin-bottom: $base * 15
+        &__list
+            grid-column: 1
+            grid-row: 3
+            grid-row-gap: $half-base * 25
+        &__item
+            &:first-child
+                grid-column: 1
+                grid-row: 1
+    .services
+        &__subtitle
+            font-size: 30px
+        &__list
+            grid-column-gap: $half-base * 35
+            grid-row-gap: $half-base * 25
+    .doctors
+        &-cards
+
+            grid-row-gap: $base * 15
+            grid-column-gap: $base * 10
+    .comments
+        &-card
+            max-width: 300px
+    .footer
+        &__wrap
+            grid-template-columns: 290px 190px
+            grid-template-rows: min-content min-content min-content
+            justify-content: space-between
+        &__logo
+            grid-column: 1
+            grid-row: 1
+        &__about-us
+            grid-column: 1
+            grid-row: 2
+            &-title
+                margin-bottom: $half-base * 9
+        &__contacts
+            grid-column: 1
+            grid-row: 3
+        &__social
+            grid-column: 2
+            grid-row: 1 / 3
+            justify-self: start
+            &-title
+                margin-bottom: $half-base * 9
+        &__newsletter
+            grid-column: 2
+            grid-row: 3
+            &-title
+                margin-bottom: $half-base * 9
+    .about-us
+        &__text
+            width: inherit
+            margin-bottom: $base * 15
+    .history
+        &__text
+            width: inherit
+            margin-bottom: $base * 10
+    .departments
+        padding-bottom: $padding-vertical-992px
+    .main-doctors
+        &__text
+            width: inherit
+        &__img-wrap
+            align-self: center
+    .main-contacts
+        &__list
+            grid-template-columns: 1fr
+            grid-row-gap: $base * 10
+    .main-article-card
+        grid-template-rows: min-content minmax(366px, 1fr) min-content min-content
+@media (max-width:576px)
+    .container
+        width: 90%
+    h1
+        font-size: 30px
+        line-height: 38px
+    h2
+        font-size: 28px
+        line-height: 38px
+    .main
+        &::before
+            width: 355px
+            height: 355px
+            right: -120px
+        &__text
+            width: 100%
+            margin-bottom: $base * 20
+        &__img
+            width: 90%
+            height: 210px
+            margin-left: 32px
+    .features
+        &__list
+            grid-template-columns: minmax(min-content,300px)
+            justify-content: center
+        &__item
+            width: inherit
+    .rules
+        padding-top: $padding-vertical-sm-992px
+        padding-bottom: $padding-vertical-sm-992px
+        &::before
+            top: 60px
+        &__wrap
+            grid-row-gap: $half-base * 15
+
+        &__img
+            width: Min(90%, 320px)
+            &-wrap
+                margin-bottom: $base * 10
+        &__list
+            grid-template-columns: 1fr
+            grid-row-gap: $base * 5
+    .services
+        &__subtitle
+            font-size: 28px
+            line-height: 36px
+        &__list
+            grid-template-columns: minmax(min-content,300px)
+            grid-row-gap: $base * 15
+            margin-bottom: $base * 15
+        &__item-info
+            margin-bottom: $base * 6
+    .doctors
+        &-cards
+            grid-template-columns: minmax(min-content,320px)
+            justify-content: center
+            grid-row-gap: $base * 19
+    .comments
+        padding-bottom: $padding-vertical-sm-992px
+        &__subtitle
+            font-size: 16px
+            line-height: 24px
+    .swiper-slide
+        opacity: 0
+        &-visible
+            opacity: 1
+    .swiper-container
+        width: 100%
+        padding-bottom: 25px
+    .swiper-pagination
+        bottom: 0px
+    .blog
+        &__subtitle
+            font-size: 16px
+            line-height: 28px
+        &-cards
+            grid-template-columns: minmax(min-content, 350px)
+            &--index
+                grid-row-gap: $base * 15
+                & li:last-child
+                    grid-column: 1
+                    max-width: inherit
+    .footer
+        &__wrap
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(auto-fit, min-content)
+            grid-row-gap: $base * 10
+        &__logo
+            grid-column: 1
+            grid-row: 1
+        &__about-us
+            grid-column: 1
+            grid-row: 2
+            margin-bottom: 0px
+        &__contacts
+            grid-column: 1
+            grid-row: 3
+        &__social
+            grid-column: 1
+            grid-row: 4
+        &__newsletter
+            grid-column: 1
+            grid-row: 5
+    .about-us
+        &__img
+            width: 90%
+            margin-left: 24px
+            height: 250px
+            &-wrap
+                align-self: center
+    .history
+        &__img
+            width: Min(100%, 400px)
+            object-fit: cover
+            max-height: 350px
+            &-wrap
+                display: flex
+                justify-content: center
+    .departments
+        &__info
+            margin-bottom: $base * 15
+        &__list
+            grid-template-columns: minmax(min-content,350px)
+    .main-doctors
+        padding-bottom: $padding-vertical-992px
+        &__img
+            width: Min(100%,400px)
+            object-fit: cover
+            max-height: 350px
+            &-wrap
+                display: flex
+                justify-content: center
+    .main-article-card
+        grid-template-rows: min-content minmax(200px, 1fr) min-content min-content
+        &__title
+            font-size: 23px
+            line-height: 31px
+    .blog-card
+        display: grid
+        grid-template-rows: 200px repeat(3,min-content)
+    #map-yandex
+        height: 300px
+    .feedback
+        padding-bottom: $padding-vertical-sm-992px
+        &-form
+            grid-template-columns: 1fr
+            &__field
+                &--name
+                    grid-column: 1
+                    grid-row: 1
+                &--email
+                    grid-column: 1
+                    grid-row: 2
+                &--subject
+                    grid-column: 1
+                    grid-row: 3
+                &--textarea
+                    grid-column: 1
+                    grid-row: 4
+            &__btn
+                grid-column: 1
+                grid-row: 5

@@ -1,0 +1,66 @@
+*
+    box-sizing: border-box
+body
+    font-family: 'Rubik', sans-serif
+h1
+    font-family: 'Merriweather', serif
+h2
+    font-family: 'Merriweather', serif
+h3
+    font-family: 'Merriweather', serif
+h4
+    font-family: 'Merriweather', serif
+p
+    font-weight: 400
+a,
+button
+    font-weight: 500
+
+.container
+    max-width: 1150px
+    margin: 0px auto
+img
+    width: 100%
+    height: 100%
+    object-fit: cover
+@media only screen and (max-width: 2300px) and (min-width: 993px)
+    .button
+        &-contact
+            &:hover
+                background-color: transparent
+                border: 2px solid $white
+                color: $white
+
+        &-more
+            &:hover
+                background-color: $grey
+                color: $white
+
+    .header
+        &-link
+            &:hover
+                color: $blue-link
+
+                opacity: 0.8
+        &__link
+            &:hover
+                &::after
+                    width: 100%
+                    transition: ease 0.5s
+
+        &-logo
+            &__img
+                &:hover
+                    opacity: 0.6
+    .footer
+        &-mail
+            &:hover
+                opacity: 1
+        &-copy
+            &__text
+                &:hover
+                    opacity: 1
+        &-logo
+            &__img
+                &:hover
+                    opacity: 0.6

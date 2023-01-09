@@ -1,0 +1,186 @@
+
+@media (max-width:1200px)
+    .container
+        width: 960px
+    .header
+        &-info
+            display: grid
+            grid-template-columns: repeat(2, minmax(min-content, 1fr))
+            grid-gap: 400px
+        &-links
+            position: static
+            height: max-content
+            align-self: center
+
+@media (max-width:992px)
+    .container
+        width: 700px
+    .header
+        &-info
+            grid-gap: 150px
+        &-nav
+            flex-basis: 65%
+        &-links
+    .materials
+        &-text
+            width: 328px
+    .features
+        &-wrap
+            flex-direction: column
+        &__img
+            margin-bottom: 50px
+@media (max-width:767px)
+
+    .menu-scroll
+        display: flex
+        align-items: center
+        width: 550px
+        justify-content: space-between
+        position: fixed
+        top: 35px
+        z-index: 3
+        transition: all 0.5s ease 0s
+
+        &.out
+            transform: translateY(-210%)
+    .test
+        background-color: red
+    body
+        &.lock
+            overflow: hidden
+    .container
+        width: 550px
+    .header
+        padding-bottom: 95px
+        &-wrap
+        &-logo
+            position: relative
+            z-index: 3
+            &__img
+                &.color
+                    fill: $blue-link
+        &-nav
+            position: fixed
+            z-index: 2
+            top: -100%
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: $grey
+            padding-top: 140px
+            overflow: auto
+            transition: all 0.4s ease 0s
+            &.active
+                top: 0
+
+        &-items
+            display: flex
+            flex-direction: column
+            margin: 16px 0px 16px 0px
+        &__item
+            margin: 20px
+
+        &__burger
+            display: block
+            position: relative
+            z-index: 3
+            width: 30px
+            height: 20px
+            cursor: pointer
+
+            &-span
+                position: absolute
+                width: 100%
+                height: 2px
+                left: 0
+                top: 9px
+                background-color: $white
+                transition: all 0.3s ease 0s
+                &.active
+                    transform: scale(0)
+                &.color
+                    background-color: $blue-link
+            &::before,
+            &::after
+                content: ''
+                background-color: $white
+                position: absolute
+                width: 100%
+                height: 2px
+                left: 0
+                transition: all 0.3s ease 0s
+            &::before
+                top: 0
+            &::after
+                bottom: 0
+            &.active
+                &::before
+                    transform: rotate(45deg)
+                    top: 9px
+                &::after
+                    transform: rotate(-45deg)
+                    bottom: 9px
+            &.color
+                &::before
+                    background-color: $blue-link
+                &::after
+                    background-color: $blue-link
+        &-info
+            grid-template-rows: repeat(2, minmax(1fr, 169px))
+            grid-template-columns: repeat(1, minmax(min-content, 1fr))
+            grid-gap: 100px
+        &-text
+            grid-row: 1
+        &-links
+            grid-row: 2
+            transform: rotate(0deg)
+        &-link
+            font-size: 14px
+    .materials
+        &-wrap
+            flex-direction: column
+        &-slider
+            margin-top: 50px
+            top: 0
+    .footer
+        &-wrap
+            flex-direction: column
+        &-logo
+            order: -1
+            margin-bottom: 15px
+        &-mail
+            margin-bottom: 15px
+@media (max-width:576px)
+    .container
+        width: 90%
+    .menu-scroll
+        width: 90%
+    .header
+        &-text
+            width: inherit
+            &__title
+                font-size: 28px
+    .materials
+        &-text
+            width: 90%
+            &__title
+                font-size: 28px
+        &-slider
+            width: 90%
+    .innovation
+        padding-bottom: 38px
+        &__title
+            margin: 0px 0px 15px 0px
+            font-size: 28px
+        &-text
+            flex-direction: column
+            &__info
+                margin-bottom: 50px
+    .features
+        &__img
+            width: 90%
+            height: 300px
+        &-text
+            width: 90%
+            flex-direction: column
+            align-items: center

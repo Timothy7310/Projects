@@ -1,0 +1,49 @@
+.about-us
+    &__card
+        margin-bottom: 210px
+.card
+    &__img-wrap
+        &--about-us
+            width: 682px
+            height: 726px
+        &--left-up
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                z-index: -1
+                top: -30px
+                left: -34px
+                width: 100%
+                height: 100%
+                border: 2px solid $beige
+                border-radius: 140px 0px
+    &__text
+        &--about-us
+            width: 544px
+            margin-left: 44px
+        &--number
+            width: 528px
+            margin-right: 44px
+
+    &__number
+      
+        font-style: normal
+        font-weight: bold
+        font-size: 288px
+        background-image: url('../img/section-about-us/number-bg.jpg')
+        background-size: cover
+        background-clip: text
+        -webkit-background-clip: text
+        color: transparent
+
+    &__title
+        &--about-us
+            font-size: 48px
+            line-height: 57px
+            font-weight: 500
+        &--number
+            font-weight: 500
+            font-size: 50px
+            line-height: 65px
+            letter-spacing: 0.04em

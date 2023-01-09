@@ -1,0 +1,142 @@
+.clients
+    margin-bottom: 149px
+    &-wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+    &-title
+        font-size: 32px
+        line-height: 48px
+        color: $dark
+        margin: 0px 0px 17px 0px
+        text-align: center
+    &-info
+        font-size: 20px
+        line-height: 32px
+        margin: 0px 0px 55px 0px
+        text-align: center
+    &-text
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 127px
+        width: 100%
+    &-features
+        &-items
+            list-style: none
+            margin: 0px
+            padding: 0px
+        &__item
+            display: flex
+            width: 458px
+            margin-bottom: 30px
+        &__img
+            max-width: 48px
+            min-width: 48px
+            height: 48px
+        &-text
+            margin-left: 16px
+        &__title
+            font-size: 18px
+            line-height: 24px
+            color: $dark
+            margin: 0px 0px 10px 0px
+        &__info
+            font-size: 16px
+            line-height: 24px
+            color: $grey
+            margin: 0px
+    &-reviews
+        width: 614px
+        padding: 60px 92px 92px 87px
+        background-color: $grey-offer
+        border-radius: 5px
+        position: relative
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 48px
+            left: 40px
+            background-image: url(/img/section-clients/quotes.svg)
+            background-repeat: no-repeat
+            width: 102px
+            height: 78px
+        &__text
+            font-size: 30px
+            line-height: 48px
+            color: $dark
+            margin: 0px 0px 28px 0px
+        &-avatar
+            display: flex
+            align-items: center
+            &__img
+                border-radius: 50%
+                overflow: hidden
+                width: 49px
+                height: 48px
+                object-fit: cover
+            &__text
+                width: 331px
+                display: flex
+                flex-direction: column
+                margin-left: 8px
+            &__name
+                font-size: 16px
+                line-height: 19px
+                color: $dark
+            &__prof
+                font-size: 16px
+                line-height: 19px
+                color: $grey
+    &-awards
+
+        &-items
+            list-style: none
+            margin: 0
+            padding: 0
+            display: flex
+            flex-wrap: wrap
+            align-items: flex-start
+            justify-content: space-around
+            width: 672px
+        &__item
+            display: flex
+            flex-direction: column
+            align-items: center
+            min-height: 201px
+            justify-content: space-between
+            margin-left: 50px
+            margin-right: 53px
+            &:nth-child(1)
+                margin-left: 0px
+            &:nth-child(3)
+                margin-right: 0px
+
+            &:nth-child(4)
+                margin-top: 41px
+                margin-left: 0px
+
+        &__link
+
+        &__name
+            width: 139px
+            text-align: center
+            font-size: 16px
+            line-height: 19px
+            color: $grey
+.swiper
+    &-container
+        max-width: 614px
+        min-height: 516px
+        margin-left: 0px !important
+        margin-right: 0px !important
+    &-pagination
+        left: 92px !important
+        bottom: 56px !important
+        width: inherit !important
+        padding-bottom: 10px !important
+        &-bullet
+            background-color: $blue-dot !important
+            &-active
+                background-color: $blue !important

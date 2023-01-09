@@ -1,0 +1,171 @@
+.lifehacks
+    background-color: $bg-grey
+    &-bg
+        background-color: $dark
+        height: 445px
+        width: 100%
+        position: absolute
+
+    &-wrap
+        position: relative
+        display: flex
+        border-radius: 10px
+        overflow: hidden
+        max-height: 573px
+    &-article
+        position: relative
+        height: 100%
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+
+        &__text
+            position: absolute
+            top: 55px
+            left: 55px
+            max-width: 700px
+    &-img
+        min-width: 877px
+        height: 100%
+        object-fit: cover
+
+    &-tools
+
+        color: $blue
+        font-style: normal
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+    &-title
+
+        font-family: Roboto Slab, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 50px
+        color: $light
+        margin: 20px 0px 50px 0px
+    &-content
+        list-style-type: none
+        padding: 0
+        margin: 0
+        &__item
+            height: 100%
+            display: none
+            &--active
+                display: block
+.button
+
+    &-read
+        position: relative
+        padding: 10px 45px 10px 20px
+        color: $light
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        background-color: $blue
+        border-radius: 20px
+        border: none
+        cursor: pointer
+        &__arrow
+            position: absolute
+            right: 22px
+            top: 17px
+            bottom: 16px
+.author
+
+    display: flex
+    align-items: center
+    margin-bottom: 145px
+    &__img
+        width: 45px
+        height: 45px
+        object-fit: cover
+        border-radius: 50%
+        margin-right: 10px
+    &-text
+        color: $light
+        display: flex
+        flex-direction: column
+        &__name
+            opacity: 0.85
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+        &__prof
+            opacity: 0.4
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+.recommendations
+    background-color: $light
+    padding: 20px 0px 0px 0px
+
+    width: 100%
+    &-title
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: $dark
+        margin: 0px 0px 20px 25px
+    &-links
+        list-style: none
+        padding: 0px
+    &-item
+        background-color: transparent
+        cursor: pointer
+        &:nth-child(1)
+            color: $bluegreen
+        &:nth-child(2)
+            color: $greyblue
+        &:nth-child(3)
+            color: $purple
+        &:nth-child(4)
+            color: $orange
+            padding-bottom: 20px
+        &:nth-child(5)
+            color: $green
+            padding-bottom: 14px
+
+        &::before
+            content: ''
+            display: block
+            height: 1px
+            background: $rec-underline
+            margin-bottom: 17px
+        &--active
+            background-color: $tabs-bg
+    &-link
+        text-decoration: none
+        display: flex
+        flex-direction: column
+        color: inherit
+        padding-bottom: 19px
+        padding-left: 25px
+    &__tools
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        font-style: normal
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        padding-bottom: 8px
+    &__about
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $footer-info-color

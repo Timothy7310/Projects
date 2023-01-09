@@ -1,0 +1,201 @@
+*
+    box-sizing: border-box
+
+body
+    font-family: 'Lato', sans-serif
+    // color: $text-color
+    // background-color: $secondary
+.container
+    max-width: 1140px
+    margin: 0px auto
+img
+    max-width: 100%
+.back-to-top
+    position: fixed
+    right: 20px
+    bottom: 32px
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    border: 1px solid $blue
+    text-decoration: none
+    background-color: transparent
+    color: $blue
+    display: none
+    z-index: 3
+    &::before,
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+    &::before
+        width: 5px
+        height: 25px
+        border-top-left-radius: 3px
+        border-top-right-radius: 3px
+        background-color: $blue
+    &::after
+        width: 15px
+        height: 15px
+        transform: translate(-50%, -50% ) rotate(45deg)
+        border-top: 5px solid $blue
+        border-left: 5px solid $blue
+@media only screen and ( max-width:2300px) and (min-width: 993px)
+    .back-to-top
+        &:hover
+            color: darken($blue, 25%)
+    .button-read
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear
+    .foryou-link
+        &:hover
+            color: $blue
+            transition: all 0.3s linear
+
+    .read-article
+        &:hover
+            & .read-article-title,
+            & .read-article__title
+                color: $blue
+                transition: all 0.3s linear
+    .read-popular-text
+        &:hover
+            & .read-popular-title
+                color: $blue
+                transition: all 0.3s linear
+    .read-link
+        &:hover
+            filter: brightness(0.76)
+            transition: all 0.3s linear
+    .investigation-button
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear
+    .news-main-item
+        &:hover
+            & .main-item-text__title
+                color: $blue
+                transition: all 0.3s linear
+    .news-recent-more
+        &:hover
+            color: $blue
+            transition: all 0.3s linear
+    .news-recent-text
+        &:hover
+            & .news-recent-text__num
+                color: $blue
+                transition: all 0.3s linear
+    .preview-reader-button
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear
+    .preview-article-main__button
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear
+    .preview-article
+        &:hover
+            & .preview-article-title
+                color: $blue
+                transition: all 0.3s linear
+    .form-subscribe__button
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear
+    .footer-info__link
+        &:hover
+            filter: brightness(0.76)
+            transition: all 0.3s linear
+    .footer-info__contacts-link
+        &:hover
+            color: $blue
+            transition: all 0.3s linear
+
+    // Подчеркивание ссылок
+    .header__link
+        position: relative
+        &::after
+            display: block
+            content: ""
+            background-color: $blue
+            height: 3px
+            width: 0%
+            left: 50%
+            position: absolute
+            transition: width .3s ease-in-out
+
+            transform: translateX(-50%)
+
+    .header__link
+        &:hover,
+        &:focus
+            &::after
+                width: 100%
+    .footer-item__link
+        position: relative
+        &::after
+            display: block
+            content: ""
+            background-color: $blue
+            height: 2px
+            width: 0%
+            left: 50%
+            position: absolute
+            transition: width .3s ease-in-out
+            transform: translateX(-50%)
+    .footer-item__link
+        &:hover,
+        &:focus
+            &::after
+                width: 100%
+
+    //  Кнопки на странице article
+    .form-home__button
+        &:hover
+            color: $blue
+            transition: all 0.3s linear
+    .form-back__button
+        &:hover
+            color: $blue
+            transition: all 0.3s linear
+    .form-forward__button
+        &:hover
+            color: $blue
+            transition: all 0.3s linear
+    .info-author__link
+        &:hover
+            color: $blue
+            transition: all 0.3s linear
+    .subject
+        &:hover
+            & .subject-name
+                color: $blue
+                transition: all 0.3s linear
+    .repost__button
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear
+    .othernews-card
+        &:hover
+            & .othernews-title
+                color: $blue
+                transition: all 0.3s linear
+    .comments-header__button
+        &:hover
+            background-color: $dark
+            color: $light
+            transition: all 0.3s linear
+            border: 1px solid $dark
+    .button-loading
+        &:hover
+            background-color: $dark
+            color: $light
+            transition: all 0.3s linear
+            border: 1px solid $dark
+    .think-about-btn
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear

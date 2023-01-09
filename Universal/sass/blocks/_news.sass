@@ -1,0 +1,218 @@
+.news
+    padding-top: 60px
+    background-color: $bg-grey
+    padding-bottom: 61px
+
+    &-wrap
+        display: flex
+        align-items: flex-start
+    &-main
+        margin-right: 29px
+        background-color: $light
+        border-radius: 10px
+        &-items
+            list-style: none
+            margin: 0
+            padding: 0
+        &-item
+            display: flex
+            padding: 25px 25px 22px 25px
+            position: relative
+            &:nth-child(1)
+                color: $blue
+            &:nth-child(2)
+                color: $bluegreen
+            &:nth-child(3)
+                color: $red
+            &:nth-child(4)
+                color: $bluegreen
+            &:nth-child(5)
+                color: $red
+            &:nth-child(6)
+                color: $purple
+            &::after
+                content: ''
+                display: block
+                background-color: $rec-underline
+                width: 93%
+                height: 1px
+                position: absolute
+                bottom: 0
+            &:last-child
+                &::after
+                    display: none
+
+.main
+    &-item
+        &-img
+            width: 336px
+            height: 195px
+            object-fit: cover
+        &-link
+            text-decoration: none
+            color: inherit
+        &-text
+            display: flex
+            flex-direction: column
+            max-width: 437px
+            margin-left: 25px
+            position: relative
+            margin-top: 5px
+            &__type
+                font-style: normal
+                font-weight: 900
+                font-size: 12px
+                line-height: 15px
+                letter-spacing: 0.5px
+                text-transform: uppercase
+                margin-bottom: 15px
+
+            &__title
+                font-family: Roboto Slab
+                font-style: normal
+                font-weight: bold
+                font-size: 20px
+                line-height: 25px
+                color: $dark
+                margin: 0px 0px 10px 0px
+            &__info
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 20px
+                color: $footer-info-color
+                padding: 0
+                margin: 0px
+            &__data
+                display: flex
+                align-items: center
+                position: absolute
+                bottom: 8px
+            &__date
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: $header-search-text
+                margin-right: 13px
+            &__com
+                margin-right: 7px
+            &__like
+                margin-right: 6px
+            &__num
+                color: $header-search-text
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                margin-right: 7px
+            &__favorites
+                position: absolute
+                top: -5px
+                right: 2px
+                width: 14px
+                height: 18px
+                fill: #BCBFC2
+                cursor: pointer
+.news
+    &-recent
+        background-color: #fff
+        border-radius: 10px
+        padding: 20px 25px 14px 25px
+        position: relative
+        &::before
+            content: ''
+            display: block
+            width: 100%
+            height: 1px
+            background-color: $rec-underline
+            position: absolute
+            top: 59px
+            left: 0
+        &::after
+            content: ''
+            display: block
+            width: 100%
+            height: 1px
+            background-color: $rec-underline
+            position: absolute
+            bottom: 45px
+            left: 0
+        &-items
+            list-style: none
+            margin: 0
+            padding: 0
+        &-item
+            padding-bottom: 35px
+            position: relative
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                background-color: $rec-underline
+                width: 100%
+                height: 1px
+                bottom: 17px
+                left: 0
+            &:last-child
+                padding-bottom: 28px
+                &::after
+                    display: none
+        &-link
+            display: flex
+            color: inherit
+            text-decoration: none
+        &__img
+            width: 60px
+            height: 60px
+            object-fit: cover
+            margin-right: 10px
+        &-title
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 20px
+            margin: 0px 0px 37px 0px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $dark
+
+        &-more
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 20px
+            color: $dark
+            text-decoration: none
+            text-align: center
+            width: 100%
+            border: none
+            background-color: transparent
+            cursor: pointer
+        &-text
+            display: flex
+            flex-direction: column
+            position: relative
+            &__info
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 20px
+                margin-bottom: 5px
+                max-width: 143px
+                color: $footer-info-color
+            &__date
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: $header-search-text
+            &__num
+                font-family: 'Lato-HeavyItalic'
+                font-size: 70px
+                line-height: 50px
+                font-weight: 900
+                opacity: 0.08
+                color: $dark
+                position: absolute
+                right: 0

@@ -1,0 +1,282 @@
+.comments
+    padding-top: 56px
+    &-wraper
+        display: flex
+        flex-direction: column
+        max-width: 750px
+        margin-left: 98px
+    &-header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 16px
+        &__title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 40px
+            line-height: 50px
+            color: $dark
+            &-num
+                font-family: Lato
+                color: $header-search-text
+        &__button
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 20px
+            color: $dark
+            padding: 10px 20px 10px 50px
+            position: relative
+            border: 1px solid #D9DADB
+            border-radius: 20px
+            background-color: transparent
+            cursor: pointer
+            &-img
+                position: absolute
+                top: 10px
+                left: 20px
+    &-items
+        list-style: none
+        margin: 0px
+        padding: 0px
+    &-item
+        margin-bottom: 45px
+        position: relative
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            width: 100%
+            height: 1px
+            top: -21px
+            left: 0
+            background-color: $rec-underline
+        &-hidden
+            display: none
+
+        &-com
+            display: flex
+    &-avatar
+        width: 75px
+        height: 75px
+        object-fit: cover
+        border-radius: 50%
+    &-text
+        display: flex
+        flex-direction: column
+        margin-left: 15px
+        &__name
+            margin: 0px 0px 10px 0px
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            color: $dark
+        &__date
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $header-search-text
+        &__info
+            width: 570px
+            margin: 0px 0px 14px 0px
+            padding: 0
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 30px
+            color: $footer-info-color
+            &--45
+                margin-bottom: 45px
+
+        &-reply
+            display: flex
+            align-items: center
+
+            &__count
+                font-size: 12px
+                line-height: 15px
+                color: $green
+.button
+    &-reply
+        border: none
+        cursor: pointer
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $dark
+        background-color: transparent
+        display: flex
+        align-items: center
+        padding-left: 0
+        &__img
+            margin-right: 6px
+    &-like
+        border: none
+        cursor: pointer
+        background-color: transparent
+    &-dislike
+        border: none
+        cursor: pointer
+        background-color: transparent
+.comments
+    padding-bottom: 31px
+    &-reply
+        list-style: none
+        padding: 0
+        margin: 0
+        max-width: 750px
+        &-wrap
+            display: flex
+        &-item
+            margin-top: 50px
+            padding-left: 89px
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                display: block
+                top: -21px
+                left: 0px
+                width: 100%
+                height: 1px
+                background-color: $rec-underline
+        &-text
+            display: flex
+            flex-direction: column
+            margin-left: 15px
+        &__name
+            margin: 0px 10px 8px 0px
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            color: $dark
+        &__date
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $header-search-text
+        &__info
+            width: 570px
+            margin: 0px 0px 16px 0px
+            padding: 0
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 30px
+            color: $footer-info-color
+        &-answer
+            display: flex
+            align-items: center
+            &__count
+                font-size: 12px
+                line-height: 15px
+                color: $header-search-text
+.button
+    &-loading
+
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: $dark
+        background-color: #ffffff
+        padding: 14px 302px 14px 325px
+        border: 1px solid $rec-underline
+        border-radius: 25px
+        cursor: pointer
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 60px
+        margin-top: -16px
+        &__img
+            margin-right: 8px
+        &-hidden
+            display: none
+.think-about
+    &-wrap
+        display: flex
+        background-color: $tabs-bg
+        border-radius: 10px
+        align-items: flex-start
+        align-items: center
+    &-form
+        display: flex
+        flex-direction: column
+        margin-left: 20px
+        margin-bottom: 36px
+        position: relative
+        &::before
+            content: ''
+            width: 12px
+            display: block
+            height: 12px
+            background-color: $light
+            border: 1px solid #d9dadb
+            border-top: none
+            border-right: none
+            position: absolute
+            left: -6px
+            top: 100px
+            transform: rotate(45deg)
+            z-index: 4
+    &__avatar
+        width: 75px
+        height: 75px
+        object-fit: cover
+        border-radius: 50%
+        margin-top: -75px
+        margin-left: 30px
+    &__title
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 25px
+        color: $dark
+        padding: 0
+        margin: 30px 0px 15px 0px
+    &-textarea
+        width: 585px
+        height: 130px
+        resize: none
+        font-size: 18px
+        line-height: 30px
+        color: $footer-info-color
+        padding: 10px
+        border: 1px solid $rec-underline
+        border-radius: 5px
+    &-btn
+        align-self: flex-start
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: $light
+        background-color: $blue
+        border: none
+        cursor: pointer
+        padding: 10px 49px 10px 21px
+        border-radius: 20px
+        margin-top: 15px
+        position: relative
+        &__img
+            position: absolute
+            top: 17px
+            right: 21px
+label
+    &.invalid-textarea
+        position: absolute
+        bottom: 32px
+        right: 0
+        color: $red

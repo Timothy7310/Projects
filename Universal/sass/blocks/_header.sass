@@ -1,0 +1,63 @@
+.header
+    background-color: $dark
+    padding: 15px 0px 38px 0px
+    &-wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-nav
+        margin: auto
+    &-links
+        list-style: none
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 531px
+        padding: 0
+    &__item
+        &--mobile--visible
+            display: none
+
+    &__link
+        font-family: 'LatoBlack', sans-serif
+        text-decoration: none
+        color: $light
+        font-style: normal
+
+        font-size: 14px
+        line-height: 20px
+        &--uppercase
+            text-transform: uppercase
+    &__burger
+        display: none
+.search
+    position: relative
+    overflow: hidden
+    border-radius: 10px
+    height: 39px
+    &__input
+        height: 100%
+        width: 263px
+        padding-left: 24px
+        padding-right: 65px
+        border: none
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        background-color: $header-search-bg
+        color: #0b0b0b
+        outline: none
+    &__button
+        position: absolute
+        right: 20px
+        top: 9px
+        bottom: 10px
+        background-color: transparent
+        border: none
+        cursor: pointer
+        outline: none
+.navbar
+    &-search
+        &--mobile--visible
+            display: block

@@ -1,0 +1,122 @@
+html
+    box-sizing: border-box
+
+*,
+*::before,
+*::after
+    box-sizing: inherit
+
+body
+    margin: 0
+    @include manrope
+img
+    max-width: 100%
+    vertical-align: bottom
+ul
+    list-style: none
+    padding: 0
+    margin: 0
+.container
+    max-width: 1171px
+    margin: 0px auto
+
+h1,
+h2,
+h3,
+h4,
+h6,
+    padding: 0
+    margin: 0
+
+h1
+    font-size: 40px
+    line-height: 48px
+    font-weight: $fw-extrabold
+h2
+    font-size: 36px
+    line-height: 44px
+    font-weight: $fw-extrabold
+h3
+    font-size: 24px
+    line-height: 32px
+    font-weight: $fw-semibold
+h4
+    font-size: 18px
+    line-height: 26px
+    font-weight: $fw-bold
+
+ul
+    list-style: none
+    padding: 0
+    margin: 0
+.visually-hidden
+    position: absolute !important
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px)
+    padding: 0 !important
+    border: 0 !important
+    height: 1px !important
+    width: 1px !important
+    overflow: hidden
+
+.button
+    background-color: $primary
+    color: $white
+    border: 1px solid $primary
+    cursor: pointer
+    &-order
+        font-size: 20px
+        line-height: 28px
+        font-weight: $fw-bold
+        padding: ($half-base * 8) ($half-base * 15)
+        border-radius: 10px
+        border: 2px solid $primary
+    &-more
+        color: $main-info
+        font-size: 20px
+        line-height: 30px
+        font-weight: $fw-bold
+        background-color: transparent
+        border: none
+        cursor: pointer
+        padding: 0
+        display: inline-grid
+        grid-auto-flow: column
+        grid-column-gap: $half-base * 9
+        align-items: center
+        &__img
+            width: 22px
+            height: 14px
+            fill: $main-info
+            transition: $transition-ease
+.pagination
+    align-self: flex-end
+    margin-top: $base * 15
+    &__list
+        display: inline-grid
+        grid-auto-flow: column
+        grid-column-gap: $base * 2
+    &__link
+        width: 46px
+        height: 46px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none
+        background-color: #F6F6F6
+        color: #BBBBBB
+        font-size: 20px
+        font-weight: $fw-semibold
+        &--active
+            background-color: $primary
+            color: $white
+.btn-come-back
+    padding: ($half-base * 6) ($half-base * 8)
+    background-color: $primary
+    color: $white
+    border: 2px solid $primary
+    border-radius: 10px
+    font-size: 18px
+    font-weight: $fw-semibold
+    text-transform: uppercase
+    cursor: pointer

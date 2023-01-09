@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decbase</title>
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="preload" href="fonts/Open-Sans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Open-Sans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Open-Sans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+
+
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="index.html" class="header__logo">
+                    <picture class="header__logo-img">
+                        <source srcset="img/header/logo@1x.webp 1x,
+                                        img/header/logo@2x.webp 2x" type="image/webp">
+                        <img src="img/header/logo@1x.png"
+                            srcset="img/header/logo@2x.png 2x" alt="Logo Decbase.">
+                    </picture>
+                </a>
+                <button id="burger" class="header__burger" aria-label="Menu.">
+                    <span class="header__burger-span header__burger-span--1"></span>
+                    <span class="header__burger-span header__burger-span--2"></span>
+                    <span class="header__burger-span header__burger-span--3"></span>
+                    <span class="header__burger-span header__burger-span--4"></span>
+                </button>
+                <nav class="header__nav">
+                    <ul class="header__items">
+                        <li class="header__item"><a href="#" class="header__link">Home</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Project</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Services</a></li>
+                        <li class="header__item"><a href="#" class="header__link">About</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Blog</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Shop</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                        <li class="header__item header__item--mobile"><button  class="button-sign-up header__button button-sign-up--mobile modal-toggle--mb"  >Sign Up</button></li>
+                    </ul>
+                    
+                </nav>
+                <button  class="button-sign-up header__button modal-toggle" >Sign Up</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__wrap">
+                <div class="main__card card">
+                    <div class="card__text card__text--main">
+                        <span class="card__subtitle">
+                            Modern Interior
+                        </span>
+                        <h1 class="card__title card__title--main">
+                            Create Your Interior Design.
+                        </h1>
+                        <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation.</p>
+                        <button class="button button--contact">Contact</button>
+                    </div>
+                    <!-- /.card__text -->
+                    <div class="card__img-wrap">
+                        <picture >
+                            <source srcset="img/section-main/main@1x.webp 1x,
+                                            img/section-main/main@2x.webp 2x" 
+                                            type="image/webp">
+                            <img src="img/section-main/main@1x.jpg" 
+                            class="card__img"
+                                srcset="img/section-main/main@2x.jpg 2x"
+                                alt="Bright room designed by our workers.">
+                        </picture>
+                    </div>
+                </div>
+                <!-- /.main__card card -->
+            </div>
+            <!-- /.main__wrap -->
+        </div>
+    </main>
+        <section class="service">
+            <div class="container">
+                <div class="service__wrap">
+                    <div class="service__text">
+                        <span class="service__subtitle">What we do</span>
+                        <h2 class="service__title">Our Service</h2>
+                    </div>
+
+                    
+                    <div class="slider-buttons">
+                        <button class="slider-button service__button-prev">
+                            <svg class="slider-button__img">
+                                <use xlink:href="img/sprite.svg#prev"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-button service__button-next">
+                            <svg class="slider-button__img">
+                                <use xlink:href="img/sprite.svg#next"></use>
+                            </svg>
+                        </button>
+                    </div>
+                   <div class="slider-wrap">
+                        <!-- Slider main container -->
+                        <div class="swiper-container service-slider">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <svg class="service__img">
+                                            <use xlink:href="img/sprite.svg#design"></use>
+                                        </svg>
+                                       
+                                        <div class="service-text">
+                                            <h3 class="service-text__title">Interior Design</h3>
+                                            <p class="service-text__info">Lorem ipsum dolor amet consectetur
+                                                adipiscing elit sed eiusmod tempor
+                                                incididunt ut labore.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="service__item ">
+                                        <svg class="service__img">
+                                            <use xlink:href="img/sprite.svg#architecture"></use>
+                                        </svg>
+                                        <div class="service-text">
+                                            <h3 class="service-text__title ">Architecture</h3>
+                                            <p class="service-text__info ">Lorem ipsum dolor amet consectetur
+                                                adipiscing elit sed eiusmod tempor
+                                                incididunt ut labore.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <svg class="service__img">
+                                            <use xlink:href="img/sprite.svg#planning"></use>
+                                        </svg>
+                                        <div class="service-text">
+                                            <h3 class="service-text__title">Planning</h3>
+                                            <p class="service-text__info">Lorem ipsum dolor amet consectetur
+                                                adipiscing elit sed eiusmod tempor
+                                                incididunt ut labore.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-us">
+            <div class="container">
+                <div class="about-us__wrap">
+                    <div class="about-us__card card">
+                        
+                        <div class="card__img-wrap card__img-wrap--about-us card__img-wrap--left-up">
+                            <picture>
+                                <source srcset="img/section-about-us/interior-1@1x.webp 1x,
+                                        img/section-about-us/interior-1@2x.webp 2x"
+                                        type="image/webp">
+                                <img src="img/section-about-us/interior-1@1x.jpg" 
+                                    class="card__img"
+                                    srcset="img/section-about-us/interior-1@2x.jpg 2x"
+                                    alt="Large living room in soft beige tones with wooden staircase.">
+                            </picture>
+                        </div>
+                        <div class="card__text card__text--about-us">
+                            <span class="card__subtitle">
+                                about us
+                            </span>
+                            <h2 class="card__title card__title--about-us">
+                                Interioris The Will of An Epoch Mextreo
+                            </h2>
+                            <p class="card__info">There are many variations of passages of Lorem Ipsum available,
+                                but the majority have suffered alteration in some form injected
+                                humour, or randomised words which don't look even slightly
+                                believable.If you are going to use a passage of Lorem Ipsum,
+                                sure there isn't anything embarrassing hidden the middleof text.
+                                All the Lorem Ipsum generators on the Internettend to repeat
+                                predefined chunks as necessary,making this the first true
+                                generator on the Internet.</p>
+                            <button class="button button--more">Learn More</button>
+                        </div>
+                        <!-- /.card__text -->
+                    </div>
+                    <!-- /.about-us__card card -->
+
+                    <div class="about-us__card card">
+                        <div class="card__text card__text--number ">
+                            
+                                <span class="card__number">
+                                    20
+                                </span>
+                            
+                            
+                            <h2 class="card__title card__title--number ">
+                                Years Of Successful Working The Market
+                            </h2>
+                            <button class="button button--read">Read More</button>
+                        </div>
+                        <!-- /.card__text -->
+
+                        <div class="card__img-wrap card__img-wrap--about-us">
+                            <picture>
+                                <source srcset="img/section-about-us/interior-2@1x.webp 1x,
+                                                img/section-about-us/interior-2@2x.webp 2x"
+                                                type="image/webp">
+                                <img src="img/section-about-us/interior-2@1x.jpg"
+                                    class="card__img"
+                                    srcset="img/section-about-us/interior-2@2x.jpg 2x"
+                                    alt="Wooden containers attached to the wall to hold flowers.">
+                            </picture>
+                        </div>
+                    </div>
+                    <!-- /.about-us__card card -->
+                </div>
+            </div>
+        </section>
+        <section class="statistic">
+            <div class="container">
+                <div class="statistic__wrap">
+                    <h2 class="statistic__title">
+                        3000+ Completed Work Which WE have Successfully Done
+                    </h2>
+                    <ul class="statistic-list statistic-list--mb">
+                        <li class="statistic-card">
+                            <div class="statistic-card__text">
+                                <span class="statistic-card__number">
+                                    980
+                                </span>
+                                <span class="statistic-card__name">
+                                    Project
+                                </span>
+                            </div>
+                        </li>
+                        <li class="statistic-card">
+                            <div class="statistic-card__text">
+                                <span class="statistic-card__number">
+                                    520
+                                </span>
+                                <span class="statistic-card__name">
+                                Happy Client
+                                </span>
+                            </div>
+                        </li>
+                        <li class="statistic-card">
+                            <div class="statistic-card__text">
+                                <span class="statistic-card__number">
+                                    330
+                                </span>
+                                <span class="statistic-card__name">
+                                    Winners
+                                </span>
+                            </div>
+                        </li>
+                        <li class="statistic-card">
+                            <div class="statistic-card__text">
+                                <span class="statistic-card__number">
+                                    120
+                                </span>
+                                <span class="statistic-card__name">
+                                    Recoment
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="clients">  
+            <div class="container">
+                <div class="clients__wrap">
+                    <span class="clients__subtitle">Testimonials</span>
+                    <h2 class="clients__title">Client says about us</h2>
+                    <div class="slider-buttons">
+                        <button class="slider-button clients__button-prev">
+                            <svg class=" slider-button__img">
+                                <use xlink:href="img/sprite.svg#prev"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-button clients__button-next">
+                            <svg class="slider-button__img">
+                                <use xlink:href="img/sprite.svg#next"></use>
+                            </svg>
+                        </button>
+                    </div>
+                   
+                       
+                        <div class="swiper-container clients-slider">
+                            
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="clients__item">
+                                       
+                                        <picture>
+                                            <source srcset="img/section-clients/clients-1@1x.webp 1x,
+                                                            img/section-clients/clients-1@2x.webp 2x"
+                                                            type="image/webp">
+                                            <img src="img/section-clients/clients-1@1x.jpg"
+                                                class="clients__avatar" 
+                                                srcset="img/section-clients/clients-1@2x.jpg 2x"
+                                                alt="Avatar.">
+                                        </picture>
+                                        <div class="clients-text">
+                                            <h3 class="clients-text__name">Louis Saville
+                                                <span class="clients-text__prof">/CEO at Google inc</span>
+                                            </h3>
+                                            <p class="clients-text__info">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore
+                                                et dolore magna aliqua.
+                                            </p>
+                                            <svg class="clients__quote">
+                                                <use xlink:href="img/sprite.svg#quote"></use>
+                                            </svg>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clients__item">
+                                    
+                                        <picture>
+                                            <source srcset="img/section-clients/clients-2@1x.webp 1x,
+                                                            img/section-clients/clients-2@2x.webp 2x"
+                                                type="image/webp">
+                                            <img src="img/section-clients/clients-2@1x.jpg"
+                                                class="clients__avatar"
+                                                srcset="img/section-clients/clients-2@2x.jpg 2x" 
+                                                alt="Avatar.">
+                                        </picture>
+                                        <div class="clients-text">
+                                            <h3 class="clients-text__name">Rekha Varadwaz 
+                                                <span class="clients-text__prof">/Manager at Nike inc</span>
+                                            </h3>
+                                            <p class="clients-text__info">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore
+                                                et dolore magna aliqua.
+                                            </p>
+                                            <svg class="clients__quote">
+                                                <use xlink:href="img/sprite.svg#quote"></use>
+                                            </svg>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clients__item">
+                                    
+                                        <picture>
+                                            <source srcset="img/section-clients/clients-3@1x.webp 1x,
+                                                            img/section-clients/clients-3@2x.webp 2x"
+                                                type="image/webp">
+                                            <img src="img/section-clients/clients-3@1x.jpg"
+                                                class="clients__avatar"
+                                                srcset="img/section-clients/clients-3@2x.jpg 2x"
+                                                alt="Avatar.">
+                                        </picture>
+                                        <div class="clients-text">
+                                            <h3 class="clients-text__name">Carol Parker
+                                                <span class="clients-text__prof">/CEO at Facebook inc</span>
+                                            </h3>
+                                            <p class="clients-text__info">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore
+                                                et dolore magna aliqua.
+                                            </p>
+                                            <svg class="clients__quote">
+                                                <use xlink:href="img/sprite.svg#quote"></use>
+                                            </svg>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clients__item">
+                                
+                                        <picture>
+                                            <source srcset="img/section-clients/clients-4@1x.webp 1x,
+                                                            img/section-clients/clients-4@2x.webp 2x"
+                                                type="image/webp">
+                                            <img src="img/section-clients/clients-4@1x.jpg"
+                                                class="clients__avatar"
+                                                srcset="img/section-clients/clients-4@2x.jpg 2x"
+                                                alt="Avatar.">
+                                        </picture>
+                                        <div class="clients-text">
+                                            <h3 class="clients-text__name">Jim Darvis
+                                                <span class="clients-text__prof">/Manager at Puma inc</span>
+                                            </h3>
+                                            <p class="clients-text__info">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore
+                                                et dolore magna aliqua.
+                                            </p>
+                                            <svg class="clients__quote">
+                                                <use xlink:href="img/sprite.svg#quote"></use>
+                                            </svg>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="news">  
+            <div class="container">
+                <div class="news__wrap">
+                    <span class="news__subtitle">Latest News</span>
+                    <h2 class="news__title">
+                        From Our Blog
+                    </h2>
+                    <div class="news__cards">
+                        <article class="news__card card">
+                        
+                            <div class="card__img-wrap card__img-wrap--news">
+                                <picture>
+                                    <source srcset="img/section-news/news-1@1x.webp 1x,
+                                                    img/section-news/news-1@2x.webp 2x"
+                                                    type="image/webp">
+                                    <img src="img/section-news/news-1@1x.jpg"
+                                        class="card__img"
+                                        srcset="img/section-news/news-1@2x.jpg 2x"
+                                        alt="Living room with kitchen in gray and red tones.">
+                                </picture>
+                            </div>
+                            <div class="card__text card__text--news">
+                                <h3 class="card__title card__title--news">
+                                    2020 Interior Design Trends
+                                </h3>
+                                <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                incididunt ut labore et dolore magna aliqua.</p>
+                                <button class="button button--continue">Continue Reading....</button>
+                            </div>
+                            <!-- /.card__text -->
+                        </article>
+                        <article class="news__card card">
+                        
+                            <div class="card__img-wrap card__img-wrap--news">
+                                <picture>
+                                    <source srcset="img/section-news/news-2@1x.webp 1x,
+                                                    img/section-news/news-2@2x.webp 2x"
+                                                    type="image/webp">
+                                    <img src="img/section-news/news-2@1x.jpg"
+                                        class="card__img"
+                                        srcset="img/section-news/news-2@2x.jpg 2x"
+                                        alt="Light-colored office with panoramic windows.">
+                                </picture>
+                            </div>
+                            <div class="card__text card__text--news">
+                                <h3 class="card__title card__title--news">
+                                    How to make your workplace better
+                                    
+                                </h3>
+                                <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                                <button class="button button--continue">Continue Reading....</button>
+                            </div>
+                            <!-- /.card__text -->
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__wrap">
+                    <h2 class="subscribe__title">Don’t forget to Sign Up</h2>
+                    <div class="subscribe__hr"></div>
+                    <p class="subscribe__info">
+                        Find out early about all upcoming promotions and new product releases with
+                        our newsletter.
+                    </p>
+                    <form action="send.php" method="POST" class="form">
+                        <div class="form__input-wrap">
+                            <input
+                                type="email"
+                                name="email" 
+                                placeholder="Enter your email address....." 
+                                class="form__input"
+                                required>
+                        </div>
+                        <button class="button button--subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer"> 
+            <div class="container">
+                <div class="footer__wrap">  
+                    <div class="footer__logo-wrap">
+                        <a href="index.html" class="footer__logo">
+                            <picture >
+                                <source srcset="img/header/logo@1x.webp 1x,
+                                                img/header/logo@2x.webp 2x"
+                                                type="image/webp">
+                                <img src="img/header/logo@1x.png"
+                                    class="footer__logo-img"
+                                    srcset="img/header/logo@2x.png 2x"
+                                    alt="Logo Decbase.">
+                            </picture>
+                        </a>
+                        <p class="footer__info">
+                            But i must explain to you all this mistaken idea of dencouncing pleasure.
+                        </p>
+                    </div>
+                    <div class="footer__list">
+                        <h3 class="footer__list-title">Quick Links</h3>
+                        <ul class="footer__items">
+                            <li class="footer__item"><a href="#" class="footer__link">About Our Company</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Services WE provide</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Career & Opportunity</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Privacy & policy</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Contact US</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__list">
+                        <h3 class="footer__list-title">Company</h3>
+                        <ul class="footer__items">
+                            <li class="footer__item"><a href="#" class="footer__link">About Company</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Our Testimonials</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Latest News</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Our misson</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Get a free Quot</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__list">
+                        <h3 class="footer__list-title">Contact us</h3>
+                        <ul class="footer__items">
+                            <li class="footer__item"><a href="#" class="footer__link">Sagrada Familia, Herba</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Street Front USA</a></li>
+                            <li class="footer__item"><a href="mailto:brandoxide@gmail.com" class="footer__link">brandoxide@gmail.com</a></li>
+                            <li class="footer__item"><a href="tel:002-568423591" class="footer__link">002-568423591</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__list">
+                        <h3 class="footer__list-title">Follow Us</h3>
+                        <ul class="footer-links">
+                            <li class="footer-links__item">
+                                <a href="https://ru-ru.facebook.com/" target="_blank" rel="nofollow noopener" aria-label="Facebook" class="footer-links__link">
+                                    <svg class="footer-links__img">
+                                        <use xlink:href="img/sprite.svg#fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-links__item">
+                                <a href="https://twitter.com/" target="_blank" rel="nofollow noopener" aria-label="Twitter" class="footer-links__link">
+                                    <svg class="footer-links__img">
+                                        <use xlink:href="img/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-links__item">
+                                <a href="https://www.instagram.com/" target="_blank" rel="nofollow noopener" aria-label="Instagram" class="footer-links__link">
+                                    <svg class="footer-links__img">
+                                        <use xlink:href="img/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-links__item">
+                                <a href="https://www.linkedin.cn/login" target="_blank" rel="nofollow noopener" aria-label="LinkedIn" class="footer-links__link">
+                                    <svg class="footer-links__img">
+                                        <use xlink:href="img/sprite.svg#linked-in"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__bottom">
+                        
+                        <p class="footer__copy">
+                            Copyright @ 2020 <a href="#" class="footer__copy-link">Brandoxide</a>.all right reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal" >
+            <div class="modal__overlay"></div>
+            <div class="modal__dialog" >
+                <button class="button-close" id="button-close" aria-label="Close Sign Up window." autofocus >
+                    <svg class="button-close__img">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                    
+                </button>
+                
+                <form    class="form form-modal">
+                    <div class="form__field">
+                        <label for="email_field" class="form__field-label">E-mail:</label>
+                        <input type="email" name="email" id="email_field" 
+                            class="form__field-input" required>
+                    </div>
+                    <div class="form__field">
+                        <label for="password_field" class="form__field-label">Password:</label>
+                        <input type="password" name="password" id="password_field" 
+                            class="form__field-input" required>
+                    </div>
+                    <button class="button button--modal">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    <script src="js/main.min.js"></script>
+    
+</body>
+</html>

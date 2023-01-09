@@ -1,0 +1,542 @@
+
+@media (max-width:1500px)
+    .card
+        &__img-wrap
+            width: 517px
+            height: 426px
+        &__number
+            font-size: 235px
+    .service
+        &__item
+            // width: 335px
+            // width: inherit
+            width: 28vw
+    .card
+        &__text
+            &--news
+                width: 500px
+        &__img-wrap
+            &--news
+                width: 417px
+                height: 326px
+    .news
+        &__cards
+            justify-content: space-evenly
+    .footer
+        &__info
+            width: 220px
+
+@media (max-width:1200px)
+    .container
+        width: 960px
+    .header
+        padding-left: 0
+        padding-right: 0
+        &__items
+            width: 600px
+        &__button
+            margin-left: 30px
+    .main
+        padding: 107px 0px 159px 0px
+    .card
+        &__img-wrap
+            width: 517px
+            height: 426px
+            &::after
+                bottom: -17px
+                right: -14px
+            &--left-up
+                &::after
+                    top: -14px
+                    left: -12px
+            &--news
+                width: 417px
+                height: 326px
+        &__title
+            &--main
+                font-size: 55px
+        &__text
+            &--news
+                width: 425px
+    .service
+        padding: 0px 0px 236px 0px
+        &__item
+            width: 425px
+    .statistic
+        padding: 0px 0px 0px 0px
+    .clients
+        padding: 163px 0px 183px 0px
+    .news
+        padding: 93px 0px 123px 0px
+        &__cards
+            justify-content: space-between
+    .subscribe
+        padding: 197px 0px 196px 0px
+    .footer
+        padding: 93px 0px 22px 0px
+        &__wrap
+            grid-template-columns: repeat(3, minmax(min-content, 1fr))
+            grid-template-rows: repeat(3, minmax(min-content, min-content))
+            grid-row-gap: 70px
+        &__info
+            width: 350px
+
+        &__list
+            &:nth-child(1)
+                grid-column: 1 / 3
+                grid-row: 1
+            &:nth-child(2)
+                grid-row: 2
+            &:nth-child(3)
+                grid-row: 2
+            &:nth-child(4)
+                grid-row: 2
+            &:nth-child(5)
+                grid-column: 3
+                grid-row: 1
+
+        &__bottom
+            grid-column: 1 / 4
+            grid-row: 3
+            margin: 0px 0px 0px 0px
+    .swiper-slide-active
+        & > .service__item
+            background-color: $white
+            & > .service__img
+
+                fill: #000000
+            & > .service-text
+                & > .service-text__title
+
+                    color: $dark
+                & > .service-text__info
+
+                    color: $dark
+
+@media (max-width:992px)
+    .container
+        width: 700px
+    .header
+        &__wrap
+            flex-wrap: wrap
+        &__button
+            margin-left: 0
+            order: -1
+        &__logo
+            order: -2
+        &__nav
+            flex-basis: 100%
+        &__items
+            margin-top: 40px
+            width: inherit
+            flex-basis: 100%
+    .card
+        flex-direction: column
+        &__text
+            &--main
+                margin-right: 0px
+                margin-bottom: 50px
+            &--about-us
+                margin-left: 0
+            &--number
+                margin-right: 0px
+            &--news
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 500px
+        &__title
+            &--main
+                font-size: 50px
+                line-height: 72px
+        &__img-wrap
+            &--left-up
+                order: 1
+                margin-top: 70px
+                &::after
+                    top: 24px
+                    left: 26px
+
+            &--about-us
+                margin-top: 70px
+            &--news
+                align-self: center
+                width: 517px
+                height: 426px
+    .service
+        padding: 0px 0px 198px 0px
+    .about-us
+        &__card
+            margin-bottom: 135px
+    .statistic
+        &-list
+            align-items: center
+            justify-content: center
+            max-width: inherit
+        &-card
+            flex-basis: 40%
+            margin: 20px
+            &:nth-child(2n)
+                align-self: center
+    .clients
+        padding: 148px 0px 155px 0px
+    .news
+        padding: 93px 0px 100px 0px
+        &__cards
+            flex-direction: column
+        &__card
+            margin-bottom: 50px
+            margin-top: 50px
+        &__title
+            margin: 21px 0px 55px 0px
+    .subscribe
+        padding: 145px 0px 165px 0px
+    .form
+        width: 80%
+        &__input-wrap
+            width: 100%
+        &__input
+            width: 100%
+            padding-right: 180px
+        &-modal
+            width: 100%
+
+    .footer
+        &__info
+            width: inherit
+
+@media (max-width:767px)
+    .container
+        width: 550px
+    body
+        &.lock
+            overflow: hidden
+
+    .header
+        &__logo
+            position: relative
+            z-index: 3
+        &__nav
+            position: fixed
+            z-index: 2
+            top: -100%
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: $white
+            padding-top: 140px
+            overflow: auto
+            transition: all 0.4s ease 0s
+            flex-direction: column
+            &.active
+                top: 0
+        &__items
+            flex-direction: column
+            margin: 16px 0px 16px 0px
+            overflow-y: auto
+        &__item
+            margin: 20px
+            &--mobile
+                display: block
+        &__link
+            font-size: 21px
+        &__burger
+            display: block
+            position: relative
+            z-index: 3
+            width: 40px
+            height: 30px
+            border: none
+            background-color: transparent
+            cursor: pointer
+            transition: all 0.4s ease-in-out
+            &-span
+                position: absolute
+                width: 100%
+                height: 2px
+                left: 0
+                transition: all 0.4s ease-in-out
+                background-color: $beige
+                &--1
+                    top: 0
+                    &.active
+                        transform: rotate(45deg)
+                        transform-origin: 5%
+                        width: 44px
+                &--2,
+                &--3
+                    top: 13.5px
+                &--2
+                    &.active
+                        transform: translateX(-40px)
+                        background-color: transparent
+                &--3
+                    right: 0
+                    &.active
+                        transform: translateX(40px)
+                        background-color: transparent
+                &--4
+                    bottom: 0
+                    &.active
+                        transform-origin: 5%
+                        transform: rotate(-45deg)
+                        width: 44px
+    .button
+        &-sign-up
+            display: none
+            &--mobile
+                display: block
+                order: 0
+                font-size: 21px
+                padding: 9px 21px 9px 21px
+        &--subscribe
+            font-size: 17px
+    .card
+        &__title
+            &--main
+                font-size: 40px
+                line-height: 65px
+            &--about-us
+                font-size: 40px
+            &--number
+                font-size: 40px
+        &__text
+            &--main
+                width: 550px
+    .main
+        &__ty
+            &-text
+                width: 100%
+            &-title
+                font-size: 40px
+    .service
+        &__title
+            font-size: 40px
+            line-height: 65px
+    .statistic
+        &__title
+            font-size: 40px
+    .clients
+        padding: 148px 0px 110px 0px
+        &__title
+            font-size: 40px
+            line-height: 38px
+
+        &__item
+            width: 420px
+        &-text
+            width: 100%
+            &__name
+                font-size: 21px
+            &__prof
+                font-size: 13px
+    .news
+        padding: 93px 0px 83px 0px
+        &__title
+            font-size: 40px
+    .subscribe
+        padding: 130px 0px 165px 0px
+        &__title
+            font-size: 40px
+            line-height: 53px
+        &__info
+            width: 100%
+            margin: 45px 0px 60px 0px
+    .form
+        &__input
+            font-size: 17px
+        &__field
+            &-label
+                font-size: 16px
+            &-input
+                height: 50px
+    .footer
+        &__wrap
+            grid-template-columns: repeat(2, minmax(min-content, 1fr))
+            grid-template-rows: repeat(4, min-content)
+        &__logo-wrap
+            grid-column: 1 / 3
+            grid-row: 1
+        &__list
+            &:nth-child(2)
+                grid-row: 2
+                grid-column: 1
+            &:nth-child(3)
+                grid-row: 2
+                grid-column: 2
+            &:nth-child(4)
+                grid-row: 3
+                grid-column: 1
+            &:nth-child(5)
+                grid-column: 2
+                grid-row: 3
+
+        &__bottom
+            grid-column: 1 / 3
+            margin: -37px auto 0px auto
+            grid-row: 4
+    .modal
+        &__dialog
+            padding: 65px 40px
+
+@media (max-width:590px)
+    .container
+        width: 90%
+    .card
+        &__text
+            display: flex
+            flex-direction: column
+            width: 90%
+            &--main
+
+        &__img-wrap
+            width: 100%
+            height: inherit
+            &::after
+                right: -9px
+                bottom: -17px
+            &--left-up
+                &::after
+                    top: 12px
+                    left: 7px
+        &__title
+            &--main
+                font-size: 32px
+                line-height: 44px
+            &--about-us
+                font-size: 32px
+                line-height: 44px
+            &--number
+                font-size: 32px
+                line-height: 44px
+        &__subtitle
+            font-size: 18px
+        &__info
+            font-size: 16px
+    .main
+        &__ty
+            &-title
+                font-size: 32px
+                line-height: 48px
+            &-info
+                font-size: 16px
+    .button
+        align-self: center
+        &--subscribe
+            position: static
+    .service
+        padding: 0px 0px 115px 0px
+        &__title
+            font-size: 32px
+            line-height: 50px
+        &-text
+            &__title
+                font-size: 19px
+
+            &__info
+                font-size: 16px
+        &__item
+            width: 250px
+    .about-us
+        &__card
+            margin-bottom: 120px
+    .slider-button
+        margin-bottom: 30px
+    .statistic
+        &__title
+            font-size: 32px
+            line-height: 44px
+    .clients
+        padding: 120px 0px 95px 0px
+        &__subtitle
+            font-size: 18px
+        &__title
+            font-size: 32px
+            text-align: center
+        &__item
+            width: 86%
+            padding: 65px 15px 30px 20px
+        &__avatar
+            left: 27px
+            top: 23%
+            width: 50px
+            height: 50px
+            border-radius: 50%
+        &-text
+            position: static
+            &__name
+                font-size: 20px
+                line-height: 28px
+            &__prof
+                font-size: 12px
+            &__info
+                font-size: 16px
+        &__quote
+            right: 20px
+            top: 20px
+        &__avatar
+            position: static
+    .news
+        &__subtitle
+            font-size: 18px
+        &__title
+            font-size: 32px
+    .form
+        flex-direction: column
+        align-items: center
+        &__input-wrap
+            margin-bottom: 40px
+        &__input
+            padding-right: 20px
+            padding-left: 20px
+            font-size: 14px
+        &__field
+            width: 100%
+    .subscribe
+        &__title
+            font-size: 32px
+            line-height: 47px
+        &__info
+            font-size: 16px
+        &__hr
+            width: 90%
+    .footer
+        &__wrap
+            grid-template-columns: repeat(1, minmax(min-content, 1fr))
+            grid-template-rows: repeat(5, min-content) 10px min-content
+            grid-row-gap: 50px
+        &__info
+            width: 90%
+        &__logo-wrap
+            grid-column: 1
+            grid-row: 1
+        &__list
+            &:nth-child(1)
+                grid-column: 1
+                grid-row: 1
+            &:nth-child(2)
+                grid-row: 2
+                grid-column: 1
+            &:nth-child(3)
+                grid-row: 3
+                grid-column: 1
+            &:nth-child(4)
+                grid-row: 4
+                grid-column: 1
+            &:nth-child(5)
+                grid-column: 1
+                grid-row: 5
+
+        &__bottom
+            grid-column: 1
+            grid-row: 7
+    .modal
+        &__dialog
+            width: 90%
+            padding: 60px 30px
+
+@media (max-height:480px)
+    .modal
+        &__dialog
+            height: 90%
+            overflow-y: scroll

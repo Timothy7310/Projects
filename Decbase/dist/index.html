@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decbase</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="index.html" class="header__logo">
+                    <picture class="header__logo-img">
+                        <source srcset="img/header/logo@1x.webp 1x,
+                                        img/header/logo@2x.webp 2x" type="image/webp">
+                        <img src="img/header/logo@1x.png" srcset="img/header/logo@2x.png 2x" alt="Logo Decbase.">
+                    </picture>
+                </a>
+                <button id="burger" class="header__burger" aria-label="Menu." aria-controls="navigation">
+                    <span class="header__burger-span header__burger-span--1"></span>
+                    <span class="header__burger-span header__burger-span--2"></span>
+                    <span class="header__burger-span header__burger-span--3"></span>
+                    <span class="header__burger-span header__burger-span--4"></span>
+                </button>
+                <nav class="header__nav">
+                    <ul class="header__items">
+                        <li class="header__item"><a href="#" class="header__link">Home</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Project</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Services</a></li>
+                        <li class="header__item"><a href="#" class="header__link">About</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Blog</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Shop</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                        <li class="header__item header__item--mobile"><button
+                                class="button-sign-up header__button button-sign-up--mobile modal-toggle--mb">Sign
+                                Up</button></li>
+                    </ul>
+
+                </nav>
+                <button class="button-sign-up header__button modal-toggle">Sign Up</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__wrap">
+                <div class="main__card card">
+                    <div class="card__text card__text--main">
+                        <span class="card__subtitle">
+                            Modern Interior
+                        </span>
+                        <h1 class="card__title card__title--main">
+                            Create Your Interior Design.
+                        </h1>
+                        <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation.</p>
+                        <button class="button button--contact">Contact</button>
+                    </div>
+                    <!-- /.card__text -->
+                    <div class="card__img-wrap">
+                        <picture>
+                            <source srcset="img/section-main/main@1x.webp 1x,
+                                            img/section-main/main@2x.webp 2x" type="image/webp">
+                            <img src="img/section-main/main@1x.jpg" class="card__img"
+                                srcset="img/section-main/main@2x.jpg 2x" alt="Bright room designed by our workers.">
+                        </picture>
+                    </div>
+                </div>
+                <!-- /.main__card card -->
+            </div>
+            <!-- /.main__wrap -->
+        </div>
+    </main>
+    <section class="service">
+        <div class="container">
+            <div class="service__wrap">
+                <div class="service__text">
+                    <span class="service__subtitle">What we do</span>
+                    <h2 class="service__title">Our Service</h2>
+                </div>
+
+
+                <div class="slider-buttons">
+                    <button class="slider-button service__button-prev">
+                        <svg class="slider-button__img" viewBox="0 0 7 10">
+                            <path d="M6 1L2 5l4 4" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <button class="slider-button service__button-next">
+                        <svg class="slider-button__img" viewBox="0 0 7 11">
+                            <path d="M1 1l4 4.5L1 10" stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="slider-wrap">
+                    <!-- Slider main container -->
+                    <div class="swiper-container service-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="service__item">
+                                    <svg viewBox="0 0 512 512" class="service__img">
+                                        <path
+                                            d="M476 284.5h-39.4V203a26 26 0 00-26-26H195a26 26 0 00-26 26v81.5h-39.4c-14.3 0-26 11.4-26 25.4v144.6a21.9 21.9 0 0043.9 0v-48.1H458v48a22 22 0 0044.1 0V309.9c0-14-11.6-25.4-26-25.4zM115.7 394.4v-17.9H490v17.9zM180.9 203a14 14 0 0114-14h215.7a14 14 0 0114 14v81.5h-14.3v-23.1c0-14-11.6-25.4-25.9-25.4h-48.5c-14.3 0-26 11.4-26 25.4v23h-14.3v-23c0-14-11.6-25.4-26-25.4h-48.4c-14.3 0-26 11.4-26 25.4v23H181zm141 81.5v-23.1a13.7 13.7 0 0114-13.4h48.5a13.7 13.7 0 0114 13.4v23zm-114.7 0v-23.1a13.7 13.7 0 0114-13.4h48.5a13.7 13.7 0 0114 13.4v23zm-77.7 12h346.6a13.7 13.7 0 0113.9 13.4v54.6H115.6V310a13.7 13.7 0 0113.9-13.4zm5.9 158a9.9 9.9 0 01-19.8 0v-48.1h19.8zM480 464a9.9 9.9 0 01-10-9.6v-48h20v48a9.9 9.9 0 01-10 9.6z" />
+                                        <path
+                                            d="M81.6 459.5H67.8V225.6h38.9a6.8 6.8 0 006.2-9.6l-24.2-53a6.8 6.8 0 00-6.3-4H41.1a6.8 6.8 0 00-6.2 4l-24.3 53a6.8 6.8 0 006.2 9.6h14.3v17.8a11 11 0 00-5.1 9.3 11.1 11.1 0 0022.2 0 11 11 0 00-5.1-9.3v-17.8h12.7v233.9h-14a6 6 0 000 12h39.8a6 6 0 000-12zM37.1 253.7a1 1 0 01-.9-1 1 1 0 01.1-.3 6.1 6.1 0 00.8 0 6 6 0 00.8 0 1 1 0 010 .3 1 1 0 01-.8 1zm7.3-82.8h34.7l19.5 42.7H25zM184.5 36a6 6 0 00-6 6v101.7a6 6 0 006 6H421a6 6 0 006-6V42a6 6 0 00-6-6zm139.2 101.7l-.8-1 28-23.5 26.2 24.5zm-91.2 0l38.8-38.3 36 38.3zm182.5 0h-20.4l-39.4-37a6 6 0 00-8-.1L314.7 128l-38.9-41.3a6 6 0 00-4.3-2 5.9 5.9 0 00-4.3 1.8l-51.7 51.2h-25V48H415z" />
+                                        <path
+                                            d="M314.8 103.8c11.3 0 20.4-9.8 20.4-21.8s-9.1-21.7-20.4-21.7S294.5 70 294.5 82s9.1 21.8 20.3 21.8zm0-31.5c4.7 0 8.4 4.3 8.4 9.7s-3.7 9.8-8.4 9.8-8.3-4.4-8.3-9.8 3.7-9.7 8.3-9.7z" />
+                                    </svg>
+
+                                    <div class="service-text">
+                                        <h3 class="service-text__title">Interior Design</h3>
+                                        <p class="service-text__info">Lorem ipsum dolor amet consectetur
+                                            adipiscing elit sed eiusmod tempor
+                                            incididunt ut labore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service__item ">
+                                    <svg viewBox="0 0 512 512" class="service__img">
+                                        <path
+                                            d="M453 361.3c-2.8-1.1-6-.5-8.2 1.6l-82 82.2a7.5 7.5 0 005.2 12.8h82.2c4.1 0 7.5-3.4 7.5-7.5v-82.1c0-3-1.9-5.8-4.7-7zM386.2 443l56.4-56.5V443h-56.4z" />
+                                        <path
+                                            d="M507.4 240.9c-2.8-1.2-6-.6-8.2 1.6L476.7 265V112c0-4.2-3.4-7.5-7.6-7.5h-57.7l21-21 20.2-20.2a22.8 22.8 0 000-32.4L429.2 7.5a22.8 22.8 0 00-32.4 0l-20.2 20.2-24.4 24.5-52.3 52.3H66.6V30c0-4.1-3.3-7.5-7.5-7.5A59.2 59.2 0 000 81.7v319.2A56.6 56.6 0 0057 455h229.6l-43.3 43.2a7.5 7.5 0 005.3 12.9h255.9c4.1 0 7.5-3.4 7.5-7.5V247.8c0-3-1.8-5.8-4.6-7zm-100-222.7c3.1-3.1 8.1-3.1 11.2 0l23.3 23.3c3.1 3 3.1 8 0 11.2l-14.8 14.9L392.5 33l15-15zM382 43.7l34.5 34.5L402.6 92l-34.5-34.5L382 43.7zm115 288.6h-13.8a7.5 7.5 0 100 15H497v22.6h-14a7.5 7.5 0 100 15h14v22.7h-14a7.5 7.5 0 100 15h14v22.7h-14a7.5 7.5 0 100 15h14v35.9H266.8l75.9-76a7.5 7.5 0 10-10.6-10.6l-30.5 30.5H56.9a41.7 41.7 0 01-41.8-40.6l.3-4.2c0-.7.2-1.4.3-2v-.3a43.5 43.5 0 011.8-6.7l.3-.8.6-1.5.2-.4.8-1.7v-.1a44.2 44.2 0 0130.7-24l.2-.1 1.8-.3h.4c.5-.2 1.1-.2 1.7-.3h.5l1.6-.2h2.8c4.2 0 7.5-3.5 7.5-7.6v-54.5a7.5 7.5 0 10-15 0v47.5A58.7 58.7 0 0015 361.5V81.7a44.2 44.2 0 0136.6-43.4v226.4a7.5 7.5 0 0015 0V119.5H285L243.3 161a7.5 7.5 0 0010.6 10.7l54.4-54.4L357.5 68l34.5 34.5-4 4-151.6 151.6-34.5-34.5 29.9-29.9a7.5 7.5 0 00-10.6-10.6L186 218.4l-.6.6-.1.2-.3.4-.2.3a7.1 7.1 0 00-.5 1.1l-.1.2-14.6 41.5-10 28.2-.3 1.2h-25a7.5 7.5 0 100 15h208.1a7.5 7.5 0 100-15H193.1l45.8-16.2h.1l.6-.3h.2l.5-.4h.2l.5-.4.1-.1.6-.6 154.7-154.6h65.2V280L354.1 387.5a7.5 7.5 0 1010.7 10.7L497 265.9v66.4zm-274.2-66.6l-21.5 7.6-14.4-14.3 7.6-21.6 28.3 28.3z" />
+                                    </svg>
+                                    <div class="service-text">
+                                        <h3 class="service-text__title ">Architecture</h3>
+                                        <p class="service-text__info ">Lorem ipsum dolor amet consectetur
+                                            adipiscing elit sed eiusmod tempor
+                                            incididunt ut labore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service__item">
+                                    <svg viewBox="0 0 512 512" class="service__img">
+                                        <path
+                                            d="M318.4 276.8a8 8 0 001.6-4.8v-30.7l6.1-18.3a15.5 15.5 0 00-3.8-16 15.7 15.7 0 00-20.4-1.4l-24.8 18.6A24 24 0 00256 248v12.3l-49.2 42.2-36.5-18.3a40.2 40.2 0 00-17.9-4.2H128v-1.4a24 24 0 0016-22.6v-33.4a24 24 0 00-8-46.6H96a40 40 0 00-40 40v16a8 8 0 001.3 4.4l14.7 22V280h-8a48 48 0 00-48 48v96a8 8 0 00.4 2.5l7.6 22.8V496h16v-40h96v40h16v-46.7l7.6-22.8a8 8 0 00.4-2.5v-60.2l16.6 6.7a77.3 77.3 0 0090.6-25.4zM72 216a24 24 0 0124-24h40a8 8 0 010 16h-16a8 8 0 00-7.4 5l-14 35H84.3L72 229.6zm16 48h16a8 8 0 007.4-5l14-35h2.6v32a8 8 0 01-8 8 8 8 0 00-8 8v8H88zm67 80.6a8 8 0 00-11 7.4v70.7l-5.8 17.3H37.8L32 422.7V328a32 32 0 0132-32h88.4a24.1 24.1 0 0110.8 2.5l25 12.6-17 40zm99.4-9.1a61.2 61.2 0 01-68.4 21.4l16.6-38.7 1.8 1a8 8 0 008.8-1.1l56-48a8 8 0 002.8-6.1v-16a8 8 0 018-8 8 8 0 004.8-1.6l25.7-19.3-6 18.4a8 8 0 00-.5 2.5v29.3z" />
+                                        <path
+                                            d="M472 16H216a24 24 0 00-24 24v240h16V88h272v264a8 8 0 01-8 8H264v16h208a24 24 0 0024-24V40a24 24 0 00-24-24zM208 72V40a8 8 0 018-8h256a8 8 0 018 8v32z" />
+                                        <circle cx="224" cy="48" r="8" />
+                                        <circle cx="248" cy="48" r="8" />
+                                        <circle cx="272" cy="48" r="8" />
+                                        <path
+                                            d="M256 136v-16h-16a8 8 0 00-8 8v48a8 8 0 008 8h48a8 8 0 008-8v-44.7l13.7-13.6-11.4-11.4-48 48 11.4 11.4 18.3-18.4V168h-32v-32zm64-8h32v16h-32zm48 0h88v16h-88zm-48 32h64v16h-64zm80 0h16v16h-16zm8 48h48v16h-48zm-64 0h48v16h-48zm-8 32h80v16h-80zm96 0h16v16h-16zm-24 48h48v16h-48zm-64 0h48v16h-48zm-8 32h80v16h-80zm96 0h16v16h-16z" />
+
+                                    </svg>
+                                    <div class="service-text">
+                                        <h3 class="service-text__title">Planning</h3>
+                                        <p class="service-text__info">Lorem ipsum dolor amet consectetur
+                                            adipiscing elit sed eiusmod tempor
+                                            incididunt ut labore.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us__wrap">
+                <div class="about-us__card card">
+
+                    <div class="card__img-wrap card__img-wrap--about-us card__img-wrap--left-up">
+                        <picture>
+                            <source srcset="img/section-about-us/interior-1@1x.webp 1x,
+                                        img/section-about-us/interior-1@2x.webp 2x" type="image/webp">
+                            <img src="img/section-about-us/interior-1@1x.jpg" class="card__img"
+                                srcset="img/section-about-us/interior-1@2x.jpg 2x"
+                                alt="Large living room in soft beige tones with wooden staircase.">
+                        </picture>
+                    </div>
+                    <div class="card__text card__text--about-us">
+                        <span class="card__subtitle">
+                            about us
+                        </span>
+                        <h2 class="card__title card__title--about-us">
+                            Interioris The Will of An Epoch Mextreo
+                        </h2>
+                        <p class="card__info">There are many variations of passages of Lorem Ipsum available,
+                            but the majority have suffered alteration in some form injected
+                            humour, or randomised words which don't look even slightly
+                            believable.If you are going to use a passage of Lorem Ipsum,
+                            sure there isn't anything embarrassing hidden the middleof text.
+                            All the Lorem Ipsum generators on the Internettend to repeat
+                            predefined chunks as necessary,making this the first true
+                            generator on the Internet.</p>
+                        <button class="button button--more">Learn More</button>
+                    </div>
+                    <!-- /.card__text -->
+                </div>
+                <!-- /.about-us__card card -->
+
+                <div class="about-us__card card">
+                    <div class="card__text card__text--number ">
+
+                        <span class="card__number">
+                            20
+                        </span>
+
+
+                        <h2 class="card__title card__title--number ">
+                            Years Of Successful Working The Market
+                        </h2>
+                        <button class="button button--read">Read More</button>
+                    </div>
+                    <!-- /.card__text -->
+
+                    <div class="card__img-wrap card__img-wrap--about-us">
+                        <picture>
+                            <source srcset="img/section-about-us/interior-2@1x.webp 1x,
+                                                img/section-about-us/interior-2@2x.webp 2x" type="image/webp">
+                            <img src="img/section-about-us/interior-2@1x.jpg" class="card__img"
+                                srcset="img/section-about-us/interior-2@2x.jpg 2x"
+                                alt="Wooden containers attached to the wall to hold flowers.">
+                        </picture>
+                    </div>
+                </div>
+                <!-- /.about-us__card card -->
+            </div>
+        </div>
+    </section>
+    <section class="statistic">
+        <div class="container">
+            <div class="statistic__wrap">
+                <h2 class="statistic__title">
+                    3000+ Completed Work Which WE have Successfully Done
+                </h2>
+                <ul class="statistic-list statistic-list--mb">
+                    <li class="statistic-card">
+                        <div class="statistic-card__text">
+                            <span class="statistic-card__number">
+                                980
+                            </span>
+                            <span class="statistic-card__name">
+                                Project
+                            </span>
+                        </div>
+                    </li>
+                    <li class="statistic-card">
+                        <div class="statistic-card__text">
+                            <span class="statistic-card__number">
+                                520
+                            </span>
+                            <span class="statistic-card__name">
+                                Happy Client
+                            </span>
+                        </div>
+                    </li>
+                    <li class="statistic-card">
+                        <div class="statistic-card__text">
+                            <span class="statistic-card__number">
+                                330
+                            </span>
+                            <span class="statistic-card__name">
+                                Winners
+                            </span>
+                        </div>
+                    </li>
+                    <li class="statistic-card">
+                        <div class="statistic-card__text">
+                            <span class="statistic-card__number">
+                                120
+                            </span>
+                            <span class="statistic-card__name">
+                                Recoment
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="container">
+            <div class="clients__wrap">
+                <span class="clients__subtitle">Testimonials</span>
+                <h2 class="clients__title">Client says about us</h2>
+                <div class="slider-buttons">
+                    <button class="slider-button clients__button-prev">
+                        <svg class="slider-button__img" viewBox="0 0 7 10">
+                            <path d="M6 1L2 5l4 4" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <button class="slider-button clients__button-next">
+                        <svg class="slider-button__img" viewBox="0 0 7 11">
+                            <path d="M1 1l4 4.5L1 10" stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+
+
+                <div class="swiper-container clients-slider">
+
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="clients__item">
+
+                                <picture>
+                                    <source srcset="img/section-clients/clients-1@1x.webp 1x,
+                                                            img/section-clients/clients-1@2x.webp 2x"
+                                        type="image/webp">
+                                    <img src="img/section-clients/clients-1@1x.jpg" class="clients__avatar"
+                                        srcset="img/section-clients/clients-1@2x.jpg 2x" alt="Avatar.">
+                                </picture>
+                                <div class="clients-text">
+                                    <h3 class="clients-text__name">Louis Saville
+                                        <span class="clients-text__prof">/CEO at Google inc</span>
+                                    </h3>
+                                    <p class="clients-text__info">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                                        stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 64 64"
+                                        class="clients__quote">
+                                        <path d="M-1216 0H64v800h-1280z" />
+                                        <path
+                                            d="M36.8 52v-8c2.5-.2 4.5-.7 5.8-1.4 1.3-.8 2.2-2.1 2.7-3.9.5-1.7.8-4.3.8-7.6h-9.3V12h19v18.2c0 7.5-1.5 13-4.7 16.5-3.3 3.5-8 5.3-14.3 5.3zM8 52v-8c2.5-.2 4.5-.6 5.8-1.4 1.3-.7 2.2-2 2.8-3.8.6-1.8.9-4.4.9-7.7H8V12h19.2v18.2c0 7.5-1.6 13-4.8 16.5-3.2 3.5-8 5.3-14.4 5.3z"
+                                            fill="#B0855B" />
+                                    </svg>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__item">
+
+                                <picture>
+                                    <source srcset="img/section-clients/clients-2@1x.webp 1x,
+                                                            img/section-clients/clients-2@2x.webp 2x"
+                                        type="image/webp">
+                                    <img src="img/section-clients/clients-2@1x.jpg" class="clients__avatar"
+                                        srcset="img/section-clients/clients-2@2x.jpg 2x" alt="Avatar.">
+                                </picture>
+                                <div class="clients-text">
+                                    <h3 class="clients-text__name">Rekha Varadwaz
+                                        <span class="clients-text__prof">/Manager at Nike inc</span>
+                                    </h3>
+                                    <p class="clients-text__info">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                                        stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 64 64"
+                                        class="clients__quote">
+                                        <path d="M-1216 0H64v800h-1280z" />
+                                        <path
+                                            d="M36.8 52v-8c2.5-.2 4.5-.7 5.8-1.4 1.3-.8 2.2-2.1 2.7-3.9.5-1.7.8-4.3.8-7.6h-9.3V12h19v18.2c0 7.5-1.5 13-4.7 16.5-3.3 3.5-8 5.3-14.3 5.3zM8 52v-8c2.5-.2 4.5-.6 5.8-1.4 1.3-.7 2.2-2 2.8-3.8.6-1.8.9-4.4.9-7.7H8V12h19.2v18.2c0 7.5-1.6 13-4.8 16.5-3.2 3.5-8 5.3-14.4 5.3z"
+                                            fill="#B0855B" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__item">
+
+                                <picture>
+                                    <source srcset="img/section-clients/clients-3@1x.webp 1x,
+                                                            img/section-clients/clients-3@2x.webp 2x"
+                                        type="image/webp">
+                                    <img src="img/section-clients/clients-3@1x.jpg" class="clients__avatar"
+                                        srcset="img/section-clients/clients-3@2x.jpg 2x" alt="Avatar.">
+                                </picture>
+                                <div class="clients-text">
+                                    <h3 class="clients-text__name">Carol Parker
+                                        <span class="clients-text__prof">/CEO at Facebook inc</span>
+                                    </h3>
+                                    <p class="clients-text__info">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                                        stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 64 64"
+                                        class="clients__quote">
+                                        <path d="M-1216 0H64v800h-1280z" />
+                                        <path
+                                            d="M36.8 52v-8c2.5-.2 4.5-.7 5.8-1.4 1.3-.8 2.2-2.1 2.7-3.9.5-1.7.8-4.3.8-7.6h-9.3V12h19v18.2c0 7.5-1.5 13-4.7 16.5-3.3 3.5-8 5.3-14.3 5.3zM8 52v-8c2.5-.2 4.5-.6 5.8-1.4 1.3-.7 2.2-2 2.8-3.8.6-1.8.9-4.4.9-7.7H8V12h19.2v18.2c0 7.5-1.6 13-4.8 16.5-3.2 3.5-8 5.3-14.4 5.3z"
+                                            fill="#B0855B" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients__item">
+
+                                <picture>
+                                    <source srcset="img/section-clients/clients-4@1x.webp 1x,
+                                                            img/section-clients/clients-4@2x.webp 2x"
+                                        type="image/webp">
+                                    <img src="img/section-clients/clients-4@1x.jpg" class="clients__avatar"
+                                        srcset="img/section-clients/clients-4@2x.jpg 2x" alt="Avatar.">
+                                </picture>
+                                <div class="clients-text">
+                                    <h3 class="clients-text__name">Jim Darvis
+                                        <span class="clients-text__prof">/Manager at Puma inc</span>
+                                    </h3>
+                                    <p class="clients-text__info">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                                        stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 64 64"
+                                        class="clients__quote">
+                                        <path d="M-1216 0H64v800h-1280z" />
+                                        <path
+                                            d="M36.8 52v-8c2.5-.2 4.5-.7 5.8-1.4 1.3-.8 2.2-2.1 2.7-3.9.5-1.7.8-4.3.8-7.6h-9.3V12h19v18.2c0 7.5-1.5 13-4.7 16.5-3.3 3.5-8 5.3-14.3 5.3zM8 52v-8c2.5-.2 4.5-.6 5.8-1.4 1.3-.7 2.2-2 2.8-3.8.6-1.8.9-4.4.9-7.7H8V12h19.2v18.2c0 7.5-1.6 13-4.8 16.5-3.2 3.5-8 5.3-14.4 5.3z"
+                                            fill="#B0855B" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="news__wrap">
+                <span class="news__subtitle">Latest News</span>
+                <h2 class="news__title">
+                    From Our Blog
+                </h2>
+                <div class="news__cards">
+                    <article class="news__card card">
+
+                        <div class="card__img-wrap card__img-wrap--news">
+                            <picture>
+                                <source srcset="img/section-news/news-1@1x.webp 1x,
+                                                    img/section-news/news-1@2x.webp 2x" type="image/webp">
+                                <img src="img/section-news/news-1@1x.jpg" class="card__img"
+                                    srcset="img/section-news/news-1@2x.jpg 2x"
+                                    alt="Living room with kitchen in gray and red tones">
+                            </picture>
+                        </div>
+                        <div class="card__text card__text--news">
+                            <h3 class="card__title card__title--news">
+                                2020 Interior Design Trends
+                            </h3>
+                            <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                incididunt ut labore et dolore magna aliqua.</p>
+                            <button class="button button--continue">Continue Reading....</button>
+                        </div>
+                        <!-- /.card__text -->
+                    </article>
+                    <article class="news__card card">
+
+                        <div class="card__img-wrap card__img-wrap--news">
+                            <picture>
+                                <source srcset="img/section-news/news-2@1x.webp 1x,
+                                                    img/section-news/news-2@2x.webp 2x" type="image/webp">
+                                <img src="img/section-news/news-2@1x.jpg" class="card__img"
+                                    srcset="img/section-news/news-2@2x.jpg 2x"
+                                    alt="Light-colored office with panoramic windows.">
+                            </picture>
+                        </div>
+                        <div class="card__text card__text--news">
+                            <h3 class="card__title card__title--news">
+                                How to make your workplace better
+
+                            </h3>
+                            <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                incididunt ut labore et dolore magna aliqua.</p>
+                            <button class="button button--continue">Continue Reading....</button>
+                        </div>
+                        <!-- /.card__text -->
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe__wrap">
+                <h2 class="subscribe__title">Don’t forget to Sign Up</h2>
+                <div class="subscribe__hr"></div>
+                <p class="subscribe__info">
+                    Find out early about all upcoming promotions and new product releases with
+                    our newsletter.
+                </p>
+                <form action="send.php" method="POST" class="form">
+                    <div class="form__input-wrap">
+                        <input type="email" name="email" placeholder="Enter your email address....." class="form__input"
+                            required>
+                    </div>
+                    <button class="button button--subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__logo-wrap">
+                    <a href="index.html" class="footer__logo">
+                        <picture>
+                            <source srcset="img/header/logo@1x.webp 1x,
+                                                img/header/logo@2x.webp 2x" type="image/webp">
+                            <img src="img/header/logo@1x.png" class="footer__logo-img"
+                                srcset="img/header/logo@2x.png 2x" alt="Logo Decbase.">
+                        </picture>
+                    </a>
+                    <p class="footer__info">
+                        But i must explain to you all this mistaken idea of dencouncing pleasure.
+                    </p>
+                </div>
+                <div class="footer__list">
+                    <h3 class="footer__list-title">Quick Links</h3>
+                    <ul class="footer__items">
+                        <li class="footer__item"><a href="#" class="footer__link">About Our Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Services WE provide</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Career & Opportunity</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy & policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact US</a></li>
+                    </ul>
+                </div>
+                <div class="footer__list">
+                    <h3 class="footer__list-title">Company</h3>
+                    <ul class="footer__items">
+                        <li class="footer__item"><a href="#" class="footer__link">About Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Our Testimonials</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Latest News</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Our misson</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Get a free Quot</a></li>
+                    </ul>
+                </div>
+                <div class="footer__list">
+                    <h3 class="footer__list-title">Contact us</h3>
+                    <ul class="footer__items">
+                        <li class="footer__item"><a href="#" class="footer__link">Sagrada Familia, Herba</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Street Front USA</a></li>
+                        <li class="footer__item"><a href="mailto:brandoxide@gmail.com"
+                                class="footer__link">brandoxide@gmail.com</a></li>
+                        <li class="footer__item"><a href="tel:002-568423591" class="footer__link">002-568423591</a></li>
+                    </ul>
+                </div>
+                <div class="footer__list">
+                    <h3 class="footer__list-title">Follow Us</h3>
+                    <ul class="footer-links">
+                        <li class="footer-links__item">
+                            <a href="https://ru-ru.facebook.com/" target="_blank" rel="nofollow noopener"
+                                aria-label="Facebook" class="footer-links__link">
+
+                                <svg class="footer-links__img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M304 383c0 40.2-.1 80.3.1 120.5 0 4.4-1.2 5.6-5.6 5.5-34.2-.2-68.3-.2-102.5 0-4.7 0-6.2-1.1-6.2-6 .2-79.7.1-159.3.1-239 0-8 .9-7-7.3-7.1-14.5 0-29-.1-43.5.1-3.5 0-4.5-1.1-4.5-4.6v-76c0-3.5 1-4.6 4.5-4.5 15.2.2 30.3-.1 45.5.2 4.1.1 5.4-1 5.4-5.3-.2-21.3 0-42.7-.1-64a98.1 98.1 0 0111.5-50.4c9.6-17 24-28.7 41.8-36.3 15-6.4 30.8-9.4 47-10.3 32.1-1.8 64.3-.3 96.4-.9 3.6-.1 4.5 1.2 4.5 4.6v79c0 4-1.5 4.6-5 4.6l-55.5-.1a25.5 25.5 0 00-26.5 26.3c0 15.7.2 31.3-.1 47-.1 4.5 1.4 5.6 5.7 5.6 25.3-.2 50.7 0 76-.2 4.2 0 5.6 1.2 5.1 5.4l-4.2 38.7c-1.3 12.4-3.5 24.7-5.5 37-.6 3.5-1.7 4.3-4.9 4.3h-65c-8.5 0-7.3-1.1-7.3 7.5L304 383z"
+                                        fill="#FFF" /></svg>
+
+                            </a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="https://twitter.com/" target="_blank" rel="nofollow noopener" aria-label="Twitter"
+                                class="footer-links__link">
+
+                                <svg viewBox="0 0 512 512" class="footer-links__img" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4 440.5c55.6 5 105.7-9 151.3-43.2-47.7-4.2-79.6-28-97.4-72.6 15.6 1.9 30.2 2.4 45.7-1.8-51.4-16-78.8-49.6-82.5-103.8a111 111 0 0047 12.6c-30.5-22.9-46.1-52.6-45.5-90a97 97 0 0114-48.7C93.1 159.1 164 195.7 251.3 201.8l-1.2-9.9a103.7 103.7 0 0183.8-116.3c34.5-6.6 65 2.5 90.8 26.3 4 3.6 7.4 4.4 12.4 3.1a249.4 249.4 0 0057.7-22.5 108 108 0 01-41.5 55.8c4.5-.8 9.1-1.4 13.6-2.3a240.5 240.5 0 0027.4-7.5c4.5-1.5 9-3.2 14.3-4.1-2.6 3.6-5.1 7.4-7.9 10.9a233.1 233.1 0 01-39.7 39.1 7.9 7.9 0 00-2.7 5.6 297 297 0 01-15.7 103.7c-22.6 66.2-62 119.8-121.1 158.1a279.5 279.5 0 01-95.2 38.5 314.4 314.4 0 01-101.9 4.4c-34.2-4-66.7-14.1-97.3-29.9-8.1-4.1-15.9-8.7-23.8-13.1l.7-1.2z"
+                                        fill="#FFF" /></svg>
+
+                            </a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="https://www.instagram.com/" target="_blank" rel="nofollow noopener"
+                                aria-label="Instagram" class="footer-links__link">
+
+                                <svg class="footer-links__img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="#FFF">
+                                        <path
+                                            d="M505 257v108c0 52-24 90-68 117-25 16-53 23-83 23H159c-46 0-85-16-116-50a128 128 0 01-34-91V150C9 98 33 59 77 32c25-16 53-23 83-23h195c46 0 85 17 116 50 19 21 30 46 33 74l1 32v92zm-459 0v110c0 25 9 47 27 65 23 24 51 36 85 36h197c21 0 41-5 59-15 35-20 54-49 54-89V147c0-25-9-47-26-64-23-25-52-37-85-37H158c-21 0-40 5-58 15a98 98 0 00-54 90v106z" />
+                                        <path
+                                            d="M257 363c-64 0-116-52-116-116 0-63 53-114 117-114s116 52 116 116c0 63-52 114-117 114zm0-37c44 0 80-35 80-78s-35-78-79-78-80 35-80 78 36 78 79 78zm106-202c0-15 11-26 25-26 13 0 24 12 24 26 0 13-11 25-24 25-14 0-25-11-25-25z" />
+                                    </g>
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a href="https://www.linkedin.cn/login" target="_blank" rel="nofollow noopener"
+                                aria-label="LinkedIn" class="footer-links__link">
+
+                                <svg viewBox="0 0 32 32" class="footer-links__img" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M32 31.3V19.5c0-6.4-3.4-9.3-7.9-9.3-3.6 0-5.3 2-6.2 3.4v-3h-6.8v20.7h6.8V19.8c0-.6 0-1.3.2-1.7.5-1.2 1.7-2.5 3.6-2.5 2.4 0 3.4 1.9 3.4 4.7v11H32zM3.8 7.8c2.4 0 4-1.5 4-3.5-.1-2-1.6-3.6-4-3.6S0 2.2 0 4.3c0 2 1.5 3.5 3.8 3.5zm3.5 23.5V10.7H.4v20.6h6.9z"
+                                        fill="#FFF" /></svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__bottom">
+
+                    <p class="footer__copy">
+                        Copyright @ 2020 <a href="#" class="footer__copy-link">Brandoxide</a>.all right reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__dialog">
+            <button class="button-close" id="button-close" aria-label="Close Sign Up window." autofocus>
+
+                <svg class="button-close__img" width="21" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 2l18.3 18.3M1 20.3l19-19" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+
+            </button>
+
+            <form class="form form-modal">
+                <div class="form__field">
+                    <label for="email_field" class="form__field-label">E-mail:</label>
+                    <input type="email" name="email" id="email_field" class="form__field-input" required>
+                </div>
+                <div class="form__field">
+                    <label for="password_field" class="form__field-label">Password:</label>
+                    <input type="password" name="password" id="password_field" class="form__field-input" required>
+                </div>
+                <button class="button button--modal">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

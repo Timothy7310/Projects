@@ -12,5 +12,8 @@
 - [Universal](https://timothy7310.github.io/Projects/Universal/)
 - [BestTour](https://timothy7310.github.io/Projects/BestTour/)
 
+## The Rolling Scopes School 🎓
+- [Projects](https://github.com/Timothy7310/RS-School)
+
 ## Good cocktails 🥃
 - [Old Sport](https://timothy7310.github.io/Projects/OldSport/app/)
